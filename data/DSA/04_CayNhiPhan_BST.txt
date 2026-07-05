@@ -1,0 +1,250 @@
+#TIME: 55
+
+#Q1 [SC4]
+Với cấu trúc dữ liệu cây - Tree, một nút không có nút con được gọi là?
+A. Nút rỗng
+B. Nút gốc
+C. Nút trong
+D. Nút lá
+#ANSWER: D
+#EXPLAIN: Nút không có con gọi là nút lá (Leaf Node).
+
+#Q2 [SC4]
+Trong một cây nhị phân tìm kiếm với nút gốc có đủ 2 con, nút có giá trị nhỏ nhất trên cây nằm tại:
+A. Nút bên trái nhất của gốc
+B. Nút nằm trái nhất trên cây con phải của gốc
+C. Nút bên phải nhất của gốc
+D. Nút nằm phải nhất trên cây con trái của gốc
+#ANSWER: A
+#EXPLAIN: Cứ liên tục rẽ trái đến cuối cùng sẽ tìm được phần tử nhỏ nhất.
+
+#Q3 [SC4]
+Nếu duyệt cây nhị phân theo thứ tự trước (Pre-order) và thứ tự sau (Post-order) cho ra cùng một kết quả thì cây đó có tối đa mấy nút?
+A. 1 nút
+B. Cây đầy đủ
+C. Cây rỗng
+D. Cây hoàn chỉnh
+#ANSWER: A
+#EXPLAIN: Gốc nằm ở đầu Pre-order và cuối Post-order; nếu 2 dãy giống nhau, dãy chỉ được phép có tối đa 1 phần tử.
+
+#Q4 [SC4]
+Với một cây nhị phân tìm kiếm, duyệt theo thứ tự nào sẽ thu được danh sách theo thứ tự tăng dần?
+A. Duyệt thứ tự sau - Post-order
+B. Duyệt thứ tự giữa - In-order
+C. Duyệt thứ tự trước - Pre-order
+D. Duyệt theo mức - Level-order
+#ANSWER: B
+#EXPLAIN: In-order (Trái - Gốc - Phải) trên BST luôn tạo ra dãy khóa tăng dần.
+
+#Q5 [SC4]
+Chọn định nghĩa đúng đối với cây nhị phân tìm kiếm?
+A. Cây nhị phân tìm kiếm chính là cây nhị phân bất kỳ
+B. Khóa mỗi nút lớn hơn khóa mọi nút cây con trái và nhỏ hơn khóa mọi nút cây con phải
+C. Khóa mỗi nút lớn hơn khóa mọi nút cây con trái và lớn hơn khóa mọi nút cây con phải
+D. Khóa mỗi nút nhỏ hơn khóa mọi nút cây con trái và nhỏ hơn khóa mọi nút cây con phải
+#ANSWER: B
+#EXPLAIN: Đây là định nghĩa chuẩn của Binary Search Tree (BST).
+
+#Q6 [SC4]
+Cho T là một BST thu được bằng cách chèn lần lượt: 3, 4, 8, 20, 5, 1, 15, 2. Kết luận nào đúng?
+A. 5 là con phải của 4
+B. 5 là con trái của 8
+C. 5 và 3 là hai nút anh em
+D. 5 là nút gốc của cây con phải
+#ANSWER: B
+#EXPLAIN: Xây cây: gốc 3, nhánh phải có 4, 8, 20. Khóa 5 chèn sau 8 (5<8) nên 5 là con trái của 8.
+
+#Q7 [SC4]
+Cùng cây T ở trên (chèn 3,4,8,20,5,1,15,2), thứ tự các khóa duyệt Pre-order là:
+A. 3, 1, 2, 4, 8, 5, 20, 15
+B. 1, 2, 3, 4, 5, 8, 15, 20
+C. 3, 4, 8, 20, 5, 1, 15, 2
+D. 2, 1, 5, 15, 20, 8, 4, 3
+#ANSWER: A
+#EXPLAIN: Duyệt Pre-order (Gốc - Trái - Phải) trên cây BST đã xây dựng.
+
+#Q8 [SC4]
+Cùng cây T ở trên, thứ tự các khóa duyệt Post-order là:
+A. 2, 1, 5, 15, 20, 8, 4, 3
+B. 3, 1, 2, 4, 8, 5, 20, 15
+C. 1, 2, 3, 4, 5, 8, 15, 20
+D. 3, 4, 8, 20, 5, 1, 15, 2
+#ANSWER: A
+#EXPLAIN: Duyệt Post-order (Trái - Phải - Gốc) trên cây BST đã xây dựng.
+
+#Q9 [SC4]
+Cùng cây T ở trên, thứ tự các khóa duyệt In-order là:
+A. 1, 2, 3, 4, 5, 8, 15, 20
+B. 3, 1, 2, 4, 8, 5, 20, 15
+C. 2, 1, 5, 15, 20, 8, 4, 3
+D. 20, 15, 8, 5, 4, 3, 2, 1
+#ANSWER: A
+#EXPLAIN: Duyệt In-order của BST luôn tạo ra dãy tăng dần.
+
+#Q10 [SC4]
+Cây T: gốc 10, con trái 7 (con trái 5, con phải 9), con phải 14 (con trái 12, con phải 15). Dãy nút 5,7,9,10,12,14,15 là dãy được thăm theo phép duyệt nào?
+A. Thứ tự trước
+B. Thứ tự giữa
+C. Thứ tự sau
+D. Theo mức
+#ANSWER: B
+#EXPLAIN: Dãy này tăng dần, đặc trưng của phép duyệt In-order (Trái - Gốc - Phải).
+
+#Q11 [SC4]
+Cây T: gốc 8, con trái 4 (con trái 2, con phải 6), con phải 15 (con trái 10, con phải 20). T có phải là cây AVL không?
+A. Có, là cây AVL
+B. Không phải cây AVL
+C. Chỉ là BST, không phải AVL
+D. Không đủ dữ liệu để kết luận
+#ANSWER: A
+#EXPLAIN: Các giá trị thỏa mãn BST, và chiều cao cây con trái/phải tại mọi nút đều cân bằng hoàn hảo.
+
+#Q12 [SC4]
+Dãy khóa: 3,4,7,8,9,12,13,14,16,20,21,29,30,31,32 lưu trên cây BST cân bằng hoàn chỉnh. Tìm khóa 20 cần bao nhiêu phép so sánh?
+A. 3
+B. 4
+C. 2
+D. 5
+#ANSWER: A
+#EXPLAIN: Gốc là 14 (vị trí 8). So 20 với 14 -> qua phải (gốc con là 29). So 20 với 29 -> qua trái (gốc là 20). So 20 với 20 -> thấy. Tổng 3 phép so sánh.
+
+#Q13 [SC4]
+Dãy khóa 3,4,7,8,9,12,13 lưu trên một cây AVL. Kết luận "Chỉ có duy nhất 1 cây AVL lưu dãy khóa trên" là đúng hay sai?
+A. Đúng, chỉ có duy nhất 1 cây
+B. Sai, có thể có nhiều cây AVL hợp lệ khác nhau
+C. Chỉ đúng khi số khóa nhỏ hơn 5
+D. Không xác định được
+#ANSWER: B
+#EXPLAIN: Có thể vẽ nhiều hơn 1 sơ đồ cây AVL hợp lệ (chênh lệch nhánh trái/phải không quá 1) cho cùng một bộ khóa.
+
+#Q14 [SC4]
+Cho cây nhị phân trong đó mỗi nút hoặc là lá hoặc có đủ 2 con. Nếu duyệt Pre-order là A B D C E thì Post-order sẽ là?
+A. D E C B A
+B. A B D C E
+C. D B E C A
+D. E D C B A
+#ANSWER: A
+#EXPLAIN: A là gốc, B và C là 2 con của A; D là con của B, E là con của C. Post-order (Trái-Phải-Gốc) cho ra D E C B A.
+
+#Q15 [SC4]
+Số lượng nút tối đa trên một cây nhị phân tìm kiếm có chiều cao h (chiều cao tính từ 0) là?
+A. 2^(h+1) - 1
+B. 2^h - 1
+C. 2^(h+1) + 1
+D. 2^h
+#ANSWER: A
+#EXPLAIN: Với quy ước gốc có độ sâu 0, tổng số nút tối đa của cây nhị phân chiều cao h là 2^(h+1) - 1.
+
+#Q16 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(r): nếu r==NULL trả 0, ngược lại trả max(cal(leftChild), cal(rightChild)) + 1.
+Cây: gốc 6, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 7, con phải 8, 8 có con trái 3 và con phải 10).
+r trỏ tới nút 9. cal(r) trả về bao nhiêu?
+A. 3
+B. 2
+C. 4
+D. 5
+#ANSWER: A
+#EXPLAIN: Hàm cal tính chiều cao nhánh. Nhánh từ 9 có đường dài nhất là 9 -> 8 -> 10 (3 nút), chiều cao bằng 3.
+
+#Q17 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(k,r,d): nếu k<=d trả về r.key + cal(k,leftChild,d+1) + cal(k,rightChild,d+1), ngược lại chỉ đệ quy tiếp không cộng r.key.
+Cây: gốc 6 (mức 1), con 1 và 9 (mức 2), con của 1 là 4 (mức 3), con của 9 là 7,8 (mức 3), con của 4 là 2,5 (mức 4), con của 8 là 3,10 (mức 4).
+r trỏ tới nút 6. cal(3, r, 1) trả về bao nhiêu?
+A. 39
+B. 35
+C. 42
+D. 30
+#ANSWER: A
+#EXPLAIN: Ở mức 3 cộng 4+7+8=19, ở mức 4 cộng 2+5+3+10=20. Tổng toàn cây là 19+20=39.
+
+#Q18 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(k,r,d): nếu r.key==k trả về d; d1=cal(k,leftChild,d+1); nếu d1>0 trả d1; ngược lại trả cal(k,rightChild,d+1).
+Cây: gốc 7, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 6, con phải 8, 8 có con trái 3 và con phải 11).
+r trỏ tới nút 6. cal(5, r, 1) trả về bao nhiêu?
+A. 4
+B. 3
+C. 5
+D. 2
+#ANSWER: A
+#EXPLAIN: Hàm tìm mức sâu của nút có giá trị bằng k, tính từ 1. Nút 5 nằm ở mức thứ 4 tính từ gốc nhánh, kết quả trả về 4.
+
+#Q19 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(r): nếu r==NULL trả 0; nếu là lá trả r.key; ngược lại trả cal(leftChild)+cal(rightChild).
+Cây: gốc 6, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 7, con phải 8, 8 có con trái 3 và con phải 10).
+p trỏ tới nút có khóa bằng 1. cal(p) trả về bao nhiêu?
+A. 7
+B. 5
+C. 9
+D. 6
+#ANSWER: A
+#EXPLAIN: Hàm tính tổng khóa các nút lá trong nhánh. Lá của nhánh gốc 1 là 2 và 5. Tổng = 7.
+
+#Q20 [SC4]
+Mức (độ sâu) của mỗi nút trên cây nhị phân là độ dài đường đi từ gốc đến nút đó (gốc có độ sâu 0). Trên một cây nhị phân, có thể có tối đa bao nhiêu nút có độ sâu bằng 3?
+A. 8
+B. 4
+C. 16
+D. 6
+#ANSWER: A
+#EXPLAIN: Độ sâu k có tối đa 2^k nút. Với k=3, số nút tối đa là 2^3 = 8.
+
+#Q21 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(r): nếu r==NULL trả 0; nếu là lá trả r.key; ngược lại trả cal(leftChild)+cal(rightChild).
+Cây: gốc 6, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 7, con phải 8, 8 có con trái 3 và con phải 10).
+Gọi cal(6) (r trỏ vào gốc) trả về bao nhiêu?
+A. 27
+B. 24
+C. 30
+D. 21
+#ANSWER: A
+#EXPLAIN: Tổng khóa các nút lá toàn cây: 2+5+7+3+10 = 27.
+
+#Q22 [SC4]
+Hàm find(r): nếu r==NULL trả NULL; nếu r.rightChild==NULL trả r.key; ngược lại trả find(r.rightChild).
+Cây T có duyệt In-order: 5,10,12,15,20,22,25,28,30,35. r trỏ đến gốc. find(r) trả về khóa bằng bao nhiêu?
+A. 35
+B. 30
+C. 28
+D. 20
+#ANSWER: A
+#EXPLAIN: Hàm luôn đệ quy sang phải đến cùng, đây chính là nút có khóa lớn nhất trong BST.
+
+#Q23 [SC4]
+Hàm cal(a,b,r): nếu r==NULL trả 0; nếu a<=r.key<=b trả r.key + cal(a,b,leftChild) + cal(a,b,rightChild); nếu r.key>a trả cal(a,b,leftChild); ngược lại trả cal(a,b,rightChild).
+Cây: gốc 20, con trái 10 (con trái 5, con phải 15, 15 có con trái 12), con phải 30 (con trái 25 (con trái 22, con phải 28), con phải 35).
+r trỏ đến gốc 20. cal(12, 26, r) trả về bao nhiêu?
+A. 94
+B. 84
+C. 100
+D. 75
+#ANSWER: A
+#EXPLAIN: Các nút thỏa 12<=key<=26 gồm: 12, 15, 20, 22, 25. Tổng = 12+15+20+22+25 = 94.
+
+#Q24 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(k,r,d): nếu r==NULL trả 0; nếu r.key==k trả d; ngược lại d1=cal(k,leftChild,d+1); nếu d1>0 trả d1; ngược lại trả cal(k,rightChild,d+1).
+Cây: gốc 6, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 7, con phải 8, 8 có con trái 3 và con phải 10).
+r trỏ tới nút 6 (nhánh gốc chỉ chứa 6,1,4,2,5,9,7,8,3,10 - không chứa khóa 8 trong nhánh con của 6 ở ví dụ này nếu r đổi thành nhánh 1). Nếu r trỏ tới nút 1 và tìm khóa 8, cal(8, r, 1) trả về bao nhiêu?
+A. 0
+B. 1
+C. 5
+D. -1
+#ANSWER: A
+#EXPLAIN: Nhánh xuất phát từ nút 1 (gồm 1,4,2,5) không hề chứa khóa 8, nên hàm đệ quy không tìm thấy và trả về 0.
+
+#Q25 [SC4]
+Cho một cây nhị phân T. Biết dãy duyệt Post-order là 1,2,3,4,5,6 và dãy duyệt In-order là 4,2,5,6,3,1. Chiều cao của cây T (số nút trên đường đi dài nhất từ gốc đến lá) bằng bao nhiêu?
+A. 4
+B. 3
+C. 5
+D. 6
+#ANSWER: A
+#EXPLAIN: Gốc là 1 (cuối Post-order). Dựng lại cây từ 2 phép duyệt, đường đi dài nhất có 4 nút.
+
+#Q26 [SC4]
+Cho một cây nhị phân T. Biết dãy duyệt Post-order là 2,5,6,7,8,4,6,1,3 và dãy duyệt In-order là 2,5,6,3,8,7,4,1,6. Chiều cao của cây T bằng bao nhiêu?
+A. 5
+B. 4
+C. 6
+D. 7
+#ANSWER: A
+#EXPLAIN: Gốc là 3 (nút cuối dãy Post-order). Dựng lại cây theo 2 phép duyệt, đường đi dài nhất có 5 nút.

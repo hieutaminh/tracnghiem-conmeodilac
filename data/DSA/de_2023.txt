@@ -1,0 +1,435 @@
+#TIME: 60
+
+#Q1 [ESSAY]
+Chương trình C sau in ra màn hình xâu kí tự gì?
+
+#include <stdio.h>
+#include <math.h>
+int kt(int n) {
+if (n < 2) return 0;
+int squareRoot = (int) sqrt(n);
+for (int i = 2; i <= squareRoot; i++)
+if (n % i == 0) return 0;
+return 1;
+}
+int main() {
+printf("=");
+for (int i = 0; i < 30; i++)
+if (kt(i)) {
+printf("%d", i);
+if (i < 29) printf(",");
+}
+}
+
+Điền kết quả in ra màn hình (không dấu cách):
+#ANSWER: =2,3,5,7,11,13,17,19,23,29
+
+#Q2 [SC4]
+Cho đoạn mã:
+
+#include <stdio.h>
+int f(int n){
+if(n <= 0) return 1;
+return f(n-2) + f(n-3);
+}
+int main(int argc, char** argv){
+printf("%d", f(7));
+}
+
+Điều gì sẽ xảy ra nếu thay câu lệnh điều kiện neo đệ quy ở dòng 4 bởi câu lệnh:
+if(n == 0) return 1;
+A. Biên dịch không lỗi, kết quả in ra màn hình khi chạy chương trình vẫn là một số nguyên không đổi so với đoạn mã trước khi thay câu lệnh.
+B. Biên dịch bị lỗi ở dòng 4.
+C. Biên dịch không lỗi nhưng sẽ lỗi khi chạy chương trình.
+D. Biên dịch không lỗi nhưng kết quả in ra màn hình khi chạy chương trình sẽ là một số nguyên khác so với đoạn mã trước khi thay câu lệnh.
+#ANSWER: C
+
+#Q3 [SC6]
+Khi thêm một nút mới vào cây đỏ-đen, nếu nút cha của nút mới là nút đen và nút chú (uncle) là nút đỏ, ta cần thực hiện bước nào?
+A. Không cần thực hiện thêm bước gì, cây vẫn đảm bảo tính chất đỏ-đen.
+B. Đổi màu nút chú thành đen, đổi màu nút ông (grandparent) thành đỏ.
+C. Thực hiện một phép xoay trái (left-rotation) tại nút ông (grandparent).
+D. Thực hiện một phép xoay trái (left-rotation) tại nút ông (grandparent), đổi màu nút chú thành đen, đổi màu nút ông thành đỏ.
+E. Không có lựa chọn nào đưa ra là chính xác.
+F. Thực hiện một phép xoay phải (right-rotation) tại nút cha.
+#ANSWER: A
+
+#Q4 [SC4]
+Mỗi nút trong danh sách móc nối đơn được khai báo như sau:
+
+typedef struct _NodeType{
+int inf;
+struct _NodeType *next;
+} NodeType;
+
+Giả sử có một danh sách móc nối đơn khác rỗng được trỏ bởi head, để chèn một nút có trường thông tin là X vào cuối danh sách này, ta có hàm sau:
+
+NodeType *Insert_ToLast(NodeType *head, int X) {
+if(head == NULL) return head;
+NodeType *TempNode;
+NodeType *NewNode = (NodeType *) malloc(sizeof(NodeType));
+NewNode->inf = X;
+NewNode->next = NULL;
+// vi tri dien doan ma
+TempNode->next = NewNode;
+return head;
+}
+
+Xác định đoạn mã cần điền vào vị trí trống của hàm trên.
+A. TempNode=head; while (TempNode != NULL) TempNode = TempNode->next;
+B. TempNode=head; while (TempNode->next != NULL) TempNode = TempNode->next;
+C. TempNode=head->next; if (TempNode->next != NULL) TempNode = TempNode->next;
+D. tempNode=head; if (TempNode != NULL) TempNode = TempNode->next;
+#ANSWER: B
+
+#Q5 [SC4]
+Chọn đoạn chương trình viết bằng mã giả hoạt động trên stack như sau:
+
+khai báo một stack chứa các kí tự
+while (vẫn còn kí tự trong xâu đầu vào cần đọc (đọc xâu từ trái sang phải))
+{
+đọc kí tự hiện thời
+push kí tự vừa đọc được vào stack
+}
+while (stack vẫn chưa rỗng)
+{
+pop 1 kí tự ra khỏi stack
+in kí tự đó ra màn hình
+}
+
+Nếu xâu đầu vào là: Stackquiz thì trên màn hình sẽ hiển thị gì khi đoạn chương trình trên được thực thi?
+A. Stackquiz Stackquiz
+B. ziuqStack
+C. ziuqkcatS ziuqkcatS
+D. Trong những lựa chọn đưa ra, không có lựa chọn nào đúng.
+#ANSWER: D
+
+#Q6 [SC4]
+Cho đồ thị vô hướng G = (V, E) trong đó V = {1, 2, 3, 4, 5} là tập đỉnh và tập cạnh E = {(1, 2),(1, 5),(2, 3),(2, 4),(3, 4)}. Hỏi khi duyệt G theo chiều rộng bắt đầu từ đỉnh 5 thì thứ tự các đỉnh được duyệt là thế nào sau đây?
+A. 5, 4, 3, 2, 1
+B. 5, 2, 1, 4, 3
+C. 5, 3, 4, 1, 2
+D. 5, 1, 2, 3, 4
+#ANSWER: D
+
+#Q7 [SC4]
+Cho T là một cây nhị phân tìm kiếm BST thu được bằng cách chèn liên tiếp dãy khóa sau vào (bắt đầu từ cây rỗng): 4, 7, 1, 10, 2, 6, 9. Thứ tự các khóa thu được trong phép duyệt cây T theo thứ tự trước là:
+A. 4, 2, 7, 1, 6, 10, 9
+B. 1, 2, 4, 6, 7, 9, 10
+C. 4, 1, 7, 2, 6, 10, 9
+D. 4, 1, 2, 7, 6, 10, 9
+#ANSWER: D
+
+#Q8 [ESSAY]
+Hoàn thiện hàm đảo ngược danh sách liên kết đệ quy:
+
+Node *d(Node *h){
+if(h==NULL) return h;
+if(h->next==NULL) return h;
+Node *tmp = d(h->next);
+// ===> CODE A <===
+h->next = tmp;
+return tmp;
+}
+
+Yêu cầu: Điền câu lệnh còn thiếu (không dấu cách, không ngoặc mở/đóng) vào chỗ trống.
+#ANSWER: h->next->next=h
+
+#Q9 [SC4]
+Chèn lần lượt các khóa sau vào cây nhị phân tìm kiếm ban đầu rỗng, con phải của gốc là khóa nào? 2, 14, 5, 26, 8, 7, 15, 9, 3
+A. 14
+B. 5
+C. 26
+D. 3
+#ANSWER: A
+
+#Q10 [SC4]
+Cho biểu thức trung tố sau:
+1 + 50 × (6/(8 − 7))
+Xác định biểu thức hậu tố tương ứng (các toán tử là toán tử hai ngôi).
+A. 1 50 6 8 7 - * / +
+B. 1 50 6 8 7 - / *
+C. 1 50 6 7 8 - / *
+D. 1 50 6 7 + 8 / *
+#ANSWER: B
+
+#Q11 [MC6]
+Chèn lần lượt các khóa sau 1,3,5,7,9,11,13,15 vào trong một cây đỏ đen ban đầu rỗng, hỏi trong các kết luận sau kết luận nào là chính xác? Chú ý: trong trường hợp có nhiều hơn 1 lựa chọn chính xác, cần chọn đúng đủ mới được điểm của câu này.
+A. 7 là nút gốc
+B. các nút đỏ là 3,11,9,15
+C. 7 có con trái là 3, có con phải là 11
+D. 13 thuộc cây con phải của nút gốc
+E. 15 là con trái của 13
+F. 5 thuộc cây con trái của nút gốc
+#ANSWER: A,C,D,F
+
+#Q12 [SC4]
+Cho dãy 1, 4, 3, 6, 7, 2, 5 cần được sắp xếp theo thứ tự không giảm bằng thuật toán sắp xếp vun đống. Trong các dãy sau đây, dãy nào tương ứng với max-heap?
+A. 7, 4, 6, 2, 3, 5, 1
+B. 2, 1, 4, 3, 6, 7, 5
+C. 5, 3, 1, 7, 6, 2, 4
+D. 1, 2, 3, 4, 5, 6, 7
+#ANSWER: A
+
+#Q13 [SC4]
+Để cài đặt hàng đợi ưu tiên với yêu cầu: phần tử có độ ưu tiên lớn nhất được xử lý trước còn với các phần tử có cùng độ ưu tiên thì phần tử nào đến trước sẽ được xử lý trước, ta cần dùng:
+A. maxHeap + tem thời gian để phân biệt thứ tự
+B. minHeap
+C. minHeap + tem thời gian để phân biệt thứ tự
+D. maxHeap
+#ANSWER: A
+
+#Q14 [MC4]
+Điền thêm code vào chỗ trống để hoàn thiện hàm sắp xếp sau:
+
+void SortFunc(int arr[], int n) {
+int i, j, idx;
+for (i = 0; i < A; i++) { // ma lenh A
+min_idx = i;
+for (j = i+1; j < n; j++) {
+if (B) // ma lenh B
+idx = j;
+}
+int temp = arr[idx];
+arr[idx] = arr[i];
+arr[i] = temp;
+}
+}
+
+Chú ý: trong trường hợp có nhiều hơn 1 lựa chọn chính xác, cần chọn đúng đủ mới được điểm của câu này.
+A. A. n-1
+B. A. n
+C. B. arr[j] < arr[idx]
+D. B. arr[j] > arr[idx]
+#ANSWER: A,C
+
+#Q15 [SC4]
+Cho T là một cây nhị phân tìm kiếm BST thu được bằng cách chèn liên tiếp dãy khóa sau vào (bắt đầu từ cây rỗng): 3, 4, 8, 20, 5, 1, 15, 2. Thứ tự các khóa thu được trong phép duyệt theo thứ tự sau là:
+A. 2, 1, 5, 15, 20, 8, 4, 3
+B. 5, 1, 4, 8, 15, 20, 3, 2
+C. 20, 15, 8, 5, 4, 3, 2, 1
+D. 1, 2, 3, 4, 5, 8, 15, 20
+#ANSWER: A
+
+#Q16 [SC4]
+Mỗi nút trong danh sách móc nối đơn được khai báo như sau:
+
+typedef struct _NodeType{
+int inf;
+struct _NodeType *next;
+} NodeType;
+
+Giả sử có một danh sách móc nối đơn khác rỗng được trỏ bởi First, để xóa nút đầu của danh sách và trả về địa chỉ của nút đầu mới, ta có hàm sau:
+
+NodeType *Delete_First(NodeType *First)
+{
+if(First == NULL) return NULL;
+// vi tri dien doan ma
+}
+
+Xác định đoạn mã cần điền vào vị trí trống của hàm trên.
+A. NodeType *TempNode = First; free(TempNode); return First;
+B. NodeType *TempNode = First -> next; free(TempNode); return First;
+C. NodeType *TempNode = First; free(First); return TempNode;
+D. NodeType *TempNode = First -> next; free(First); return TempNode;
+#ANSWER: D
+
+#Q17 [SC4]
+Mỗi nút của một cây nhị phân có cấu trúc sau đây
+
+typedef struct Node{
+int id;
+struct Node* leftChild;
+struct Node* rightChild;
+} Node;
+
+Cho T là một cây nhị phân sau đây:
+Nút gốc là 20; Nút 20 có con trái là 2 và con phải là 6; Nút 2 có con trái là 7; Nút 6 có con trái là 3 và con phải là 5; Nút 3 có con trái là 8 và con phải là 9; Nút 8 có con phải là 10.
+
+Hỏi hàm sau đây (đầu vào là con trỏ r đến gốc của cây T nói trên) cho kết quả bằng bao nhiêu?
+
+int fh(Node* r){
+if(r == NULL) return 0;
+int hL = fh(r->leftChild);
+int hR = fh(r->rightChild);
+return hL > hR ? hL + 1 : hR + 1;
+}
+
+A. 4
+B. 2
+C. 5
+D. 3
+#ANSWER: C
+
+#Q18 [SC4]
+Chọn một phát biểu đúng nhất dưới đây với cây nhị phân tìm kiếm (giả thiết khóa của các nút đôi một khác nhau)?
+A. Cây nhị phân tìm kiếm là cây nhị phân mà khóa của mỗi nút lớn hơn khóa của các nút con.
+B. Khóa của mỗi nút trên cây nhị phân tìm kiếm lớn hơn khóa của tất cả các nút ở cây con trái và nhỏ hơn khóa của tất cả các nút ở cây con phải.
+C. Mỗi nút trên cây nhị phân tìm kiếm luôn có 2 nút con.
+D. Không có phát biểu nào đúng.
+#ANSWER: B
+
+#Q19 [SC4]
+Trong một đống max (max heap) gồm n phần tử, thời gian để tìm ra phần tử nhỏ nhất trong đống là:
+A. O(n)
+B. O(1)
+C. O(log log n)
+D. O(log n)
+#ANSWER: A
+
+#Q20 [SC4]
+Hãy cho biết độ phức tạp tính toán của hàm f(n) sau đây (mô tả mã giả)
+
+s = 0;
+a = 1;
+i = 1;
+while (s <= n) {
+s = s + a;
+a = 2 * a;
+i++;
+}
+
+A. O(n^2)
+B. O(n log n)
+C. O(log n)
+D. O(n)
+#ANSWER: C
+
+#Q21 [SC4]
+Trong bảng băm, khái niệm hàm băm là
+A. Hàm nhận đầu vào là khóa của đối tượng và tính ra chỉ số xác định vị trí lưu trữ đối tượng.
+B. Hàm cho phép tính ra khóa của các đối tượng lưu trữ.
+C. Không có phát biểu nào đúng.
+D. Cả hai phát biểu trên đều đúng.
+#ANSWER: A
+
+#Q22 [SC4]
+Số nút của cây nhị phân đầy đủ có chiều cao n là bao nhiêu? (nút lá có chiều cao là 1 và dấu ' là dấu lũy thừa)
+A. 2^(n-1), với n ≥ 1
+B. 2^n, với n ≥ 0
+C. (2^n) − 1, với n ≥ 1
+D. 2^(n+1), với n ≥ 0
+#ANSWER: C
+
+#Q23 [SC4]
+Phát biểu nào sau đây không đúng?
+A. Các phần tử của danh sách liên kết không nhất thiết được cấp phát kế tiếp nhau trong bộ nhớ.
+B. Các phần tử của danh sách liên kết luôn được cấp phát kế tiếp nhau trong bộ nhớ.
+C. Danh sách liên kết dùng cấp phát động.
+D. Các nút được nối với nhau bằng con trỏ.
+#ANSWER: B
+
+#Q24 [ESSAY]
+Hãy cho biết độ phức tạp tính toán của hàm f(n) sau đây (mô tả mã giả)
+
+s = 0;
+i = 1;
+while i <= n do {
+s = s + i;
+i = i + 1;
+}
+return s;
+
+#ANSWER: O(n)
+
+#Q25 [SC4]
+Kết luận nào sau đây đúng với hàng đợi?
+A. Phần tử nào vào hàng đợi cuối cùng thì sẽ được lấy ra cuối cùng.
+B. Phần tử nào vào hàng đợi đầu tiên thì sẽ được lấy ra cuối cùng.
+C. Hàng đợi hoạt động theo nguyên tắc LIFO.
+D. Không có phát biểu nào đúng.
+#ANSWER: A
+
+#Q26 [SC4]
+Kết luận 1000n^2 + 2 = Ω(n^3) là đúng hay sai?
+A. Sai
+B. Đúng
+C. Không xác định
+D. Cả hai đều sai
+#ANSWER: A
+
+#Q27 [SC4]
+Cho đồ thị vô hướng G = (V, E) trong đó V = {1, 2, 3, 4, 5} và E = {(1, 2),(1, 5),(2, 3),(2, 4),(3, 4)}. Hỏi khi duyệt G theo chiều rộng bắt đầu từ đỉnh 1 thì thứ tự các đỉnh được duyệt là thế nào sau đây?
+A. 1, 2, 3, 4, 5
+B. 1, 3, 4, 2, 5
+C. 1, 4, 3, 2, 5
+D. 1, 2, 5, 3, 4
+#ANSWER: D
+
+#Q28 [SC4]
+Vẫn đồ thị trên, duyệt theo chiều sâu bắt đầu từ đỉnh 3, thứ tự các đỉnh được duyệt là?
+A. 3, 2, 4, 5, 1
+B. 3, 5, 4, 1, 2
+C. 3, 1, 2, 4, 5
+D. 3, 2, 1, 5, 4
+#ANSWER: D
+
+#Q29 [SC4]
+Vẫn đồ thị trên, duyệt theo chiều sâu bắt đầu từ đỉnh 5, thứ tự các đỉnh được duyệt là?
+A. 5, 3, 4, 2, 1
+B. 5, 1, 2, 4, 3
+C. 5, 4, 3, 2, 1
+D. 5, 1, 3, 4, 2
+#ANSWER: B
+
+#Q30 [SC4]
+Mỗi nút (Node) của danh sách liên kết có cấu trúc như sau (biểu diễn mã giả):
+
+Node {
+value; // giá trị của nút
+next; // con trỏ đến phần tử tiếp theo
+}
+
+Xét hàm sau (viết bằng mã giả):
+
+F(h, v) {
+if (h == NULL) return NULL;
+if (h.value == v) {
+h = h.next;
+if (h == NULL) return h;
+}
+h.next = F(h.next, v);
+return h;
+}
+
+h là con trỏ trỏ đến nút đầu của danh sách liên kết mà các nút có giá trị theo thứ tự từ đầu đến cuối là 3, 4, 1, 4, 3, 2, 6. Hỏi hàm F(h, 4) trả về con trỏ đến danh sách nào sau đây?
+A. 4, 1, 4, 3, 2, 6
+B. 3, 1, 3, 2, 6
+C. 3, 4, 1, 3, 2, 6
+D. 3, 1, 2, 6
+#ANSWER: B
+
+#Q31 [SC4]
+Cho một danh sách móc nối đơn chỉ có duy nhất một con trỏ head trỏ vào đầu danh sách. Có các thao tác sau: (i) Chèn một nút vào đầu danh sách (ii) Chèn một nút vào cuối danh sách (iii) Xóa một nút ở đầu danh sách (iv) Xóa một nút ở cuối danh sách
+Các thao tác nào nêu ra ở trên có thể được cài đặt với thời gian là O(1)?
+A. i, ii và iv
+B. i và iii
+C. i, ii và iii
+D. i và ii
+#ANSWER: B
+
+#Q32 [SC4]
+Mỗi nút của một cây nhị phân có cấu trúc sau đây
+
+typedef struct Node{
+int id;
+struct Node* leftChild;
+struct Node* rightChild;
+} Node;
+
+Cho T là một cây nhị phân sau đây:
+Nút gốc là 20; Nút 20 có con trái là 2 và con phải là 6; Nút 2 có con trái là 7 và con phải là 1; Nút 6 có con trái là 3 và con phải là 5; Nút 3 có con trái là 8 và con phải là 9.
+
+Hỏi hàm sau đây (đầu vào là con trỏ r đến gốc của cây T nói trên) cho kết quả bằng bao nhiêu?
+
+int cnt(Node* r){
+if(r == NULL) return 0;
+if(r->leftChild == NULL && r->rightChild == NULL) return 1;
+return cnt(r->leftChild) + cnt(r->rightChild);
+}
+
+A. 6
+B. 5
+C. 8
+D. 7
+#ANSWER: B

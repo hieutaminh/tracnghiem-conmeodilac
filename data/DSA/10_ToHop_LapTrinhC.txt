@@ -1,0 +1,74 @@
+#TIME: 25
+
+#Q1 [SC4]
+Số nghiệm nguyên dương của phương trình 2x1 + 4x2 + 3x3 + 5x4 = 60 thỏa mãn điều kiện x1 + x2 = 6 là bao nhiêu?
+A. 13
+B. 11
+C. 15
+D. 10
+#ANSWER: A
+#EXPLAIN: Các cặp (x1,x2) có tổng bằng 6 là (1,5),(2,4),(3,3),(4,2),(5,1). Thử từng trường hợp vào phương trình, tổng cộng có 13 nghiệm.
+
+#Q2 [SC4]
+Cho hai chương trình C: (1) char s[] = "hello"; return s; và (2) char *s = "hello"; return s; Kết luận nào đúng?
+A. Hai chương trình cho kết quả giống nhau
+B. Hai chương trình cho kết quả khác nhau
+C. Cả hai đều gây lỗi biên dịch
+D. Cả hai đều an toàn như nhau khi dùng ngoài hàm
+#ANSWER: B
+#EXPLAIN: Chương trình 1 trả về con trỏ tới vùng nhớ cục bộ (Undefined Behavior). Chương trình 2 trả về con trỏ tới vùng hằng tĩnh (string literal), an toàn hơn khi dùng ngoài hàm.
+
+#Q3 [SC4]
+void ham7(unsigned int n) { if(n==0) return; else { ham7(--n); printf("%d", n); } }
+Gọi ham7(4), kết quả in ra màn hình là gì?
+A. 3 2 1 0
+B. 0 1 2 3
+C. 4 3 2 1
+D. 1 2 3 4
+#ANSWER: A
+#EXPLAIN: Toán tử --n sửa giá trị trước rồi mới đệ quy. Hàm con chạy về 0 không in, sau đó in giật lùi theo ngăn xếp lời gọi: 3 2 1 0.
+
+#Q4 [SC4]
+Đoạn mã dùng biến toàn cục S, count, n=3, m=11: TRY(k,last) { for v=last+1 to m { S+=v; if(k==n){if(S==m)count++;} else TRY(k+1,v); S-=v; } } Gọi TRY(1,0), giá trị count là bao nhiêu?
+A. 5
+B. 4
+C. 6
+D. 3
+#ANSWER: A
+#EXPLAIN: Đếm số cách phân tích 11 thành tổng 3 số nguyên dương tăng ngặt: có 5 cách (1,2,8),(1,3,7),(1,4,6),(2,3,6),(2,4,5).
+
+#Q5 [SC4]
+Cấu trúc dữ liệu (Data Structure) là gì?
+A. Là cách thức tổ chức, quản lý, lưu trữ dữ liệu sao cho việc truy cập hay thay đổi được hiệu quả
+B. Là một ngôn ngữ lập trình bậc cao
+C. Là hệ điều hành quản lý bộ nhớ máy tính
+D. Là một loại thuật toán sắp xếp
+#ANSWER: A
+#EXPLAIN: Đây là định nghĩa chuẩn của khái niệm cấu trúc dữ liệu trong khoa học máy tính.
+
+#Q6 [SC4]
+Kiểu dữ liệu trừu tượng (Abstract Data Type - ADT) có đặc điểm nào đúng nhất?
+A. Chỉ gồm các mô tả (description) thuộc tính kèm thao tác, chưa cài đặt cụ thể
+B. Đã được cài đặt cụ thể sẵn trong máy tính
+C. Có kích thước bộ nhớ cố định xác định trước
+D. Người dùng luôn thấy rõ cách cài đặt bên trong
+#ANSWER: A
+#EXPLAIN: ADT chỉ mô tả giao diện (interface) logic gồm thuộc tính và thao tác, không quan tâm đến cách cài đặt cụ thể.
+
+#Q7 [SC4]
+Để biểu diễn mối quan hệ giữa các phần tử theo kiểu thứ bậc (phân cấp cha - con), ta thường dùng cấu trúc dữ liệu nào?
+A. Hàng đợi - Queue
+B. Ngăn xếp - Stack
+C. Cây - Tree
+D. Mảng
+#ANSWER: C
+#EXPLAIN: Cây (Tree) là cấu trúc dữ liệu phân cấp, biểu diễn tự nhiên mối quan hệ cha - con giữa các phần tử.
+
+#Q8 [SC4]
+Cấu trúc dữ liệu mảng có ưu điểm nào sau đây?
+A. Việc truy xuất và tìm kiếm phần tử dễ dàng vì các phần tử liền nhau, chỉ cần dùng chỉ số để định vị
+B. Việc thêm/bớt phần tử luôn dễ dàng hơn danh sách liên kết
+C. Mật độ sử dụng bộ nhớ của mảng luôn tối ưu tuyệt đối
+D. Không giới hạn kích thước khi khai báo
+#ANSWER: A
+#EXPLAIN: Nhờ các phần tử được cấp phát liên tục, mảng cho phép truy cập trực tiếp qua chỉ số với độ phức tạp O(1).

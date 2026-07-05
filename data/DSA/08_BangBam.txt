@@ -1,0 +1,73 @@
+#TIME: 20
+
+#Q1 [SC4]
+Phát biểu "Trong việc lưu trữ các đối tượng, chỉ khi nào khóa của đối tượng là số nguyên dương thì mới áp dụng được cơ chế bảng băm" là đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng với số nguyên âm
+D. Chỉ đúng với số thực
+#ANSWER: B
+#EXPLAIN: Hàm băm có thể xử lý mọi kiểu dữ liệu (chuỗi, ký tự, số thực...) bằng cách ánh xạ chúng về số nguyên.
+
+#Q2 [SC4]
+Phát biểu nào dưới đây đúng với Bảng băm?
+A. Bảng băm là cấu trúc dữ liệu ánh xạ mỗi giá trị (value) đến 1 khóa (key)
+B. Bảng băm là cấu trúc dữ liệu ánh xạ mỗi khóa (key) với 1 giá trị (value)
+C. Bảng băm là một dạng đặc biệt của ngăn xếp
+D. Bảng băm là một dạng đặc biệt của hàng đợi
+#ANSWER: B
+#EXPLAIN: Đây là nguyên lý hoạt động cơ bản của cấu trúc Map/Dictionary/Hash Table.
+
+#Q3 [SC4]
+Trong cấu trúc bảng băm, khi 2 khóa k1 và k2 khác nhau cho cùng giá trị hàm băm h(k1)=h(k2), ta gọi hiện tượng đó là gì?
+A. Collision
+B. Duplication
+C. Segmentation
+D. Overflow
+#ANSWER: A
+#EXPLAIN: Đây gọi là Collision (đụng độ/va chạm) trong bảng băm.
+
+#Q4 [SC4]
+Trong bảng băm sử dụng cơ chế địa chỉ mở (Open Addressing) để xử lý va chạm, phát biểu nào đúng?
+A. Các cặp (khóa, giá trị) được lưu trong mảng, áp dụng probing để tìm vị trí trống hoặc khóa cần tìm
+B. Mỗi phần tử của bảng ánh xạ đến 1 khối chứa các khóa cùng giá trị hàm băm
+C. Dùng cây nhị phân tìm kiếm để lưu tất cả các khóa
+D. Cơ chế này không cần xử lý va chạm
+#ANSWER: A
+#EXPLAIN: Open Addressing giữ mọi thứ trực tiếp trên mảng, dùng probing để tìm vị trí lưu trữ hoặc tìm kiếm.
+
+#Q5 [SC4]
+Trong bảng băm sử dụng cơ chế nối chuỗi (Chaining) để xử lý va chạm, phát biểu nào đúng?
+A. Các cặp (khóa, giá trị) được lưu trong mảng, áp dụng probing để tìm kiếm
+B. Mỗi ô (slot) của bảng ánh xạ đến 1 khối (mảng/danh sách liên kết/cây/bảng băm con) chứa các khóa cùng giá trị hàm băm
+C. Chaining không cần dùng đến hàm băm
+D. Chaining chỉ áp dụng được với khóa là số nguyên
+#ANSWER: B
+#EXPLAIN: Đây là mô tả của cơ chế xâu chuỗi ngoài (Separate Chaining).
+
+#Q6 [SC4]
+Trong cấu trúc bảng băm, hai khóa khác nhau luôn cho giá trị hàm băm khác nhau, đúng hay sai?
+A. Đúng, luôn luôn khác nhau
+B. Sai, có thể trùng nhau (đây gọi là va chạm/collision)
+C. Chỉ đúng với hàm băm tốt
+D. Không xác định được
+#ANSWER: B
+#EXPLAIN: Tồn tại rất nhiều khóa cho cùng giá trị băm (đồng dư), đây chính là lý do cần các kỹ thuật giải quyết va chạm.
+
+#Q7 [SC4]
+Hàm băm là gì?
+A. Hàm xác định vị trí lưu trữ (chỉ số) trong bảng cho một khóa
+B. Hàm cho phép từ giá trị (value) tính ra khóa (key)
+C. Hàm dùng để sắp xếp các khóa theo thứ tự tăng dần
+D. Hàm dùng để mã hóa/giải mã dữ liệu bảo mật
+#ANSWER: A
+#EXPLAIN: Hàm băm ánh xạ khóa về một vị trí (chỉ số) cụ thể trong bảng lưu trữ.
+
+#Q8 [SC4]
+Một bảng băm dùng Open Addressing, h(k) = k mod m - 1, với m=10, bảng ban đầu rỗng. Chèn lần lượt 5, 7, 27, 15, 17 (dò tuyến tính khi có va chạm). Khóa 15 sẽ rơi vào slot số mấy?
+A. 5
+B. 6
+C. 7
+D. 4
+#ANSWER: A
+#EXPLAIN: Tính h(15) rồi áp dụng dò tuyến tính khi slot lý thuyết đã bị chiếm, khóa 15 sẽ rơi vào slot số 5.

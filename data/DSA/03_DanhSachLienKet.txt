@@ -1,0 +1,160 @@
+#TIME: 30
+
+#Q1 [SC4]
+Mỗi nút danh sách liên kết đơn: struct Node { int id; Node* next; }
+Node* proc(Node* f, int v) {
+  if (f == NULL) return NULL;
+  if (f->id == v) { Node* tm=f; f=f->next; free(tm); return f; }
+  f->next = proc(f->next, v);
+  return f;
+}
+Hàm proc thực hiện công việc gì?
+A. Loại bỏ phần tử ĐẦU TIÊN có giá trị bằng v
+B. Loại bỏ phần tử CUỐI CÙNG có giá trị bằng v
+C. Loại bỏ TẤT CẢ phần tử có giá trị bằng v
+D. Không thay đổi danh sách
+#ANSWER: A
+#EXPLAIN: Hàm duyệt từ đầu, ngay khi tìm thấy id==v thì giải phóng và return ngay, không xét tiếp phần còn lại.
+
+#Q2 [SC4]
+Cùng cấu trúc Node như trên.
+Node* proc(Node* f, int v) {
+  if (f == NULL) return NULL;
+  if (f->id == v) { Node* tm=f; f=f->next; free(tm); f=proc(f,v); return f; }
+  f->next = proc(f->next, v);
+  return f;
+}
+Hàm proc thực hiện công việc gì?
+A. Loại bỏ phần tử đầu tiên có giá trị bằng v
+B. Loại bỏ TẤT CẢ phần tử có giá trị bằng v
+C. Đảo ngược danh sách
+D. Không thay đổi danh sách
+#ANSWER: B
+#EXPLAIN: Sau khi free(tm), hàm tiếp tục gọi đệ quy proc(f,v) cho phần còn lại nên xóa hết mọi phần tử bằng v.
+
+#Q3 [SC4]
+Node* makeNode(int v) { Node* p=malloc(sizeof(Node)); p->id=v; p->next=NULL; return p; }
+Node* proc(Node* f, int v) {
+  if (f == NULL) return makeNode(v);
+  Node* p = makeNode(v);
+  p->next = f;
+  return p;
+}
+Hàm proc thực hiện công việc gì?
+A. Thêm nút có giá trị v vào ĐẦU danh sách
+B. Thêm nút có giá trị v vào CUỐI danh sách
+C. Xóa nút đầu danh sách
+D. Đảo ngược danh sách
+#ANSWER: A
+#EXPLAIN: Luôn tạo nút mới p, gán p->next = f, làm p trở thành nút đầu tiên của danh sách.
+
+#Q4 [SC4]
+Kết luận nào sau đây đúng với danh sách liên kết?
+A. Các phần tử được cấp phát liên tục trong bộ nhớ
+B. Các phần tử không được cấp phát liên tục, liên kết với nhau qua con trỏ
+C. Cả hai đều đúng tùy theo cách cài đặt
+D. Không xác định được cách cấp phát
+#ANSWER: B
+#EXPLAIN: Đây là đặc điểm phân biệt danh sách liên kết (cấp phát động, rải rác) với mảng (cấp phát tĩnh, liên tục).
+
+#Q5 [SC4]
+Node* proc(Node* f, int v) {
+  if (f == NULL) return makeNode(v);
+  f->next = proc(f->next, v);
+  return f;
+}
+Hàm proc thực hiện công việc gì?
+A. Chèn v vào ĐẦU danh sách
+B. Chèn v vào CUỐI danh sách
+C. Xóa phần tử có giá trị v
+D. Đảo ngược danh sách
+#ANSWER: B
+#EXPLAIN: Đệ quy đi đến hết danh sách (f==NULL) rồi mới tạo nút mới và nối vào, nên nút mới nằm ở cuối.
+
+#Q6 [SC4]
+Node* proc(Node* f) {
+  Node *p=f, *pp=NULL, *np=NULL;
+  while (p != NULL) {
+    np = p->next; p->next = pp; pp = p; p = np;
+  }
+  return pp;
+}
+Hàm proc thực hiện công việc gì?
+A. Đảo ngược (Reverse) danh sách liên kết
+B. Sắp xếp danh sách liên kết
+C. Xóa phần tử cuối danh sách
+D. Nối hai danh sách liên kết
+#ANSWER: A
+#EXPLAIN: Dùng 3 con trỏ để lần lượt đổi hướng con trỏ next về phía trước, đảo ngược toàn bộ danh sách.
+
+#Q7 [SC4]
+Danh sách liên kết có giá trị theo thứ tự 2, 3, 6. F(h,v) = h.value + v*F(h.next, v). Gọi F(h,3) trả về kết quả bằng bao nhiêu?
+A. 65
+B. 56
+C. 71
+D. 60
+#ANSWER: A
+#EXPLAIN: 2 + 3*(3 + 3*(6 + 3*0)) = 2 + 3*21 = 65.
+
+#Q8 [SC4]
+Danh sách liên kết có giá trị 4, 2, 1. Hàm F(h): T=0; duyệt từ đầu, T = 4*T + p.value; return T. F(h) bằng bao nhiêu?
+A. 73
+B. 68
+C. 81
+D. 65
+#ANSWER: A
+#EXPLAIN: Horner xuôi: 0*4+4=4 -> 4*4+2=18 -> 18*4+1=73.
+
+#Q9 [SC4]
+Danh sách liên kết có giá trị 2, 3, 6. F(h) = h.value + F(h.next) (h==NULL trả về 0). F(h) bằng bao nhiêu?
+A. 11
+B. 9
+C. 13
+D. 15
+#ANSWER: A
+#EXPLAIN: Đây là tổng các phần tử: 2 + 3 + 6 = 11.
+
+#Q10 [SC4]
+Lựa chọn câu đúng nhất về danh sách liên kết đôi (Doubly Linked List)?
+A. Mỗi phần tử có 2 liên kết với 1 phần tử khác
+B. Mỗi phần tử có 2 liên kết với phần tử trước và sau nó
+C. Mỗi phần tử có 1 liên kết với 2 phần tử khác
+D. Mỗi phần tử có 2 liên kết với phần tử đầu và cuối danh sách
+#ANSWER: B
+#EXPLAIN: Mỗi nút trong danh sách liên kết đôi có con trỏ prev và next trỏ tới phần tử trước và sau nó.
+
+#Q11 [SC4]
+Định nghĩa nào đúng nhất với danh sách liên kết?
+A. Là tập hợp các phần tử nối kết nhau thông qua vùng liên kết của chúng
+B. Là cấu trúc dữ liệu dạng cây
+C. Là tập hợp các phần tử đặc kín và nằm liên tục trong bộ nhớ
+D. Là cấu trúc dữ liệu tự định nghĩa không có quy tắc chung
+#ANSWER: A
+#EXPLAIN: Định nghĩa chuẩn: các phần tử liên kết với nhau qua vùng con trỏ (liên kết), không cần liền kề trong bộ nhớ.
+
+#Q12 [SC4]
+Trong các thuật toán sắp xếp sau, thuật toán nào phù hợp nhất để sắp xếp phần tử lưu trữ bằng danh sách liên kết đơn?
+A. Sắp xếp nổi bọt
+B. Sắp xếp chèn
+C. Sắp xếp nhanh
+D. Sắp xếp lựa chọn
+#ANSWER: B
+#EXPLAIN: Danh sách liên kết chỉ duyệt được về phía trước, rất phù hợp với thao tác gỡ nối và chèn 1 phần tử vào danh sách con đã có sẵn.
+
+#Q13 [SC4]
+Thực hiện lần lượt: InsertHead(1) => InsertLast(3) => InsertLast(5) => InsertHead(4) => DeleteHead() => InsertHead(7). Kết quả danh sách cuối cùng là gì?
+A. 7 -> 1 -> 3 -> 5
+B. 1 -> 7 -> 3 -> 5
+C. 4 -> 1 -> 3 -> 5
+D. 7 -> 4 -> 1 -> 3 -> 5
+#ANSWER: A
+#EXPLAIN: Các bước: 1 -> 1,3 -> 1,3,5 -> 4,1,3,5 -> 1,3,5 (xóa đầu) -> 7,1,3,5.
+
+#Q14 [SC4]
+Node h.next.key + eval(h.next.next) (h hoặc h.next là NULL trả về 0). Danh sách giá trị: 2, 5, 3, 9, 7, 4. eval(h) trả về bao nhiêu?
+A. 18
+B. 14
+C. 21
+D. 16
+#ANSWER: A
+#EXPLAIN: Hàm cộng dồn các giá trị ở vị trí chẵn (tính từ 1): 5 + 9 + 4 = 18.

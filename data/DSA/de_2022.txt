@@ -1,0 +1,376 @@
+#TIME: 60
+
+#Q1 [SC4]
+Cho bảng băm kích thước 7 dùng hàm băm h = k mod 7, và xử lí đụng độ bằng đánh địa chỉ mở, dò tuyến tính. Sử dụng hàm băm để bổ sung các khóa 44, 45, 79, 55, 91, 18, 63. Bảng băm được đánh chỉ số từ 0 đến 6. Vị trí của khóa (key) 18 là gì?
+A. 6
+B. 3
+C. 5
+D. 4
+#ANSWER: C
+
+#Q2 [ESSAY]
+Hãy xác định kí pháp hậu tố (postfix) của biểu thức sau: (2 − a)^(b + 9)/(d + 4)
+#ANSWER: 2 a - b 9 + ^ d 4 + /
+
+#Q3 [SC4]
+(Những) Mệnh đề nào sau đây không đúng khi nói về danh sách liên kết đôi:
+A. Ta có thể di chuyển theo danh sách theo cả hai hướng: từ đầu đến cuối, từ cuối đến đầu
+B. Tốn nhiều bộ nhớ hơn so với danh sách liên kết đơn
+C. Thêm và xóa 1 nút khỏi danh sách tốn thời gian hơn so với khi thực hiện trên danh sách liên kết đơn
+D. Trong những lựa chọn đưa ra, không có lựa chọn nào đúng
+#ANSWER: D
+
+#Q4 [SC4]
+Một bảng băm sử dụng cơ chế địa chỉ mở (Open Addressing) để xử lý collision với thứ tự dò là h(k, i) = (k mod m + i) mod m, trong đó m là kích thước của bảng. Ban đầu, bảng rỗng. Ta thực hiện chèn liên tiếp các khóa: 5, 7, 27, 15, 17. Với m = 10, hãy cho biết trạng thái của bảng (từ trái qua phải là các slot từ 0 đến m-1, slot trống là x).
+A. | x | 5 | 15 | 7 | 17 | 27 | x | x | x | x |
+B. | x | x | x | x | x | 5 | 15 | 7 | 27 | 17 |
+C. | 5 | 7 | 27 | 15 | 17 | x | x | x | x | x |
+D. | 5 | 7 | 15 | 17 | 27 | x | x | x | x | x |
+#ANSWER: B
+
+#Q5 [SC4]
+Sắp xếp các hàm sau theo thứ tự tăng dần của độ phức tạp: 1000√n, n log n, 10n^2
+A. 1000√n, n log n, 10n^2
+B. n log n, 1000√n, 10n^2
+C. 10n^2, n log n, 1000√n
+D. n log n, 10n^2, 1000√n
+#ANSWER: A
+
+#Q6 [ESSAY]
+Hãy xác định kí pháp hậu tố (postfix) của biểu thức sau: 5 + (4 + 2)/3 + 3
+#ANSWER: 5 4 2 + 3 / + 3 +
+
+#Q7 [SC4]
+Trong các phương án biểu diễn cây tổng quát thì phương án nào tiết kiệm bộ nhớ nhất:
+A. Biểu diễn qua danh sách nút con
+B. Biểu diễn qua con đầu tiên và anh chị em kế tiếp (Left-Child Right-Sibling)
+C. Biểu diễn qua danh sách nhân nút cha
+D. Các phương án đều tiết kiệm bộ nhớ như nhau
+#ANSWER: B
+
+#Q8 [SC4]
+Trong các thuật toán sắp xếp sau, thuật toán nào có thể cải tiến để dừng sớm: sắp xếp lựa chọn, sắp xếp chèn, sắp xếp nổi bọt?
+A. Sắp xếp chèn
+B. Sắp xếp lựa chọn
+C. Không thuật toán nào
+D. Sắp xếp nổi bọt
+#ANSWER: D
+
+#Q9 [SC4]
+Phát biểu nào sau đây đúng với thuật toán sắp xếp trộn (Merge Sort) cho dãy gồm n phần tử?
+A. Độ phức tạp trong tình huống tồi nhất là O(n log n) và độ phức tạp trung bình là Θ(n log n)
+B. Độ phức tạp trong tình huống tồi nhất là O(n log n) và độ phức tạp trung bình là Θ(n)
+C. Độ phức tạp trong tình huống tồi nhất là O(n^2) và độ phức tạp trung bình là Θ(n^2)
+D. Độ phức tạp trong tình huống tồi nhất là O(n^2) và độ phức tạp trung bình là Θ(n)
+#ANSWER: A
+
+#Q10 [SC4]
+Sắp xếp các hàm sau đây theo thứ tự tăng dần của độ tăng: 10^6 n, n^3, √n log n, √n, log(log n)
+A. log(log n), √n, √n log n, n^3, 10^6 n
+B. log(log n), √n, √n log n, 10^6 n, n^3
+C. √n, log(log n), √n log n, 10^6 n, n^3
+D. n^3, 10^6 n, √n log n, √n, log(log n)
+#ANSWER: B
+
+#Q11 [SC4]
+Bạn được cung cấp sẵn con trỏ FIRST đang trỏ vào nút đầu tiên và con trỏ LAST đang trỏ vào nút cuối cùng của danh sách liên kết đơn. Thao tác nào sau đây phụ thuộc vào độ dài của danh sách liên kết?
+A. Xóa phần tử cuối cùng
+B. Xóa phần tử đầu tiên
+C. Thêm 1 phần tử mới vào đầu danh sách
+D. Thêm 1 phần tử mới vào cuối danh sách
+#ANSWER: A
+
+#Q12 [SC4]
+Áp dụng thuật toán sắp xếp chèn (Insertion sort) để sắp xếp mảng gồm các số nguyên 12, 5, 8, 4 theo thứ tự tăng dần. Dãy nào trong các dãy dưới đây thể hiện quá trình hoán đổi được thực hiện trong sắp xếp chèn.
+A. 12, 5, 8, 4 → 4, 12, 5, 8 → 4, 5, 12, 8 → 4, 5, 8, 12
+B. 12, 5, 8, 4 → 5, 12, 8, 4 → 5, 8, 4, 12 → 4, 5, 8, 12
+C. 12, 5, 8, 4 → 4, 5, 8, 12 → 4, 5, 8, 12 → 4, 5, 8, 12
+D. 12, 5, 8, 4 → 5, 12, 8, 4 → 5, 8, 12, 4 → 4, 5, 8, 12
+#ANSWER: D
+
+#Q13 [SC4]
+Gọi T(n) là thời gian tính của thuật toán A với đầu vào dữ liệu kích thước n: T(n) = 3T(n-1) nếu n > 0, = 1 nếu ngược lại. Hãy sử dụng kí hiệu tiệm cận O-lớn, đưa ra đánh giá độ phức tạp T(n).
+A. O(n)
+B. O(1)
+C. O(log3 n)
+D. Trong những lựa chọn đưa ra, không có lựa chọn nào đúng.
+#ANSWER: D
+
+#Q14 [SC4]
+Sắp xếp các hàm sau đây theo thứ tự tăng dần của độ tăng: 10^6 n, n^3, √n log n, √n, log(log n).
+A. log(log n), √n, √n log n, n^3, 10^6 n
+B. log(log n), √n, √n log n, 10^6 n, n^3
+C. √n, log(log n), √n log n, 10^6 n, n^3
+D. n^3, 10^6 n, √n log n, √n, log(log n)
+#ANSWER: B
+
+#Q15 [SC4]
+Bạn được cung cấp sẵn con trỏ FIRST và con trỏ LAST của danh sách liên kết đơn, thao tác nào sau đây phụ thuộc vào độ dài của danh sách liên kết?
+A. Xóa phần tử cuối cùng
+B. Xóa phần tử đầu tiên
+C. Thêm 1 phần tử mới vào đầu danh sách
+D. Thêm 1 phần tử mới vào cuối danh sách
+#ANSWER: A
+
+#Q16 [SC6]
+Trong những lựa chọn dưới đây, đâu là đánh giá cho độ phức tạp về thời gian tính của hàm sau:
+
+void func(int n) {
+int count = 0;
+for (int i = n/2; i <= n; i++)
+for (int j = 1; j <= n; j = 2 * j)
+for (int k = 1; k <= n; k = k * 3)
+count++;
+}
+
+A. O(log3 n)
+B. Trong những lựa chọn đưa ra, không lựa chọn nào đúng
+C. O(n^3)
+D. O(n^2 log n)
+E. O(n log2 n)
+F. O(n^2)
+#ANSWER: E
+
+#Q17 [SC4]
+Áp dụng thuật toán sắp xếp chèn (Insertion sort) để sắp xếp mảng gồm các số nguyên 12, 5, 8, 4 theo thứ tự tăng dần (giống câu 12).
+A. 12, 5, 8, 4 → 4, 12, 5, 8 → 4, 5, 12, 8 → 4, 5, 8, 12
+B. 12, 5, 8, 4 → 5, 12, 8, 4 → 5, 8, 4, 12 → 4, 5, 8, 12
+C. 12, 5, 8, 4 → 4, 5, 8, 12 → 4, 5, 8, 12 → 4, 5, 8, 12
+D. 12, 5, 8, 4 → 5, 12, 8, 4 → 5, 8, 12, 4 → 4, 5, 8, 12
+#ANSWER: D
+
+#Q18 [SC4]
+Gọi T(n) là thời gian tính của thuật toán A: T(n) = 3T(n-1) nếu n > 0, = 1 nếu ngược lại (giống câu 13).
+A. O(n)
+B. O(1)
+C. O(log3 n)
+D. Trong những lựa chọn đưa ra, không có lựa chọn nào đúng.
+#ANSWER: D
+
+#Q19 [SC4]
+Thời gian tìm kiếm một phần tử trong trường hợp tồi nhất của cây nhị phân tìm kiếm (BST) tổng quát là
+A. O(log n)
+B. O(n^2)
+C. O(n)
+D. O(n log n)
+#ANSWER: C
+
+#Q20 [SC4]
+Cho hàm đệ quy đếm và trả về số lượng nút trong có 2 con trên cây nhị phân sau. Ta sẽ điền các câu lệnh nào phù hợp vào chỗ bị khuyết A và B?
+
+int countNodes(struct BNODE *root) {
+if(root == NULL) return 0;
+if(root->left == NULL && root->right == NULL) return 0;
+if(root->left == NULL || root->right == NULL) return A;
+return B;
+}
+
+A. A: countNodes(root->left) + countNodes(root->right); B: 1 + countNodes(root->left) + countNodes(root->right)
+B. A: 1 + countNodes(root->left) + countNodes(root->right); B: 1 + countNodes(root->left) + countNodes(root->right)
+C. A: countNodes(root->left); B: countNodes(root->right)
+D. A: 0; B: countNodes(root->left) + countNodes(root->right)
+#ANSWER: A
+
+#Q21 [SC4]
+Cho S là 1 ngăn xếp (Stack) với 2 thao tác PUSH, POP. Hãy cho biết kết quả hiển thị:
+
+for i = 10 downto 1 do { S.PUSH(i); }
+for i = 1 to 4 do { x = S.POP(); }
+x = S.POP();
+print(x);
+
+A. 9
+B. 6
+C. 5
+D. 4
+#ANSWER: B
+
+#Q22 [SC4]
+Biết chiều cao của cây nhị phân đầy đủ là 4, hãy xác định số nút trên cây.
+A. 14
+B. 17
+C. 15
+D. 16
+#ANSWER: C
+
+#Q23 [SC4]
+Cho Q là 1 hàng đợi (Queue) với 2 thao tác PUSH, POP. Kết quả hiển thị:
+
+for i = 10 downto 1 do { Q.PUSH(i); }
+for i = 1 to 3 do { x = Q.POP(); }
+x = Q.POP();
+print(x);
+
+A. 3
+B. 7
+C. 8
+D. 9
+#ANSWER: B
+
+#Q24 [ESSAY]
+Cho đoạn code C như sau:
+
+#include <stdio.h>
+void PrintPattern(int m) {
+if(m > 0) {
+printf("%d ", m);
+PrintPattern(m - 5);
+}
+printf("%d ", m);
+}
+
+Khi gọi PrintPattern(12), có bao nhiêu số, số thứ 4 và thứ 5 là bao nhiêu?
+#ANSWER: 7 so; thu 4 la -3; thu 5 la 2|7 số, -3 và 2
+
+#Q25 [SC4]
+Chèn lần lượt các phần tử có khóa là ký tự chữ cái in Hoa vào bảng băm kích thước 10, dùng hàm băm h = (ascii(x) − ascii('A')) mod 10. Dãy ký tự: D B M N G R. Ký tự nào gây đụng độ đầu tiên?
+A. R
+B. N
+C. M
+D. G
+#ANSWER: B
+
+#Q26 [ESSAY]
+Xét hàm Horner:
+
+F(h, v) {
+int T = 0;
+for (p = h; p != NULL; p = p.next) { T = T * v + p.value; }
+return T;
+}
+
+h ứng với danh sách 3, 2, 4. F(h, 2) bằng bao nhiêu?
+#ANSWER: 20
+
+#Q27 [SC4]
+Kết luận nào sau đây đúng với hàng đợi?
+A. Hàng đợi là cấu trúc phân cấp, dạng cây
+B. Hàng đợi là cấu trúc tuyến tính
+C. Hàng đợi hoạt động theo nguyên tắc LIFO
+D. Không có phát biểu nào đúng
+#ANSWER: B
+
+#Q28 [SC4]
+Cho dãy 3, 5, 2, 1, 6, 4 sắp xếp tăng dần bằng bubble sort. 2 phần tử đầu tiên đổi chỗ là?
+A. 3 và 1
+B. 5 và 2
+C. 6 và 4
+D. 2 và 1
+#ANSWER: B
+
+#Q29 [SC4]
+Thời gian tìm kiếm tốt nhất của tìm kiếm nhị phân trên danh sách đã sắp xếp là
+A. O(log n)
+B. O(n log n)
+C. O(1)
+D. O(n!)
+#ANSWER: C
+
+#Q30 [SC4]
+f(n) {
+s = 0; a = 1; i = 1;
+while (s <= n) { s = s + a; a = a + 1; i = i + 1; }
+}
+Hãy cho biết độ phức tạp của hàm trên.
+A. O(n log n)
+B. O(n^(1/2))
+C. O(n)
+D. O(log n)
+#ANSWER: B
+
+#Q31 [ESSAY]
+int f(int n) {
+if (n <= 1) return 1;
+if (n % 2 == 0) return 2 * f(n - 1) + f(n - 2);
+else return f(n - 1) - 2 * f(n - 2);
+}
+Kết quả f(5)?
+#ANSWER: 3
+
+#Q32 [SC4]
+Cho T là BST từ dãy 3, 4, 8, 20, 5, 1, 15, 2. Postorder?
+A. 5, 1, 4, 8, 15, 20, 3, 2
+B. 1, 2, 3, 4, 5, 8, 15, 20
+C. 2, 1, 5, 15, 20, 8, 4, 3
+D. 20, 15, 8, 5, 4, 3, 2, 1
+#ANSWER: C
+
+#Q33 [ESSAY]
+Cho T: gốc là 10; 10 có con trái là 2 và con phải là 6; 2 có con trái là 7; 6 có con trái là 3 và con phải là 5; 3 có con trái là 8 và con phải là 9.
+
+int cnt(Node* r) {
+if (r == NULL) return 0;
+return 1 + cnt(r->leftChild) + cnt(r->rightChild);
+}
+
+Hàm cnt(gốc) trả về bao nhiêu?
+#ANSWER: 8
+
+#Q34 [SC4]
+Cho cây T: gốc là 9; 9 có con trái là 5 và con phải là 20; 20 có con trái là 15 và con phải là 30. Hành động nào biến T thành cây không phải AVL?
+A. Thêm nút 1 vào vị trí con trái của nút 5
+B. Loại bỏ nút 15
+C. Thêm nút 6 vào vị trí con phải của nút 5
+D. Thêm nút 40 vào vị trí con phải của nút 30
+#ANSWER: D
+
+#Q35 [SC6]
+Mỗi nút DSLK đôi gồm prev, data, next. Số con trỏ cần cập nhật khi thêm 1 nút vào giữa danh sách?
+A. 2 next, 1 prev
+B. 1 next, 2 prev
+C. 2 next, 2 prev
+D. 3 next, 3 prev
+E. Trong các lựa chọn đưa ra, không có lựa chọn nào đúng
+F. 1 next, 1 prev
+#ANSWER: C
+
+#Q36 [SC4]
+Thêm lần lượt 12, 5, 7, 16, 8, 3, 4 vào BST rỗng, duyệt Preorder?
+A. 12, 7, 5, 3, 4, 8, 16
+B. 12, 5, 3, 4, 7, 8, 16
+C. 12, 5, 4, 3, 7, 8, 16
+D. 12, 8, 7, 5, 3, 4, 16
+#ANSWER: B
+
+#Q37 [SC4]
+Trong cấu trúc bảng băm, khi 2 khóa khác nhau cho cùng giá trị hàm băm, ta gọi hiện tượng đó là gì?
+A. Collision
+B. Segmentation
+C. Duplication
+D. Overflow
+#ANSWER: A
+
+#Q38 [SC6]
+Cho một cây nhị phân tạo thành từ n nút, chiều cao lớn nhất là bao nhiêu?
+A. n
+B. n/2
+C. log n + 1
+D. n + 1
+E. log n
+F. n - 1
+#ANSWER: A
+
+#Q39 [SC4]
+Thuật toán nào không yêu cầu nạp toàn bộ danh sách vào RAM khi sắp xếp?
+A. Sắp xếp vun đống
+B. Sắp xếp lựa chọn
+C. Sắp xếp trộn
+D. Sắp xếp nhanh
+#ANSWER: C
+
+#Q40 [SC4]
+Xét hàm loại bỏ giá trị:
+
+F(h, v) {
+if (h == NULL) return NULL;
+if (h.value == v) { h = h.next; if (h == NULL) return h; }
+h.next = F(h.next, v);
+return h;
+}
+
+h ứng với danh sách 1, 3, 2, 4, 3, 2, 5. F(h, 3) trả về danh sách nào?
+A. 1, 2, 4, 2, 5
+B. 1
+C. 2, 5
+D. 1, 2, 4, 3, 2, 5
+#ANSWER: A

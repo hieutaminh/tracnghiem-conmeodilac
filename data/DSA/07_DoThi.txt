@@ -1,0 +1,127 @@
+#TIME: 35
+
+#Q1 [SC4]
+Thuật toán Dijkstra dùng để giải bài toán nào?
+A. Tìm đường đi ngắn nhất từ 1 đỉnh đến tất cả các đỉnh còn lại trên đồ thị trọng số cạnh không âm
+B. Tìm đường đi ngắn nhất từ 1 đỉnh đến tất cả các đỉnh còn lại trên đồ thị trọng số cạnh bất kỳ
+C. Tìm cây khung nhỏ nhất của đồ thị vô hướng trọng số trên cạnh
+D. Tìm luồng cực đại trên mạng
+#ANSWER: A
+#EXPLAIN: Đặc thù thuật toán Dijkstra yêu cầu trọng số cạnh không âm.
+
+#Q2 [SC4]
+Cho đồ thị có hướng, không chu trình (DAG), trọng số cạnh không âm. Thuật toán Dijkstra có phải thuật toán tốt nhất để tìm đường đi ngắn nhất không?
+A. Đúng, luôn là tốt nhất
+B. Không, có thuật toán khác nhanh hơn (Topo Sort kết hợp Quy hoạch động)
+C. Chỉ tốt nhất khi đồ thị nhỏ
+D. Không thể xác định
+#ANSWER: B
+#EXPLAIN: Trên DAG, dùng Sắp xếp Topo kết hợp quy hoạch động cho thời gian tuyến tính O(V+E), tốt hơn Dijkstra O((V+E)logV).
+
+#Q3 [SC4]
+Thuật toán Dijkstra có thể áp dụng cho đồ thị có trọng số âm hay không?
+A. Có thể áp dụng bình thường
+B. Không thể áp dụng
+C. Chỉ áp dụng được nếu có đúng 1 cạnh âm
+D. Cần điều chỉnh nhỏ là dùng được ngay
+#ANSWER: B
+#EXPLAIN: Cơ chế tham lam (chọn min) của Dijkstra sẽ thất bại nếu đồ thị có cạnh âm; cần dùng Bellman-Ford.
+
+#Q4 [SC4]
+Trong thuật toán Dijkstra, cấu trúc dữ liệu nào thường được dùng để tối ưu tốc độ?
+A. Hàng đợi - Queue
+B. Hàng đợi ưu tiên - Priority Queue
+C. Cây nhị phân tìm kiếm AVL
+D. Ngăn xếp - Stack
+#ANSWER: B
+#EXPLAIN: Hàng đợi ưu tiên (thường cài bằng Heap) giúp lấy ra đỉnh có khoảng cách nhỏ nhất nhanh chóng.
+
+#Q5 [SC4]
+Dijkstra sử dụng hàng đợi ưu tiên (priority queue) có luôn tốt hơn không sử dụng hàng đợi ưu tiên không?
+A. Luôn tốt hơn trong mọi trường hợp
+B. Không luôn tốt hơn (với đồ thị rất dày đặc có thể chậm hơn)
+C. Chỉ tốt hơn với đồ thị thưa cạnh
+D. Không liên quan đến mật độ cạnh
+#ANSWER: B
+#EXPLAIN: Với đồ thị rất dày đặc (E≈V^2), dùng Priority Queue cho O(V^2 log V), chậm hơn bản dùng mảng thô sơ O(V^2).
+
+#Q6 [SC4]
+Đồ thị vô hướng có trọng số các cạnh đều bằng nhau và không âm. Thuật toán nào tốt hơn để tìm đường đi ngắn nhất giữa 2 đỉnh?
+A. Thuật toán Dijkstra
+B. Thuật toán duyệt theo chiều rộng (BFS)
+C. Thuật toán duyệt theo chiều sâu (DFS)
+D. Thuật toán Bellman-Ford
+#ANSWER: B
+#EXPLAIN: Vì cạnh bằng nhau nên BFS dễ cài đặt hơn và chạy với chi phí O(V+E), nhanh hơn Dijkstra.
+
+#Q7 [SC4]
+Cho đồ thị vô hướng liên thông G=(V,E) và s thuộc V. Thuật toán DFS xuất phát từ s có đảm bảo luôn tìm ra đường đi ngắn nhất theo số cạnh từ s đến các đỉnh còn lại không?
+A. Đúng, luôn đảm bảo
+B. Sai, không đảm bảo
+C. Chỉ đúng với cây
+D. Chỉ đúng khi đồ thị có trọng số
+#ANSWER: B
+#EXPLAIN: Chỉ có BFS mới đảm bảo tìm đường đi ngắn nhất theo số cạnh do lan theo từng vòng bán kính; DFS thì không.
+
+#Q8 [SC4]
+Cho đồ thị vô hướng liên thông G=(V,E) và s thuộc V. Thuật toán BFS xuất phát từ s có đảm bảo luôn tìm ra đường đi ngắn nhất theo số cạnh từ s đến các đỉnh còn lại không?
+A. Đúng, luôn đảm bảo
+B. Sai, không đảm bảo
+C. Chỉ đúng với đồ thị có hướng
+D. Chỉ đúng khi đồ thị không có chu trình
+#ANSWER: A
+#EXPLAIN: BFS duyệt theo từng mức (vòng bán kính) nên luôn tìm ra đường đi ngắn nhất theo số cạnh.
+
+#Q9 [SC4]
+Đồ thị vô hướng có một đỉnh chỉ nối với đúng 1 đỉnh khác (đỉnh treo, bậc 1). Đồ thị này có thể có chu trình Hamilton không?
+A. Có thể có
+B. Không thể có
+C. Không xác định được
+D. Chỉ có nếu đồ thị liên thông
+#ANSWER: B
+#EXPLAIN: Chu trình Hamilton đòi hỏi đi qua mọi đỉnh và quay lại điểm xuất phát, mỗi đỉnh phải có bậc ít nhất 2. Đỉnh bậc 1 khiến điều này bất khả thi.
+
+#Q10 [SC4]
+Đồ thị vô hướng 9 đỉnh chia thành 2 nhóm liên thông riêng biệt: {1,2,3,4,5} và {6,7,8,9} (không có cạnh nối giữa 2 nhóm). Đồ thị có bao nhiêu thành phần liên thông?
+A. 2
+B. 1
+C. 3
+D. 4
+#ANSWER: A
+#EXPLAIN: Mỗi nhóm đỉnh liên thông nội bộ nhưng không kết nối với nhóm còn lại nên tạo thành 2 thành phần liên thông.
+
+#Q11 [SC4]
+Đồ thị vô hướng 8 đỉnh, trong đó có 1 đỉnh hoàn toàn cô lập (không xuất hiện trong bất kỳ cạnh nào), các đỉnh còn lại đều liên thông với nhau. Đồ thị có bao nhiêu thành phần liên thông?
+A. 2
+B. 1
+C. 3
+D. 4
+#ANSWER: A
+#EXPLAIN: Đỉnh cô lập tự nó là 1 thành phần liên thông riêng, cộng với cụm các đỉnh còn lại là 2 thành phần.
+
+#Q12 [SC4]
+Một đồ thị vô hướng có đúng 2 thành phần liên thông. Cần bổ sung ít nhất bao nhiêu cạnh để đồ thị trở thành liên thông?
+A. 1
+B. 2
+C. 0
+D. 3
+#ANSWER: A
+#EXPLAIN: Chỉ cần thêm 1 cạnh nối giữa 2 thành phần liên thông là đồ thị trở thành liên thông toàn bộ.
+
+#Q13 [SC4]
+Cho đồ thị vô hướng G có n đỉnh, m cạnh. Thuật toán BFS trên G có độ phức tạp thời gian:
+A. O(n + m)
+B. O(n)
+C. O(nm)
+D. O(n^2)
+#ANSWER: A
+#EXPLAIN: Tương tự DFS, mỗi đỉnh và cạnh được xét đúng 1 lần nên độ phức tạp là O(n+m).
+
+#Q14 [SC4]
+Cho đồ thị trọng số không âm bất kỳ. Để tìm đường đi ngắn nhất từ 1 đỉnh đến 1 đỉnh khác, thuật toán Dijkstra có luôn là lựa chọn tốt nhất không?
+A. Đúng, luôn là lựa chọn tốt nhất
+B. Không, có những bài toán đặc thù có thuật toán nhanh hơn (ví dụ DAG dùng Topo + QHĐ)
+C. Chỉ tốt nhất với đồ thị vô hướng
+D. Không thể xác định
+#ANSWER: B
+#EXPLAIN: Với các cấu trúc đồ thị đặc thù (như DAG), có thuật toán chuyên biệt nhanh hơn Dijkstra tổng quát.

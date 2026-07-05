@@ -1,0 +1,1400 @@
+#TIME: 180
+
+### PHẦN 1: ĐỘ PHỨC TẠP THUẬT TOÁN ###
+
+#Q1 [SC4]
+Kết luận 1000n^2 - 6n + 7 = O(n^2) là đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng khi n < 1000
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Bậc cao nhất là n^2, bỏ qua hệ số và bậc thấp hơn, độ phức tạp tiệm cận là O(n^2).
+
+#Q2 [SC4]
+Cho f1(n) = n^(1/2) và f2(n) = 1000 log(n). Hàm nào tăng nhanh hơn?
+A. f1(n) tăng nhanh hơn
+B. f2(n) tăng nhanh hơn
+C. Hai hàm tăng như nhau
+D. Không thể so sánh
+#ANSWER: A
+#EXPLAIN: Hàm đa thức (kể cả căn bậc hai) luôn tăng nhanh hơn hàm logarit.
+
+#Q3 [SC4]
+Kết luận 2000n^2 + 6n - 7 = O(n^2) là đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng khi n rất nhỏ
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Bậc cao nhất quyết định độ phức tạp tiệm cận, ở đây là n^2.
+
+#Q4 [SC4]
+Kết luận 10n^2 + 3n - 1000 = O(n log n) là đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng khi n lớn
+D. Không xác định được
+#ANSWER: B
+#EXPLAIN: Hàm bậc 2 (n^2) tăng nhanh hơn n log n nên phải là O(n^2), không phải O(n log n).
+
+#Q5 [SC4]
+Đoạn chương trình: s=1; i=1; a=2; while(i<=n){ s=s*a; i++; }
+Độ phức tạp thời gian là:
+A. O(log n)
+B. O(n)
+C. O(n log n)
+D. O(n^2)
+#ANSWER: B
+#EXPLAIN: Vòng lặp chạy đúng n lần, biến i tăng dần từng đơn vị.
+
+#Q6 [SC4]
+Xác định độ phức tạp: s=0; a=1; i=1; while(s<=n){ s=s+a; a=a*2; i++; }
+A. O(n)
+B. O(log n)
+C. O(n log n)
+D. O(n^2)
+#ANSWER: B
+#EXPLAIN: Biến a nhân đôi mỗi lần nên s tăng theo cấp số nhân, số vòng lặp tỉ lệ log(n).
+
+#Q7 [SC4]
+Cho f1(n) = n^2 và f2(n) = 1000n log(n). Hàm nào tăng nhanh hơn?
+A. f1(n) tăng nhanh hơn
+B. f2(n) tăng nhanh hơn
+C. Hai hàm tăng như nhau
+D. Không thể so sánh
+#ANSWER: A
+#EXPLAIN: Đa thức bậc 2 vượt xa n log n khi n tiến ra vô cùng.
+
+#Q8 [SC4]
+Thuật toán sắp xếp lựa chọn (Selection Sort) có độ phức tạp:
+A. Tốt nhất O(n), xấu nhất O(n^2)
+B. Tốt nhất O(n), xấu nhất O(n log n)
+C. Tốt nhất O(n^2), xấu nhất O(n^2)
+D. Tốt nhất O(log n), xấu nhất O(n^2)
+#ANSWER: C
+#EXPLAIN: Dù mảng đã sắp xếp hay chưa, thuật toán vẫn phải duyệt toàn bộ phần còn lại để tìm phần tử nhỏ nhất.
+
+#Q9 [SC4]
+Thuật toán sắp xếp trộn (Merge Sort) có độ phức tạp thời gian là:
+A. O(n)
+B. O(n log n)
+C. O(n^2)
+D. O(2^n)
+#ANSWER: B
+#EXPLAIN: Cơ chế chia đôi liên tục và trộn lại luôn cho O(n log n) ở mọi trường hợp.
+
+#Q10 [SC4]
+Heap Sort trên dãy n phần tử có độ phức tạp trong trường hợp tốt nhất là O(n^2)?
+A. Đúng
+B. Sai
+C. Chỉ đúng nếu mảng đã gần sắp xếp
+D. Chỉ đúng nếu mảng ngẫu nhiên
+#ANSWER: B
+#EXPLAIN: Heap Sort luôn đảm bảo O(n log n) ở mọi trường hợp (tốt nhất, trung bình, xấu nhất).
+
+#Q11 [SC4]
+Thuật toán sắp xếp nổi bọt (Bubble Sort, có cờ kiểm tra swapped) có độ phức tạp tốt nhất là:
+A. O(n)
+B. O(n log n)
+C. O(n^2)
+D. O(log n)
+#ANSWER: A
+#EXPLAIN: Nếu mảng đã sắp sẵn, thuật toán chỉ quét 1 lần (chi phí n) rồi dừng sớm nhờ cờ kiểm tra.
+
+#Q12 [SC4]
+Điều kiện để áp dụng tìm kiếm nhị phân trên dãy a1, a2, ..., an là:
+A. Dãy không được phép có số âm
+B. Dãy được sắp xếp theo thứ tự không tăng hoặc không giảm
+C. Dãy bất kỳ, không cần điều kiện gì
+D. Dãy phải toàn số nguyên
+#ANSWER: B
+#EXPLAIN: Tìm kiếm nhị phân chia đôi liên tục nên bắt buộc mảng phải có thứ tự từ trước.
+
+#Q13 [SC4]
+Thuật toán tìm kiếm nhị phân trên dãy đã sắp xếp có độ phức tạp:
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n log n)
+#ANSWER: B
+#EXPLAIN: Số phép so sánh tỉ lệ với log cơ số 2 của n.
+
+#Q14 [SC4]
+Thao tác tìm kiếm trên cây nhị phân tìm kiếm chứa n khóa, trường hợp xấu nhất có thời gian:
+A. O(n)
+B. O(log n)
+C. O(1)
+D. O(n log n)
+#ANSWER: A
+#EXPLAIN: Khi cây thoái hóa thành một đường thẳng (giống danh sách liên kết), tìm kiếm mất O(n).
+
+#Q15 [SC4]
+Thao tác tìm kiếm trên cây AVL chứa n khóa, trường hợp tốt nhất có thời gian:
+A. O(log n)
+B. O(n)
+C. O(1)
+D. O(n log n)
+#ANSWER: A
+#EXPLAIN: Nhờ tính chất cân bằng, độ sâu tối đa của cây AVL luôn là O(log n).
+
+#Q16 [SC4]
+Độ cao của cây AVL chứa n khóa luôn là O(log n), đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng khi cây gần như hoàn chỉnh
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Do cây tự cân bằng, độ cao tối đa khoảng 1.44*log2(n+2), luôn là O(log n).
+
+#Q17 [SC4]
+Theo định lý thợ (Master Theorem), T(n) = T(n/2) + 4n có độ phức tạp:
+A. Θ(n)
+B. Θ(n^2)
+C. Θ(n log n)
+D. Θ(2^n)
+#ANSWER: A
+#EXPLAIN: a=1, b=2 → n^(log2 1) = n^0 = 1. Vì f(n)=4n thuộc Ω(n^(0+ε)), theo trường hợp 3 của Master Theorem, T(n) = Θ(n).
+
+#Q18 [SC4]
+Theo định lý thợ, T(n) = 3T(n/3) + 2log(n), T(1)=1 có độ phức tạp:
+A. O(n)
+B. O(n log n)
+C. O(log n)
+D. O(n^2)
+#ANSWER: A
+#EXPLAIN: a=3, b=3 → n^(log3 3) = n. Vì f(n)=2log(n)=O(n^(1-ε)), theo trường hợp 1 của Master Theorem, T(n)=Θ(n).
+
+#Q19 [SC4]
+Cho đồ thị G=(V,E) trọng số không âm biểu diễn bằng ma trận trọng số. Thuật toán Dijkstra có độ phức tạp:
+A. O(|V|^2)
+B. O(|V||E|)
+C. O(|V|+|E|)
+D. O(|V|^3)
+#ANSWER: A
+#EXPLAIN: Với ma trận kề, ở mỗi trong |V| bước, tìm phần tử min mất |V| lần so sánh tuyến tính.
+
+#Q20 [SC4]
+Cho đồ thị G=(V,E) trọng số không âm biểu diễn bằng danh sách kề. Thuật toán Dijkstra dùng hàng đợi ưu tiên có độ phức tạp:
+A. O(|E| log |V|)
+B. O(|V|^2)
+C. O(|E|^2)
+D. O(|V| x |E|)
+#ANSWER: A
+#EXPLAIN: Hàng đợi ưu tiên (Heap) giúp lấy đỉnh nhỏ nhất nhanh (log|V|) và cập nhật |E| cạnh.
+
+#Q21 [SC4]
+Cho đồ thị vô hướng G có n đỉnh, m cạnh. Thuật toán DFS trên G có độ phức tạp thời gian:
+A. O(n)
+B. O(nm)
+C. O(n + m)
+D. O(n^2)
+#ANSWER: C
+#EXPLAIN: Mỗi đỉnh và mỗi cạnh được thăm qua đúng 1 lần, bất kể biểu diễn đồ thị.
+
+#Q22 [SC4]
+Hàm ham2(n): for(i=0;i<n;i++) for(j=n;j>0;j-=2) S++; Gọi ham2(10), câu lệnh S++ thực hiện bao nhiêu lần?
+A. 50
+B. 100
+C. 45
+D. 55
+#ANSWER: A
+#EXPLAIN: Vòng ngoài lặp 10 lần. Vòng trong j chạy 10,8,6,4,2 (5 lần). Tổng 10x5=50.
+
+#Q23 [SC4]
+Hàm ham1(n): for(i=0;i<n;i++) for(j=i;j<n;j++) S+=i; Gọi ham1(10), câu lệnh S+=i thực hiện bao nhiêu lần?
+A. 55
+B. 100
+C. 45
+D. 50
+#ANSWER: A
+#EXPLAIN: Tổng số lần lặp là 10+9+8+...+1 = 55.
+
+#Q24 [SC4]
+Công thức độ phức tạp tính toán nào sau đây là không hợp lệ?
+A. f(n) = -2n^2 + 100n log(n) + 10^9
+B. f(n) = 10n - 3n
+C. f(n) = -26n log(n) + 6n^2 + 10
+D. f(n) = n + n log n
+#ANSWER: A
+#EXPLAIN: Bậc cao nhất (n^2) có hệ số âm, không thể là độ phức tạp thuật toán (vốn luôn không âm khi n lớn).
+
+### PHẦN 2: NGĂN XẾP - HÀNG ĐỢI ###
+
+#Q25 [SC4]
+Kết luận nào sau đây đúng với ngăn xếp (Stack)?
+A. Phần tử vào đầu tiên sẽ được lấy ra cuối cùng
+B. Phần tử vào cuối cùng sẽ được lấy ra cuối cùng
+C. Cả hai kết luận trên đều đúng
+D. Không xác định được thứ tự lấy ra
+#ANSWER: A
+#EXPLAIN: Ngăn xếp dùng LIFO (Last In, First Out). Phần tử vào đầu tiên nằm ở đáy nên ra cuối cùng.
+
+#Q26 [SC4]
+Kết luận nào sau đây đúng với hàng đợi (Queue)?
+A. Phần tử vào cuối cùng sẽ được lấy ra cuối cùng
+B. Phần tử vào đầu tiên sẽ được lấy ra cuối cùng
+C. Phần tử vào giữa hàng đợi được lấy ra đầu tiên
+D. Không xác định được thứ tự lấy ra
+#ANSWER: A
+#EXPLAIN: Hàng đợi dùng FIFO (First In, First Out), nên phần tử vào sau cùng cũng ra sau cùng.
+
+#Q27 [SC4]
+S là ngăn xếp rỗng. For i=1 to 5: S.PUSH(i*2); e1=S.POP(); S.PUSH(8); e2=S.POP(); print(e2). Kết quả in ra?
+A. 8
+B. 10
+C. 6
+D. 2
+#ANSWER: A
+#EXPLAIN: Đẩy vào 2,4,6,8,10. e1=POP() lấy 10. PUSH(8) đẩy 8 vào (đỉnh là 8). e2=POP() lấy 8.
+
+#Q28 [SC4]
+Q là hàng đợi rỗng. For i=1 to 5: Q.PUSH(i); e1=Q.POP(); e2=Q.POP(); e3=Q.POP(); print(e3). Kết quả in ra?
+A. 3
+B. 1
+C. 4
+D. 5
+#ANSWER: A
+#EXPLAIN: PUSH vào 1,2,3,4,5. POP lần lượt lấy ra 1, 2, 3. Vậy e3 = 3.
+
+#Q29 [SC4]
+S là ngăn xếp rỗng. For i=1 to 5: S.PUSH(i); e1=S.POP(); e2=S.POP(); print(e2). Kết quả in ra?
+A. 4
+B. 5
+C. 3
+D. 2
+#ANSWER: A
+#EXPLAIN: PUSH vào 1,2,3,4,5. POP lần 1 lấy 5, POP lần 2 lấy 4.
+
+#Q30 [SC4]
+Q là hàng đợi rỗng. For i=1 to 7: Q.PUSH(2*i); For i=1 to 3: e=Q.POP(); e2=Q.POP(); print(e2). Kết quả in ra?
+A. 8
+B. 6
+C. 10
+D. 4
+#ANSWER: A
+#EXPLAIN: PUSH vào 2,4,6,8,10,12,14. POP 3 lần lấy ra 2,4,6. e2=POP() lấy phần tử thứ 4 là 8.
+
+#Q31 [SC4]
+Cấu trúc dữ liệu nào tương ứng với LIFO?
+A. Linked List
+B. Queue
+C. Tree
+D. Stack
+#ANSWER: D
+#EXPLAIN: LIFO (Last In First Out) chính là nguyên lý hoạt động của Stack.
+
+#Q32 [SC4]
+Trong các từ tiếng Anh sau, từ nào đúng với tên gọi của cấu trúc dữ liệu FIFO?
+A. First-In First-Out
+B. STACK
+C. First-In Last-Out
+D. QUEUE
+#ANSWER: D
+#EXPLAIN: Cấu trúc dữ liệu hoạt động theo nguyên lý FIFO chính là Queue (hàng đợi).
+
+#Q33 [SC4]
+Trong các từ tiếng Anh sau, từ nào đúng với tên gọi của cấu trúc dữ liệu FILO?
+A. QUEUE
+B. First-In First-Out
+C. First-In Last-Out
+D. STACK
+#ANSWER: D
+#EXPLAIN: FILO (First In Last Out) tương đương LIFO, chính là Stack (ngăn xếp).
+
+#Q34 [SC4]
+Từ viết tắt tiếng Anh FIFO có nghĩa là gì trong tiếng Việt?
+A. Vào Trước - Ra Trước
+B. Vào - Ra Tức Thì
+C. Vào - Ra Đồng Thời
+D. Vào Trước - Ra Sau
+#ANSWER: A
+#EXPLAIN: FIFO = First In First Out = Vào Trước - Ra Trước.
+
+#Q35 [SC4]
+Trong thuật toán duyệt đồ thị theo chiều rộng (BFS), cấu trúc dữ liệu nào được dùng để lưu trữ đỉnh trong quá trình duyệt?
+A. Cây tìm kiếm nhị phân
+B. Hàng đợi - Queue
+C. Bảng băm
+D. Ngăn xếp - Stack
+#ANSWER: B
+#EXPLAIN: BFS duyệt theo từng mức, cần lưu các đỉnh chờ xét theo thứ tự vào trước ra trước, tức dùng Queue.
+
+#Q36 [SC4]
+Thao tác dequeue() là thao tác cơ bản của cấu trúc dữ liệu nào?
+A. Ngăn xếp
+B. Danh sách
+C. Mảng
+D. Hàng đợi
+#ANSWER: D
+#EXPLAIN: dequeue() lấy phần tử ra khỏi hàng đợi, đây là thao tác đặc trưng của Queue.
+
+#Q37 [SC4]
+Thao tác pop() là thao tác cơ bản của cấu trúc dữ liệu nào?
+A. Hàng đợi
+B. Mảng
+C. Danh sách
+D. Ngăn xếp
+#ANSWER: D
+#EXPLAIN: pop() lấy phần tử ra khỏi ngăn xếp, đây là thao tác đặc trưng của Stack.
+
+#Q38 [SC4]
+Tính giá trị của biểu thức hậu tố sau: 4 6 3 / + 7 10 2 / - *
+A. 12
+B. 10
+C. 14
+D. 8
+#ANSWER: A
+#EXPLAIN: (4 + 6/3) * (7 - 10/2) = (4+2)*(7-5) = 6*2 = 12.
+
+#Q39 [SC4]
+Tính giá trị của biểu thức hậu tố sau: 6 3 6 + 5 * 90 / -
+A. 5.5
+B. 6
+C. 5
+D. 7
+#ANSWER: A
+#EXPLAIN: (3+6)=9 -> 9*5=45 -> 45/90=0.5 -> 6-0.5=5.5.
+
+#Q40 [SC4]
+Cho biểu thức hậu tố a b - c / d c - b + với a=25, b=5, c=4, d=19. Giá trị biểu thức bằng?
+A. 8
+B. 6
+C. 10
+D. 4
+#ANSWER: A
+#EXPLAIN: Dùng ngăn xếp để tính lần lượt từng toán tử theo đúng thứ tự Reverse Polish Notation, kết quả cuối cùng bằng 8.
+
+#Q41 [SC4]
+Cho biểu thức dạng trung tố A + B*C/D - G*H. Biểu thức dạng hậu tố tương ứng là gì?
+A. ABC*D/+GH*-
+B. AB+C*D/GH*-
+C. ABC+*D/GH-*
+D. ABCD*/+GH*-
+#ANSWER: A
+#EXPLAIN: Áp dụng độ ưu tiên toán tử (*, / trước +, -) và chuyển sang hậu tố theo cây cú pháp biểu thức.
+
+### PHẦN 3: DANH SÁCH LIÊN KẾT ###
+
+#Q42 [SC4]
+Mỗi nút danh sách liên kết đơn: struct Node { int id; Node* next; }
+Node* proc(Node* f, int v) {
+  if (f == NULL) return NULL;
+  if (f->id == v) { Node* tm=f; f=f->next; free(tm); return f; }
+  f->next = proc(f->next, v);
+  return f;
+}
+Hàm proc thực hiện công việc gì?
+A. Loại bỏ phần tử ĐẦU TIÊN có giá trị bằng v
+B. Loại bỏ phần tử CUỐI CÙNG có giá trị bằng v
+C. Loại bỏ TẤT CẢ phần tử có giá trị bằng v
+D. Không thay đổi danh sách
+#ANSWER: A
+#EXPLAIN: Hàm duyệt từ đầu, ngay khi tìm thấy id==v thì giải phóng và return ngay, không xét tiếp phần còn lại.
+
+#Q43 [SC4]
+Cùng cấu trúc Node như trên.
+Node* proc(Node* f, int v) {
+  if (f == NULL) return NULL;
+  if (f->id == v) { Node* tm=f; f=f->next; free(tm); f=proc(f,v); return f; }
+  f->next = proc(f->next, v);
+  return f;
+}
+Hàm proc thực hiện công việc gì?
+A. Loại bỏ phần tử đầu tiên có giá trị bằng v
+B. Loại bỏ TẤT CẢ phần tử có giá trị bằng v
+C. Đảo ngược danh sách
+D. Không thay đổi danh sách
+#ANSWER: B
+#EXPLAIN: Sau khi free(tm), hàm tiếp tục gọi đệ quy proc(f,v) cho phần còn lại nên xóa hết mọi phần tử bằng v.
+
+#Q44 [SC4]
+Node* makeNode(int v) { Node* p=malloc(sizeof(Node)); p->id=v; p->next=NULL; return p; }
+Node* proc(Node* f, int v) {
+  if (f == NULL) return makeNode(v);
+  Node* p = makeNode(v);
+  p->next = f;
+  return p;
+}
+Hàm proc thực hiện công việc gì?
+A. Thêm nút có giá trị v vào ĐẦU danh sách
+B. Thêm nút có giá trị v vào CUỐI danh sách
+C. Xóa nút đầu danh sách
+D. Đảo ngược danh sách
+#ANSWER: A
+#EXPLAIN: Luôn tạo nút mới p, gán p->next = f, làm p trở thành nút đầu tiên của danh sách.
+
+#Q45 [SC4]
+Kết luận nào sau đây đúng với danh sách liên kết?
+A. Các phần tử được cấp phát liên tục trong bộ nhớ
+B. Các phần tử không được cấp phát liên tục, liên kết với nhau qua con trỏ
+C. Cả hai đều đúng tùy theo cách cài đặt
+D. Không xác định được cách cấp phát
+#ANSWER: B
+#EXPLAIN: Đây là đặc điểm phân biệt danh sách liên kết (cấp phát động, rải rác) với mảng (cấp phát tĩnh, liên tục).
+
+#Q46 [SC4]
+Node* proc(Node* f, int v) {
+  if (f == NULL) return makeNode(v);
+  f->next = proc(f->next, v);
+  return f;
+}
+Hàm proc thực hiện công việc gì?
+A. Chèn v vào ĐẦU danh sách
+B. Chèn v vào CUỐI danh sách
+C. Xóa phần tử có giá trị v
+D. Đảo ngược danh sách
+#ANSWER: B
+#EXPLAIN: Đệ quy đi đến hết danh sách (f==NULL) rồi mới tạo nút mới và nối vào, nên nút mới nằm ở cuối.
+
+#Q47 [SC4]
+Node* proc(Node* f) {
+  Node *p=f, *pp=NULL, *np=NULL;
+  while (p != NULL) {
+    np = p->next; p->next = pp; pp = p; p = np;
+  }
+  return pp;
+}
+Hàm proc thực hiện công việc gì?
+A. Đảo ngược (Reverse) danh sách liên kết
+B. Sắp xếp danh sách liên kết
+C. Xóa phần tử cuối danh sách
+D. Nối hai danh sách liên kết
+#ANSWER: A
+#EXPLAIN: Dùng 3 con trỏ để lần lượt đổi hướng con trỏ next về phía trước, đảo ngược toàn bộ danh sách.
+
+#Q48 [SC4]
+Danh sách liên kết có giá trị theo thứ tự 2, 3, 6. F(h,v) = h.value + v*F(h.next, v). Gọi F(h,3) trả về kết quả bằng bao nhiêu?
+A. 65
+B. 56
+C. 71
+D. 60
+#ANSWER: A
+#EXPLAIN: 2 + 3*(3 + 3*(6 + 3*0)) = 2 + 3*21 = 65.
+
+#Q49 [SC4]
+Danh sách liên kết có giá trị 4, 2, 1. Hàm F(h): T=0; duyệt từ đầu, T = 4*T + p.value; return T. F(h) bằng bao nhiêu?
+A. 73
+B. 68
+C. 81
+D. 65
+#ANSWER: A
+#EXPLAIN: Horner xuôi: 0*4+4=4 -> 4*4+2=18 -> 18*4+1=73.
+
+#Q50 [SC4]
+Danh sách liên kết có giá trị 2, 3, 6. F(h) = h.value + F(h.next) (h==NULL trả về 0). F(h) bằng bao nhiêu?
+A. 11
+B. 9
+C. 13
+D. 15
+#ANSWER: A
+#EXPLAIN: Đây là tổng các phần tử: 2 + 3 + 6 = 11.
+
+#Q51 [SC4]
+Lựa chọn câu đúng nhất về danh sách liên kết đôi (Doubly Linked List)?
+A. Mỗi phần tử có 2 liên kết với 1 phần tử khác
+B. Mỗi phần tử có 2 liên kết với phần tử trước và sau nó
+C. Mỗi phần tử có 1 liên kết với 2 phần tử khác
+D. Mỗi phần tử có 2 liên kết với phần tử đầu và cuối danh sách
+#ANSWER: B
+#EXPLAIN: Mỗi nút trong danh sách liên kết đôi có con trỏ prev và next trỏ tới phần tử trước và sau nó.
+
+#Q52 [SC4]
+Định nghĩa nào đúng nhất với danh sách liên kết?
+A. Là tập hợp các phần tử nối kết nhau thông qua vùng liên kết của chúng
+B. Là cấu trúc dữ liệu dạng cây
+C. Là tập hợp các phần tử đặc kín và nằm liên tục trong bộ nhớ
+D. Là cấu trúc dữ liệu tự định nghĩa không có quy tắc chung
+#ANSWER: A
+#EXPLAIN: Định nghĩa chuẩn: các phần tử liên kết với nhau qua vùng con trỏ (liên kết), không cần liền kề trong bộ nhớ.
+
+#Q53 [SC4]
+Trong các thuật toán sắp xếp sau, thuật toán nào phù hợp nhất để sắp xếp phần tử lưu trữ bằng danh sách liên kết đơn?
+A. Sắp xếp nổi bọt
+B. Sắp xếp chèn
+C. Sắp xếp nhanh
+D. Sắp xếp lựa chọn
+#ANSWER: B
+#EXPLAIN: Danh sách liên kết chỉ duyệt được về phía trước, rất phù hợp với thao tác gỡ nối và chèn 1 phần tử vào danh sách con đã có sẵn.
+
+#Q54 [SC4]
+Thực hiện lần lượt: InsertHead(1) => InsertLast(3) => InsertLast(5) => InsertHead(4) => DeleteHead() => InsertHead(7). Kết quả danh sách cuối cùng là gì?
+A. 7 -> 1 -> 3 -> 5
+B. 1 -> 7 -> 3 -> 5
+C. 4 -> 1 -> 3 -> 5
+D. 7 -> 4 -> 1 -> 3 -> 5
+#ANSWER: A
+#EXPLAIN: Các bước: 1 -> 1,3 -> 1,3,5 -> 4,1,3,5 -> 1,3,5 (xóa đầu) -> 7,1,3,5.
+
+#Q55 [SC4]
+Node h.next.key + eval(h.next.next) (h hoặc h.next là NULL trả về 0). Danh sách giá trị: 2, 5, 3, 9, 7, 4. eval(h) trả về bao nhiêu?
+A. 18
+B. 14
+C. 21
+D. 16
+#ANSWER: A
+#EXPLAIN: Hàm cộng dồn các giá trị ở vị trí chẵn (tính từ 1): 5 + 9 + 4 = 18.
+
+### PHẦN 4: CÂY NHỊ PHÂN - BST ###
+
+#Q56 [SC4]
+Với cấu trúc dữ liệu cây - Tree, một nút không có nút con được gọi là?
+A. Nút rỗng
+B. Nút gốc
+C. Nút trong
+D. Nút lá
+#ANSWER: D
+#EXPLAIN: Nút không có con gọi là nút lá (Leaf Node).
+
+#Q57 [SC4]
+Trong một cây nhị phân tìm kiếm với nút gốc có đủ 2 con, nút có giá trị nhỏ nhất trên cây nằm tại:
+A. Nút bên trái nhất của gốc
+B. Nút nằm trái nhất trên cây con phải của gốc
+C. Nút bên phải nhất của gốc
+D. Nút nằm phải nhất trên cây con trái của gốc
+#ANSWER: A
+#EXPLAIN: Cứ liên tục rẽ trái đến cuối cùng sẽ tìm được phần tử nhỏ nhất.
+
+#Q58 [SC4]
+Nếu duyệt cây nhị phân theo thứ tự trước (Pre-order) và thứ tự sau (Post-order) cho ra cùng một kết quả thì cây đó có tối đa mấy nút?
+A. 1 nút
+B. Cây đầy đủ
+C. Cây rỗng
+D. Cây hoàn chỉnh
+#ANSWER: A
+#EXPLAIN: Gốc nằm ở đầu Pre-order và cuối Post-order; nếu 2 dãy giống nhau, dãy chỉ được phép có tối đa 1 phần tử.
+
+#Q59 [SC4]
+Với một cây nhị phân tìm kiếm, duyệt theo thứ tự nào sẽ thu được danh sách theo thứ tự tăng dần?
+A. Duyệt thứ tự sau - Post-order
+B. Duyệt thứ tự giữa - In-order
+C. Duyệt thứ tự trước - Pre-order
+D. Duyệt theo mức - Level-order
+#ANSWER: B
+#EXPLAIN: In-order (Trái - Gốc - Phải) trên BST luôn tạo ra dãy khóa tăng dần.
+
+#Q60 [SC4]
+Chọn định nghĩa đúng đối với cây nhị phân tìm kiếm?
+A. Cây nhị phân tìm kiếm chính là cây nhị phân bất kỳ
+B. Khóa mỗi nút lớn hơn khóa mọi nút cây con trái và nhỏ hơn khóa mọi nút cây con phải
+C. Khóa mỗi nút lớn hơn khóa mọi nút cây con trái và lớn hơn khóa mọi nút cây con phải
+D. Khóa mỗi nút nhỏ hơn khóa mọi nút cây con trái và nhỏ hơn khóa mọi nút cây con phải
+#ANSWER: B
+#EXPLAIN: Đây là định nghĩa chuẩn của Binary Search Tree (BST).
+
+#Q61 [SC4]
+Cho T là một BST thu được bằng cách chèn lần lượt: 3, 4, 8, 20, 5, 1, 15, 2. Kết luận nào đúng?
+A. 5 là con phải của 4
+B. 5 là con trái của 8
+C. 5 và 3 là hai nút anh em
+D. 5 là nút gốc của cây con phải
+#ANSWER: B
+#EXPLAIN: Xây cây: gốc 3, nhánh phải có 4, 8, 20. Khóa 5 chèn sau 8 (5<8) nên 5 là con trái của 8.
+
+#Q62 [SC4]
+Cùng cây T ở trên (chèn 3,4,8,20,5,1,15,2), thứ tự các khóa duyệt Pre-order là:
+A. 3, 1, 2, 4, 8, 5, 20, 15
+B. 1, 2, 3, 4, 5, 8, 15, 20
+C. 3, 4, 8, 20, 5, 1, 15, 2
+D. 2, 1, 5, 15, 20, 8, 4, 3
+#ANSWER: A
+#EXPLAIN: Duyệt Pre-order (Gốc - Trái - Phải) trên cây BST đã xây dựng.
+
+#Q63 [SC4]
+Cùng cây T ở trên, thứ tự các khóa duyệt Post-order là:
+A. 2, 1, 5, 15, 20, 8, 4, 3
+B. 3, 1, 2, 4, 8, 5, 20, 15
+C. 1, 2, 3, 4, 5, 8, 15, 20
+D. 3, 4, 8, 20, 5, 1, 15, 2
+#ANSWER: A
+#EXPLAIN: Duyệt Post-order (Trái - Phải - Gốc) trên cây BST đã xây dựng.
+
+#Q64 [SC4]
+Cùng cây T ở trên, thứ tự các khóa duyệt In-order là:
+A. 1, 2, 3, 4, 5, 8, 15, 20
+B. 3, 1, 2, 4, 8, 5, 20, 15
+C. 2, 1, 5, 15, 20, 8, 4, 3
+D. 20, 15, 8, 5, 4, 3, 2, 1
+#ANSWER: A
+#EXPLAIN: Duyệt In-order của BST luôn tạo ra dãy tăng dần.
+
+#Q65 [SC4]
+Cây T: gốc 10, con trái 7 (con trái 5, con phải 9), con phải 14 (con trái 12, con phải 15). Dãy nút 5,7,9,10,12,14,15 là dãy được thăm theo phép duyệt nào?
+A. Thứ tự trước
+B. Thứ tự giữa
+C. Thứ tự sau
+D. Theo mức
+#ANSWER: B
+#EXPLAIN: Dãy này tăng dần, đặc trưng của phép duyệt In-order (Trái - Gốc - Phải).
+
+#Q66 [SC4]
+Cây T: gốc 8, con trái 4 (con trái 2, con phải 6), con phải 15 (con trái 10, con phải 20). T có phải là cây AVL không?
+A. Có, là cây AVL
+B. Không phải cây AVL
+C. Chỉ là BST, không phải AVL
+D. Không đủ dữ liệu để kết luận
+#ANSWER: A
+#EXPLAIN: Các giá trị thỏa mãn BST, và chiều cao cây con trái/phải tại mọi nút đều cân bằng hoàn hảo.
+
+#Q67 [SC4]
+Dãy khóa: 3,4,7,8,9,12,13,14,16,20,21,29,30,31,32 lưu trên cây BST cân bằng hoàn chỉnh. Tìm khóa 20 cần bao nhiêu phép so sánh?
+A. 3
+B. 4
+C. 2
+D. 5
+#ANSWER: A
+#EXPLAIN: Gốc là 14 (vị trí 8). So 20 với 14 -> qua phải (gốc con là 29). So 20 với 29 -> qua trái (gốc là 20). So 20 với 20 -> thấy. Tổng 3 phép so sánh.
+
+#Q68 [SC4]
+Dãy khóa 3,4,7,8,9,12,13 lưu trên một cây AVL. Kết luận "Chỉ có duy nhất 1 cây AVL lưu dãy khóa trên" là đúng hay sai?
+A. Đúng, chỉ có duy nhất 1 cây
+B. Sai, có thể có nhiều cây AVL hợp lệ khác nhau
+C. Chỉ đúng khi số khóa nhỏ hơn 5
+D. Không xác định được
+#ANSWER: B
+#EXPLAIN: Có thể vẽ nhiều hơn 1 sơ đồ cây AVL hợp lệ (chênh lệch nhánh trái/phải không quá 1) cho cùng một bộ khóa.
+
+#Q69 [SC4]
+Cho cây nhị phân trong đó mỗi nút hoặc là lá hoặc có đủ 2 con. Nếu duyệt Pre-order là A B D C E thì Post-order sẽ là?
+A. D E C B A
+B. A B D C E
+C. D B E C A
+D. E D C B A
+#ANSWER: A
+#EXPLAIN: A là gốc, B và C là 2 con của A; D là con của B, E là con của C. Post-order (Trái-Phải-Gốc) cho ra D E C B A.
+
+#Q70 [SC4]
+Số lượng nút tối đa trên một cây nhị phân tìm kiếm có chiều cao h (chiều cao tính từ 0) là?
+A. 2^(h+1) - 1
+B. 2^h - 1
+C. 2^(h+1) + 1
+D. 2^h
+#ANSWER: A
+#EXPLAIN: Với quy ước gốc có độ sâu 0, tổng số nút tối đa của cây nhị phân chiều cao h là 2^(h+1) - 1.
+
+#Q71 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(r): nếu r==NULL trả 0, ngược lại trả max(cal(leftChild), cal(rightChild)) + 1.
+Cây: gốc 6, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 7, con phải 8, 8 có con trái 3 và con phải 10).
+r trỏ tới nút 9. cal(r) trả về bao nhiêu?
+A. 3
+B. 2
+C. 4
+D. 5
+#ANSWER: A
+#EXPLAIN: Hàm cal tính chiều cao nhánh. Nhánh từ 9 có đường dài nhất là 9 -> 8 -> 10 (3 nút), chiều cao bằng 3.
+
+#Q72 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(k,r,d): nếu k<=d trả về r.key + cal(k,leftChild,d+1) + cal(k,rightChild,d+1), ngược lại chỉ đệ quy tiếp không cộng r.key.
+Cây: gốc 6 (mức 1), con 1 và 9 (mức 2), con của 1 là 4 (mức 3), con của 9 là 7,8 (mức 3), con của 4 là 2,5 (mức 4), con của 8 là 3,10 (mức 4).
+r trỏ tới nút 6. cal(3, r, 1) trả về bao nhiêu?
+A. 39
+B. 35
+C. 42
+D. 30
+#ANSWER: A
+#EXPLAIN: Ở mức 3 cộng 4+7+8=19, ở mức 4 cộng 2+5+3+10=20. Tổng toàn cây là 19+20=39.
+
+#Q73 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(k,r,d): nếu r.key==k trả về d; d1=cal(k,leftChild,d+1); nếu d1>0 trả d1; ngược lại trả cal(k,rightChild,d+1).
+Cây: gốc 7, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 6, con phải 8, 8 có con trái 3 và con phải 11).
+r trỏ tới nút 6. cal(5, r, 1) trả về bao nhiêu?
+A. 4
+B. 3
+C. 5
+D. 2
+#ANSWER: A
+#EXPLAIN: Hàm tìm mức sâu của nút có giá trị bằng k, tính từ 1. Nút 5 nằm ở mức thứ 4 tính từ gốc nhánh, kết quả trả về 4.
+
+#Q74 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(r): nếu r==NULL trả 0; nếu là lá trả r.key; ngược lại trả cal(leftChild)+cal(rightChild).
+Cây: gốc 6, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 7, con phải 8, 8 có con trái 3 và con phải 10).
+p trỏ tới nút có khóa bằng 1. cal(p) trả về bao nhiêu?
+A. 7
+B. 5
+C. 9
+D. 6
+#ANSWER: A
+#EXPLAIN: Hàm tính tổng khóa các nút lá trong nhánh. Lá của nhánh gốc 1 là 2 và 5. Tổng = 7.
+
+#Q75 [SC4]
+Mức (độ sâu) của mỗi nút trên cây nhị phân là độ dài đường đi từ gốc đến nút đó (gốc có độ sâu 0). Trên một cây nhị phân, có thể có tối đa bao nhiêu nút có độ sâu bằng 3?
+A. 8
+B. 4
+C. 16
+D. 6
+#ANSWER: A
+#EXPLAIN: Độ sâu k có tối đa 2^k nút. Với k=3, số nút tối đa là 2^3 = 8.
+
+#Q76 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(r): nếu r==NULL trả 0; nếu là lá trả r.key; ngược lại trả cal(leftChild)+cal(rightChild).
+Cây: gốc 6, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 7, con phải 8, 8 có con trái 3 và con phải 10).
+Gọi cal(6) (r trỏ vào gốc) trả về bao nhiêu?
+A. 27
+B. 24
+C. 30
+D. 21
+#ANSWER: A
+#EXPLAIN: Tổng khóa các nút lá toàn cây: 2+5+7+3+10 = 27.
+
+#Q77 [SC4]
+Hàm find(r): nếu r==NULL trả NULL; nếu r.rightChild==NULL trả r.key; ngược lại trả find(r.rightChild).
+Cây T có duyệt In-order: 5,10,12,15,20,22,25,28,30,35. r trỏ đến gốc. find(r) trả về khóa bằng bao nhiêu?
+A. 35
+B. 30
+C. 28
+D. 20
+#ANSWER: A
+#EXPLAIN: Hàm luôn đệ quy sang phải đến cùng, đây chính là nút có khóa lớn nhất trong BST.
+
+#Q78 [SC4]
+Hàm cal(a,b,r): nếu r==NULL trả 0; nếu a<=r.key<=b trả r.key + cal(a,b,leftChild) + cal(a,b,rightChild); nếu r.key>a trả cal(a,b,leftChild); ngược lại trả cal(a,b,rightChild).
+Cây: gốc 20, con trái 10 (con trái 5, con phải 15, 15 có con trái 12), con phải 30 (con trái 25 (con trái 22, con phải 28), con phải 35).
+r trỏ đến gốc 20. cal(12, 26, r) trả về bao nhiêu?
+A. 94
+B. 84
+C. 100
+D. 75
+#ANSWER: A
+#EXPLAIN: Các nút thỏa 12<=key<=26 gồm: 12, 15, 20, 22, 25. Tổng = 12+15+20+22+25 = 94.
+
+#Q79 [SC4]
+Mỗi nút cây nhị phân có key, leftChild, rightChild. Hàm cal(k,r,d): nếu r==NULL trả 0; nếu r.key==k trả d; ngược lại d1=cal(k,leftChild,d+1); nếu d1>0 trả d1; ngược lại trả cal(k,rightChild,d+1).
+Cây: gốc 6, con trái 1 (con phải 4, 4 có con trái 2 và con phải 5), con phải 9 (con trái 7, con phải 8, 8 có con trái 3 và con phải 10).
+r trỏ tới nút 6 (nhánh gốc chỉ chứa 6,1,4,2,5,9,7,8,3,10 - không chứa khóa 8 trong nhánh con của 6 ở ví dụ này nếu r đổi thành nhánh 1). Nếu r trỏ tới nút 1 và tìm khóa 8, cal(8, r, 1) trả về bao nhiêu?
+A. 0
+B. 1
+C. 5
+D. -1
+#ANSWER: A
+#EXPLAIN: Nhánh xuất phát từ nút 1 (gồm 1,4,2,5) không hề chứa khóa 8, nên hàm đệ quy không tìm thấy và trả về 0.
+
+#Q80 [SC4]
+Cho một cây nhị phân T. Biết dãy duyệt Post-order là 1,2,3,4,5,6 và dãy duyệt In-order là 4,2,5,6,3,1. Chiều cao của cây T (số nút trên đường đi dài nhất từ gốc đến lá) bằng bao nhiêu?
+A. 4
+B. 3
+C. 5
+D. 6
+#ANSWER: A
+#EXPLAIN: Gốc là 1 (cuối Post-order). Dựng lại cây từ 2 phép duyệt, đường đi dài nhất có 4 nút.
+
+#Q81 [SC4]
+Cho một cây nhị phân T. Biết dãy duyệt Post-order là 2,5,6,7,8,4,6,1,3 và dãy duyệt In-order là 2,5,6,3,8,7,4,1,6. Chiều cao của cây T bằng bao nhiêu?
+A. 5
+B. 4
+C. 6
+D. 7
+#ANSWER: A
+#EXPLAIN: Gốc là 3 (nút cuối dãy Post-order). Dựng lại cây theo 2 phép duyệt, đường đi dài nhất có 5 nút.
+
+### PHẦN 5: CÂY AVL - ĐỎ ĐEN ###
+
+#Q82 [SC4]
+Định nghĩa nào sau đây đúng về cây AVL?
+A. Cây BST có số nút cây con trái bằng số nút cây con phải của mỗi nút
+B. Cây BST cân bằng trong đó chênh lệch độ cao giữa 2 nút con của mỗi nút không quá 1 đơn vị
+C. Cây có tất cả các nút đều có đủ 2 con
+D. Cây nhị phân hoàn chỉnh
+#ANSWER: B
+#EXPLAIN: Đây là định nghĩa chuẩn của cây AVL, dựa trên chênh lệch chiều cao (height) chứ không phải số lượng nút.
+
+#Q83 [MC4]
+Chọn các tính chất đúng của cây Đỏ - Đen (Red-Black Tree)?
+A. Nút gốc luôn được tô màu đen
+B. Không có hai nút đỏ nào kề nhau (cha - con đều đỏ)
+C. Mọi đường đi từ gốc đến lá NIL đều đi qua số lượng nút đen bằng nhau
+D. Cây Đỏ - Đen luôn cân bằng hoàn hảo (số nút 2 nhánh bằng nhau tuyệt đối)
+#ANSWER: A,B,C
+#EXPLAIN: Đây là 3 tính chất cơ bản của cây Đỏ-Đen. Tính chất D sai vì Đỏ-Đen chỉ đảm bảo cân bằng tương đối (theo số nút đen), không cân bằng hoàn hảo như ý D mô tả.
+
+#Q84 [SC4]
+Một cây có 2 nút đỏ liền kề nhau (cha - con đều màu đỏ). Cây này có phải cây Đỏ-Đen hợp lệ không?
+A. Hợp lệ
+B. Không hợp lệ, vi phạm quy tắc
+C. Chỉ hợp lệ nếu 2 nút đó ở gần gốc
+D. Tùy thuộc vào độ sâu của cây
+#ANSWER: B
+#EXPLAIN: Quy tắc cây Đỏ-Đen yêu cầu không có 2 nút đỏ liên tiếp (kề nhau), vi phạm quy tắc này khiến cây không hợp lệ.
+
+#Q85 [SC4]
+Một cây có cấu trúc cân bằng hoàn hảo (giống AVL cân bằng tuyệt đối) và tất cả các nút đều được tô màu đen. Cây này có thể là cây Đỏ - Đen hợp lệ không?
+A. Có thể là cây Đỏ-Đen hợp lệ
+B. Không thể là cây Đỏ-Đen hợp lệ
+C. Chỉ hợp lệ nếu có ít nhất 1 nút đỏ
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Nếu mọi nút đều đen và cây cân bằng hoàn hảo thì mọi quy tắc của cây Đỏ-Đen đều được thỏa mãn (không có 2 đỏ kề nhau, số nút đen trên mọi đường đi bằng nhau).
+
+#Q86 [SC4]
+Độ cao tối đa của cây AVL chứa n khóa xấp xỉ theo công thức nào (với hệ số logarit cơ số 2)?
+A. 1.44 * log2(n+2)
+B. log2(n)
+C. 2 * log2(n)
+D. n / 2
+#ANSWER: A
+#EXPLAIN: Do cây AVL tự cân bằng, chiều cao tối đa xấp xỉ 1.44*log2(n+2), luôn thuộc O(log n).
+
+### PHẦN 6: SẮP XẾP ###
+
+#Q87 [SC4]
+sort(a[1..n]) { for k=1 to n { minIdx=k; for j=k+1 to n if(a[minIdx]>a[j]) minIdx=j; swap(a[k],a[minIdx]); print("step",k,a[1..n]); } }
+Chạy với a[1..7] = [4, 2, 1, 7, 5, 6, 3]. Kết quả in ra ở bước 1 (step 1) là gì?
+A. 1, 2, 4, 7, 5, 6, 3
+B. 2, 1, 4, 7, 5, 6, 3
+C. 1, 4, 2, 7, 5, 6, 3
+D. 4, 2, 1, 7, 5, 6, 3
+#ANSWER: A
+#EXPLAIN: Đây là mô phỏng Selection Sort. Bước 1 đưa phần tử nhỏ nhất (1) lên vị trí đầu tiên.
+
+#Q88 [SC4]
+sort(a[1..n]) { for k=2 to n { last=a[k]; j=k; while(j>1 and a[j-1]>last){ a[j]=a[j-1]; j=j-1; } a[j]=last; print("step",k,a[1..n]); } }
+Chạy với a[1..7] = [4, 2, 1, 7, 5, 6, 3]. Kết quả in ra ở bước 2 (step 2) là gì?
+A. 2, 4, 1, 7, 5, 6, 3
+B. 4, 2, 1, 7, 5, 6, 3
+C. 1, 2, 4, 7, 5, 6, 3
+D. 2, 1, 4, 7, 5, 6, 3
+#ANSWER: A
+#EXPLAIN: Đây là mô phỏng Insertion Sort. Bước 2 so sánh phần tử thứ 2 (2) với phần tử thứ 1 (4), do 2<4 nên đổi chỗ.
+
+#Q89 [SC4]
+Sắp xếp lựa chọn (Selection Sort) trên dãy 11 phần tử: 16, 68, 76, 16, 25, 75, 45, 51, 60, 33, 26. Cần thực hiện bao nhiêu vòng lặp tìm phần tử nhỏ nhất?
+A. 10
+B. 11
+C. 9
+D. 5
+#ANSWER: A
+#EXPLAIN: Danh sách có 11 phần tử, vòng lặp chọn lặp N-1 = 10 lần để chốt các phần tử (trừ phần tử cuối tự động đúng vị trí).
+
+#Q90 [SC4]
+Sắp xếp mảng M gồm 11 phần tử: 11, 16, 12, 75, 51, 54, 5, 73, 36, 52, 98 bằng phương pháp sắp xếp chèn. Cần thực hiện bao nhiêu lần chèn?
+A. 10
+B. 11
+C. 9
+D. 5
+#ANSWER: A
+#EXPLAIN: Mảng có N=11 phần tử, giữ nguyên phần tử đầu, N-1=10 phần tử còn lại cần thực hiện chèn.
+
+#Q91 [SC4]
+Dãy 3, 2, 5, 7, 1, 6, 8, 9, 4 cần sắp xếp không giảm bằng Heap Sort. Sau bước buildMaxHeap, trạng thái dãy là:
+A. 9, 7, 8, 4, 1, 6, 5, 2, 3
+B. 9, 8, 7, 6, 5, 4, 3, 2, 1
+C. 1, 2, 3, 4, 5, 6, 7, 8, 9
+D. 9, 7, 8, 4, 1, 6, 5, 3, 2
+#ANSWER: A
+#EXPLAIN: Heapify từ dưới lên trên (bottom-up) sẽ thu được Max-Heap có cấu trúc mảng tương ứng.
+
+#Q92 [SC4]
+Dãy 3, 1, 4, 5, 2, 6, 7, 9, 8 cần sắp xếp không giảm bằng Heap Sort. Sau bước buildMaxHeap, trạng thái dãy là:
+A. 9, 8, 7, 5, 2, 6, 4, 3, 1
+B. 9, 8, 7, 6, 5, 4, 3, 2, 1
+C. 1, 2, 3, 4, 5, 6, 7, 8, 9
+D. 9, 5, 4, 1, 2, 8, 7, 3, 6
+#ANSWER: A
+#EXPLAIN: Heapify bottom-up đẩy các giá trị lớn lên gốc, cho ra kết quả trên.
+
+#Q93 [SC4]
+Dãy 9, 7, 5, 1, 6, 4, 2 có phải là một max-heap hay không?
+A. Có, đây là max-heap hợp lệ
+B. Không, đây không phải max-heap
+C. Chỉ đúng một phần
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Kiểm tra mọi phần tử tại chỉ số i đều lớn hơn 2 phần tử con tại chỉ số 2i+1 và 2i+2 - thỏa mãn.
+
+#Q94 [SC4]
+Dãy 9, 7, 8, 6, 5, 4, 1, 3, 2 có phải là một max-heap hay không?
+A. Có, đây là max-heap hợp lệ
+B. Không, đây không phải max-heap
+C. Chỉ đúng một phần
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Mọi nút đều lớn hơn cả con trái và con phải của nó.
+
+#Q95 [SC4]
+Dãy 9, 8, 6, 7, 5, 4, 1, 2, 3 có phải là một max-heap hay không?
+A. Có, đây là max-heap hợp lệ
+B. Không, đây không phải max-heap
+C. Chỉ đúng một phần
+D. Không xác định được
+#ANSWER: B
+#EXPLAIN: Vị trí phần tử 7 (con trái của 8) lớn hơn nút cha 6 ở nhánh khác gây vi phạm tính chất max-heap tại một số vị trí kiểm tra chi tiết.
+
+#Q96 [SC4]
+Dùng BUILD-MAX-HEAP xây max-heap cho mảng: 14, 11, 13, 12, 26, 19, 20, 24, 18, 27. Cha của phần tử 19 là?
+A. 20
+B. 26
+C. 13
+D. 24
+#ANSWER: A
+#EXPLAIN: Sau khi heapify toàn bộ mảng theo thuật toán build max-heap, nút cha của phần tử 19 trong cây kết quả là 20.
+
+#Q97 [SC4]
+Trong các thuật toán sắp xếp sau, thuật toán nào áp dụng kỹ thuật chia để trị (Divide and Conquer)?
+A. Sắp xếp nhanh - Quick Sort
+B. Sắp xếp lựa chọn
+C. Sắp xếp nổi bọt
+D. Sắp xếp chèn
+#ANSWER: A
+#EXPLAIN: Quick Sort (cũng như Merge Sort) sử dụng kỹ thuật chia nhỏ bài toán rồi giải và kết hợp lại (Divide and Conquer).
+
+#Q98 [SC4]
+void sort() { for k=1 to n { minIdx=k; for j=k+1 to n if(a[minIdx]>a[j]) minIdx=j; swap(a[k],a[minIdx]); } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp lựa chọn (Selection Sort)
+B. Sắp xếp chèn (Insertion Sort)
+C. Sắp xếp nổi bọt (Bubble Sort)
+D. Sắp xếp trộn (Merge Sort)
+#ANSWER: A
+#EXPLAIN: Mỗi vòng lặp tìm phần tử nhỏ nhất còn lại rồi swap vào đúng vị trí, đặc trưng của Selection Sort.
+
+#Q99 [SC4]
+void sort() { sort(1,n); } void sort(L,R) { if(L<R){ M=(L+R)/2; sort(L,M); sort(M+1,R); combine(L,M,R); } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp nhanh (Quick Sort)
+B. Sắp xếp trộn (Merge Sort)
+C. Sắp xếp vun đống (Heap Sort)
+D. Sắp xếp lựa chọn
+#ANSWER: B
+#EXPLAIN: Cơ chế chia đôi liên tục (sort(L,M), sort(M+1,R)) rồi kết hợp (combine) là đặc trưng của Merge Sort.
+
+#Q100 [SC4]
+void sort() { for k=2 to n { last=a[k]; j=k; while(j>1 and a[j-1]>last){a[j]=a[j-1]; j=j-1;} a[j]=last; } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp chèn (Insertion Sort)
+B. Sắp xếp lựa chọn (Selection Sort)
+C. Sắp xếp nổi bọt (Bubble Sort)
+D. Sắp xếp vun đống (Heap Sort)
+#ANSWER: A
+#EXPLAIN: Dịch chuyển các phần tử lớn hơn sang phải để chèn phần tử hiện tại vào đúng vị trí, đặc trưng của Insertion Sort.
+
+#Q101 [SC4]
+void sort() { stop=0; while(stop==0) { stop=1; for i=1 to n-1 if(a[i]>a[i+1]){swap(a[i],a[i+1]); stop=0;} } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp nổi bọt (Bubble Sort)
+B. Sắp xếp chèn (Insertion Sort)
+C. Sắp xếp lựa chọn (Selection Sort)
+D. Sắp xếp trộn (Merge Sort)
+#ANSWER: A
+#EXPLAIN: So sánh và đổi chỗ 2 phần tử liền kề lặp đi lặp lại cho đến khi không còn đổi chỗ nào - đặc trưng Bubble Sort.
+
+#Q102 [SC4]
+void sort() { sort(1,n); } void sort(L,R) { if(L<R){ index=(L+R)/2; index=partition(L,R,index); if(index>L) sort(L,index-1); if(index<R) sort(index+1,R); } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp nhanh (Quick Sort)
+B. Sắp xếp trộn (Merge Sort)
+C. Sắp xếp vun đống (Heap Sort)
+D. Sắp xếp chèn (Insertion Sort)
+#ANSWER: A
+#EXPLAIN: Dùng hàm partition để chia mảng quanh 1 phần tử chốt (pivot) rồi đệ quy hai nửa - đặc trưng Quick Sort.
+
+#Q103 [SC4]
+void sort() { build(); for i=n; i>1; i-- { swap(i,1); justify(1,i-1); } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp vun đống (Heap Sort)
+B. Sắp xếp nhanh (Quick Sort)
+C. Sắp xếp trộn (Merge Sort)
+D. Sắp xếp lựa chọn (Selection Sort)
+#ANSWER: A
+#EXPLAIN: Xây dựng heap (build) rồi liên tục đưa phần tử lớn nhất ra cuối và justify (heapify) lại - đặc trưng Heap Sort.
+
+### PHẦN 7: ĐỒ THỊ ###
+
+#Q104 [SC4]
+Thuật toán Dijkstra dùng để giải bài toán nào?
+A. Tìm đường đi ngắn nhất từ 1 đỉnh đến tất cả các đỉnh còn lại trên đồ thị trọng số cạnh không âm
+B. Tìm đường đi ngắn nhất từ 1 đỉnh đến tất cả các đỉnh còn lại trên đồ thị trọng số cạnh bất kỳ
+C. Tìm cây khung nhỏ nhất của đồ thị vô hướng trọng số trên cạnh
+D. Tìm luồng cực đại trên mạng
+#ANSWER: A
+#EXPLAIN: Đặc thù thuật toán Dijkstra yêu cầu trọng số cạnh không âm.
+
+#Q105 [SC4]
+Cho đồ thị có hướng, không chu trình (DAG), trọng số cạnh không âm. Thuật toán Dijkstra có phải thuật toán tốt nhất để tìm đường đi ngắn nhất không?
+A. Đúng, luôn là tốt nhất
+B. Không, có thuật toán khác nhanh hơn (Topo Sort kết hợp Quy hoạch động)
+C. Chỉ tốt nhất khi đồ thị nhỏ
+D. Không thể xác định
+#ANSWER: B
+#EXPLAIN: Trên DAG, dùng Sắp xếp Topo kết hợp quy hoạch động cho thời gian tuyến tính O(V+E), tốt hơn Dijkstra O((V+E)logV).
+
+#Q106 [SC4]
+Thuật toán Dijkstra có thể áp dụng cho đồ thị có trọng số âm hay không?
+A. Có thể áp dụng bình thường
+B. Không thể áp dụng
+C. Chỉ áp dụng được nếu có đúng 1 cạnh âm
+D. Cần điều chỉnh nhỏ là dùng được ngay
+#ANSWER: B
+#EXPLAIN: Cơ chế tham lam (chọn min) của Dijkstra sẽ thất bại nếu đồ thị có cạnh âm; cần dùng Bellman-Ford.
+
+#Q107 [SC4]
+Trong thuật toán Dijkstra, cấu trúc dữ liệu nào thường được dùng để tối ưu tốc độ?
+A. Hàng đợi - Queue
+B. Hàng đợi ưu tiên - Priority Queue
+C. Cây nhị phân tìm kiếm AVL
+D. Ngăn xếp - Stack
+#ANSWER: B
+#EXPLAIN: Hàng đợi ưu tiên (thường cài bằng Heap) giúp lấy ra đỉnh có khoảng cách nhỏ nhất nhanh chóng.
+
+#Q108 [SC4]
+Dijkstra sử dụng hàng đợi ưu tiên (priority queue) có luôn tốt hơn không sử dụng hàng đợi ưu tiên không?
+A. Luôn tốt hơn trong mọi trường hợp
+B. Không luôn tốt hơn (với đồ thị rất dày đặc có thể chậm hơn)
+C. Chỉ tốt hơn với đồ thị thưa cạnh
+D. Không liên quan đến mật độ cạnh
+#ANSWER: B
+#EXPLAIN: Với đồ thị rất dày đặc (E≈V^2), dùng Priority Queue cho O(V^2 log V), chậm hơn bản dùng mảng thô sơ O(V^2).
+
+#Q109 [SC4]
+Đồ thị vô hướng có trọng số các cạnh đều bằng nhau và không âm. Thuật toán nào tốt hơn để tìm đường đi ngắn nhất giữa 2 đỉnh?
+A. Thuật toán Dijkstra
+B. Thuật toán duyệt theo chiều rộng (BFS)
+C. Thuật toán duyệt theo chiều sâu (DFS)
+D. Thuật toán Bellman-Ford
+#ANSWER: B
+#EXPLAIN: Vì cạnh bằng nhau nên BFS dễ cài đặt hơn và chạy với chi phí O(V+E), nhanh hơn Dijkstra.
+
+#Q110 [SC4]
+Cho đồ thị vô hướng liên thông G=(V,E) và s thuộc V. Thuật toán DFS xuất phát từ s có đảm bảo luôn tìm ra đường đi ngắn nhất theo số cạnh từ s đến các đỉnh còn lại không?
+A. Đúng, luôn đảm bảo
+B. Sai, không đảm bảo
+C. Chỉ đúng với cây
+D. Chỉ đúng khi đồ thị có trọng số
+#ANSWER: B
+#EXPLAIN: Chỉ có BFS mới đảm bảo tìm đường đi ngắn nhất theo số cạnh do lan theo từng vòng bán kính; DFS thì không.
+
+#Q111 [SC4]
+Cho đồ thị vô hướng liên thông G=(V,E) và s thuộc V. Thuật toán BFS xuất phát từ s có đảm bảo luôn tìm ra đường đi ngắn nhất theo số cạnh từ s đến các đỉnh còn lại không?
+A. Đúng, luôn đảm bảo
+B. Sai, không đảm bảo
+C. Chỉ đúng với đồ thị có hướng
+D. Chỉ đúng khi đồ thị không có chu trình
+#ANSWER: A
+#EXPLAIN: BFS duyệt theo từng mức (vòng bán kính) nên luôn tìm ra đường đi ngắn nhất theo số cạnh.
+
+#Q112 [SC4]
+Đồ thị vô hướng có một đỉnh chỉ nối với đúng 1 đỉnh khác (đỉnh treo, bậc 1). Đồ thị này có thể có chu trình Hamilton không?
+A. Có thể có
+B. Không thể có
+C. Không xác định được
+D. Chỉ có nếu đồ thị liên thông
+#ANSWER: B
+#EXPLAIN: Chu trình Hamilton đòi hỏi đi qua mọi đỉnh và quay lại điểm xuất phát, mỗi đỉnh phải có bậc ít nhất 2. Đỉnh bậc 1 khiến điều này bất khả thi.
+
+#Q113 [SC4]
+Đồ thị vô hướng 9 đỉnh chia thành 2 nhóm liên thông riêng biệt: {1,2,3,4,5} và {6,7,8,9} (không có cạnh nối giữa 2 nhóm). Đồ thị có bao nhiêu thành phần liên thông?
+A. 2
+B. 1
+C. 3
+D. 4
+#ANSWER: A
+#EXPLAIN: Mỗi nhóm đỉnh liên thông nội bộ nhưng không kết nối với nhóm còn lại nên tạo thành 2 thành phần liên thông.
+
+#Q114 [SC4]
+Đồ thị vô hướng 8 đỉnh, trong đó có 1 đỉnh hoàn toàn cô lập (không xuất hiện trong bất kỳ cạnh nào), các đỉnh còn lại đều liên thông với nhau. Đồ thị có bao nhiêu thành phần liên thông?
+A. 2
+B. 1
+C. 3
+D. 4
+#ANSWER: A
+#EXPLAIN: Đỉnh cô lập tự nó là 1 thành phần liên thông riêng, cộng với cụm các đỉnh còn lại là 2 thành phần.
+
+#Q115 [SC4]
+Một đồ thị vô hướng có đúng 2 thành phần liên thông. Cần bổ sung ít nhất bao nhiêu cạnh để đồ thị trở thành liên thông?
+A. 1
+B. 2
+C. 0
+D. 3
+#ANSWER: A
+#EXPLAIN: Chỉ cần thêm 1 cạnh nối giữa 2 thành phần liên thông là đồ thị trở thành liên thông toàn bộ.
+
+#Q116 [SC4]
+Cho đồ thị vô hướng G có n đỉnh, m cạnh. Thuật toán BFS trên G có độ phức tạp thời gian:
+A. O(n + m)
+B. O(n)
+C. O(nm)
+D. O(n^2)
+#ANSWER: A
+#EXPLAIN: Tương tự DFS, mỗi đỉnh và cạnh được xét đúng 1 lần nên độ phức tạp là O(n+m).
+
+#Q117 [SC4]
+Cho đồ thị trọng số không âm bất kỳ. Để tìm đường đi ngắn nhất từ 1 đỉnh đến 1 đỉnh khác, thuật toán Dijkstra có luôn là lựa chọn tốt nhất không?
+A. Đúng, luôn là lựa chọn tốt nhất
+B. Không, có những bài toán đặc thù có thuật toán nhanh hơn (ví dụ DAG dùng Topo + QHĐ)
+C. Chỉ tốt nhất với đồ thị vô hướng
+D. Không thể xác định
+#ANSWER: B
+#EXPLAIN: Với các cấu trúc đồ thị đặc thù (như DAG), có thuật toán chuyên biệt nhanh hơn Dijkstra tổng quát.
+
+### PHẦN 8: BẢNG BĂM ###
+
+#Q118 [SC4]
+Phát biểu "Trong việc lưu trữ các đối tượng, chỉ khi nào khóa của đối tượng là số nguyên dương thì mới áp dụng được cơ chế bảng băm" là đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng với số nguyên âm
+D. Chỉ đúng với số thực
+#ANSWER: B
+#EXPLAIN: Hàm băm có thể xử lý mọi kiểu dữ liệu (chuỗi, ký tự, số thực...) bằng cách ánh xạ chúng về số nguyên.
+
+#Q119 [SC4]
+Phát biểu nào dưới đây đúng với Bảng băm?
+A. Bảng băm là cấu trúc dữ liệu ánh xạ mỗi giá trị (value) đến 1 khóa (key)
+B. Bảng băm là cấu trúc dữ liệu ánh xạ mỗi khóa (key) với 1 giá trị (value)
+C. Bảng băm là một dạng đặc biệt của ngăn xếp
+D. Bảng băm là một dạng đặc biệt của hàng đợi
+#ANSWER: B
+#EXPLAIN: Đây là nguyên lý hoạt động cơ bản của cấu trúc Map/Dictionary/Hash Table.
+
+#Q120 [SC4]
+Trong cấu trúc bảng băm, khi 2 khóa k1 và k2 khác nhau cho cùng giá trị hàm băm h(k1)=h(k2), ta gọi hiện tượng đó là gì?
+A. Collision
+B. Duplication
+C. Segmentation
+D. Overflow
+#ANSWER: A
+#EXPLAIN: Đây gọi là Collision (đụng độ/va chạm) trong bảng băm.
+
+#Q121 [SC4]
+Trong bảng băm sử dụng cơ chế địa chỉ mở (Open Addressing) để xử lý va chạm, phát biểu nào đúng?
+A. Các cặp (khóa, giá trị) được lưu trong mảng, áp dụng probing để tìm vị trí trống hoặc khóa cần tìm
+B. Mỗi phần tử của bảng ánh xạ đến 1 khối chứa các khóa cùng giá trị hàm băm
+C. Dùng cây nhị phân tìm kiếm để lưu tất cả các khóa
+D. Cơ chế này không cần xử lý va chạm
+#ANSWER: A
+#EXPLAIN: Open Addressing giữ mọi thứ trực tiếp trên mảng, dùng probing để tìm vị trí lưu trữ hoặc tìm kiếm.
+
+#Q122 [SC4]
+Trong bảng băm sử dụng cơ chế nối chuỗi (Chaining) để xử lý va chạm, phát biểu nào đúng?
+A. Các cặp (khóa, giá trị) được lưu trong mảng, áp dụng probing để tìm kiếm
+B. Mỗi ô (slot) của bảng ánh xạ đến 1 khối (mảng/danh sách liên kết/cây/bảng băm con) chứa các khóa cùng giá trị hàm băm
+C. Chaining không cần dùng đến hàm băm
+D. Chaining chỉ áp dụng được với khóa là số nguyên
+#ANSWER: B
+#EXPLAIN: Đây là mô tả của cơ chế xâu chuỗi ngoài (Separate Chaining).
+
+#Q123 [SC4]
+Trong cấu trúc bảng băm, hai khóa khác nhau luôn cho giá trị hàm băm khác nhau, đúng hay sai?
+A. Đúng, luôn luôn khác nhau
+B. Sai, có thể trùng nhau (đây gọi là va chạm/collision)
+C. Chỉ đúng với hàm băm tốt
+D. Không xác định được
+#ANSWER: B
+#EXPLAIN: Tồn tại rất nhiều khóa cho cùng giá trị băm (đồng dư), đây chính là lý do cần các kỹ thuật giải quyết va chạm.
+
+#Q124 [SC4]
+Hàm băm là gì?
+A. Hàm xác định vị trí lưu trữ (chỉ số) trong bảng cho một khóa
+B. Hàm cho phép từ giá trị (value) tính ra khóa (key)
+C. Hàm dùng để sắp xếp các khóa theo thứ tự tăng dần
+D. Hàm dùng để mã hóa/giải mã dữ liệu bảo mật
+#ANSWER: A
+#EXPLAIN: Hàm băm ánh xạ khóa về một vị trí (chỉ số) cụ thể trong bảng lưu trữ.
+
+#Q125 [SC4]
+Một bảng băm dùng Open Addressing, h(k) = k mod m - 1, với m=10, bảng ban đầu rỗng. Chèn lần lượt 5, 7, 27, 15, 17 (dò tuyến tính khi có va chạm). Khóa 15 sẽ rơi vào slot số mấy?
+A. 5
+B. 6
+C. 7
+D. 4
+#ANSWER: A
+#EXPLAIN: Tính h(15) rồi áp dụng dò tuyến tính khi slot lý thuyết đã bị chiếm, khóa 15 sẽ rơi vào slot số 5.
+
+### PHẦN 9: ĐỆ QUY - QUY HOẠCH ĐỘNG ###
+
+#Q126 [SC4]
+F(a,b) { if a==b return a; if a>b return F(a-b,b); else return F(a,b-a); }
+Gọi F(6,8) trả về giá trị nào?
+A. 2
+B. 4
+C. 6
+D. 8
+#ANSWER: A
+#EXPLAIN: Đây là thuật toán tìm ước chung lớn nhất bằng phép trừ đệ quy kiểu Euclid: F(6,8)->F(6,2)->F(4,2)->F(2,2)->2.
+
+#Q127 [SC4]
+Cùng hàm F ở trên. Gọi F(28,42) trả về giá trị nào?
+A. 14
+B. 7
+C. 21
+D. 28
+#ANSWER: A
+#EXPLAIN: F tính ước chung lớn nhất của 28 và 42, kết quả là 14.
+
+#Q128 [SC4]
+cal(a,i,j) { if i==j return a[i]; return a[j] + cal(a,i,j-1); }
+Gọi cal([8,5,3,2,1,4], 0, 4) trả về giá trị bao nhiêu?
+A. 19
+B. 13
+C. 23
+D. 18
+#ANSWER: A
+#EXPLAIN: Hàm tính tổng mảng từ chỉ số i đến j. 8+5+3+2+1 = 19.
+
+#Q129 [SC4]
+int f(int n) { if(n<=1) return 1; if(n%2==0) return 3*f(n-1)+2*f(n-2); else return 2*f(n-1)+3*f(n-2); }
+Kết quả của f(5) là bao nhiêu?
+A. 137
+B. 121
+C. 145
+D. 130
+#ANSWER: A
+#EXPLAIN: f(0)=1,f(1)=1,f(2)=5,f(3)=13,f(4)=49,f(5)=2*49+3*13=137.
+
+#Q130 [SC4]
+int f(int n) { if(n<=1) return 1; if(n%2==0) return 3*f(n-1)+2*f(n-2); else return 3*f(n-1)+2*f(n-2); }
+(Cả 2 nhánh đều dùng cùng công thức). Kết quả f(6) là bao nhiêu?
+A. 1113
+B. 1000
+C. 1200
+D. 987
+#ANSWER: A
+#EXPLAIN: Tính tuần tự theo công thức truy hồi 3*f(n-1)+2*f(n-2) cho mọi n, kết quả f(6)=1113.
+
+#Q131 [SC4]
+Hàm đệ quy: F(0)=1, F(1)=1, F(n)=F(n-1)+F(n-2) với n>=2. Kết quả của F(17) là bao nhiêu?
+A. 2584
+B. 1597
+C. 4181
+D. 2178
+#ANSWER: A
+#EXPLAIN: Đây là dãy Fibonacci: 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584.
+
+#Q132 [SC4]
+Hàm đệ quy: F(0)=1; nếu n chẵn: F(n)=F(n/2)*F(n/2); nếu n lẻ: F(n)=3*F((n-1)/2)*F((n-1)/2). Kết quả F(6) là bao nhiêu?
+A. 729
+B. 512
+C. 243
+D. 900
+#ANSWER: A
+#EXPLAIN: F(0)=1,F(1)=3,F(3)=3*3*3=27,F(6)=27*27=729.
+
+#Q133 [SC4]
+Hàm đệ quy: F(0)=0; nếu n chẵn: F(n)=F(n/2)+F(n/2); nếu n lẻ: F(n)=3+F((n-1)/2)+F((n-1)/2). Kết quả F(6) là bao nhiêu?
+A. 18
+B. 15
+C. 21
+D. 12
+#ANSWER: A
+#EXPLAIN: F(0)=0,F(1)=3,F(3)=3+3+3=9,F(6)=F(3)+F(3)=9+9=18.
+
+#Q134 [SC4]
+Đoạn mã dùng biến toàn cục S, count, n=3, m=11: TRY(k,last) { for v=last+1 to m { S+=v; if(k==n){if(S==m)count++;} else TRY(k+1,v); S-=v; } }
+Gọi TRY(1,0), giá trị count cuối cùng là bao nhiêu?
+A. 5
+B. 4
+C. 6
+D. 3
+#ANSWER: A
+#EXPLAIN: Đoạn mã đếm số cách phân tích 11 thành tổng 3 số nguyên dương tăng ngặt: (1,2,8),(1,3,7),(1,4,6),(2,3,6),(2,4,5) - có 5 cách.
+
+#Q135 [SC4]
+Đoạn mã TRY(k,last) tương tự câu trên nhưng với n=4, m=23 (đếm số cách biểu diễn m thành tổng n số nguyên dương tăng ngặt). Đoạn mã này dùng để làm gì?
+A. Đếm số cách biểu diễn m thành tổng của n số nguyên dương tăng dần đôi một khác nhau
+B. Tìm đường đi ngắn nhất giữa 2 đỉnh trên đồ thị
+C. Sắp xếp một mảng số nguyên
+D. Tính tổng các phần tử của một mảng
+#ANSWER: A
+#EXPLAIN: Đây là kỹ thuật quay lui (backtracking) liệt kê và đếm các bộ số nguyên dương tăng ngặt có tổng bằng m.
+
+#Q136 [SC4]
+Trong những nhận định về Chia để trị và Quy hoạch động, nhận định nào đúng?
+A. Quy hoạch động lưu trữ kết quả các bài toán con chồng lấp để tránh tính lại; Chia để trị (cổ điển) thì không
+B. Cả hai kỹ thuật là một, không có sự khác biệt
+C. Chia để trị luôn nhanh hơn Quy hoạch động trong mọi trường hợp
+D. Quy hoạch động không sử dụng đệ quy
+#ANSWER: A
+#EXPLAIN: Đặc trưng của Quy hoạch động là ghi nhớ (memoization) kết quả bài toán con để tránh tính toán lặp lại.
+
+#Q137 [SC4]
+F(a,i,j) { if i>j return 0; if i==j return a[i]; m=(i+j)/2; t1=F(a,i,m); t2=F(a,m+1,j); if(t1>t2) return t1; else return t2; }
+Gọi F([7,3,4,21,2,5,9,13], 0, 4) trả về kết quả bằng bao nhiêu?
+A. 21
+B. 7
+C. 13
+D. 9
+#ANSWER: A
+#EXPLAIN: Hàm F tìm giá trị lớn nhất trong đoạn [i,j] của mảng bằng chia để trị. Xét a[0..4]=[7,3,4,21,2], giá trị lớn nhất là 21.
+
+#Q138 [SC4]
+F(a,i,j) { if i>j return 0; if i==j return a[i]; m=(i+j)/2; return F(a,i,m) + F(a,m+1,j); }
+Hàm F trên (dùng kỹ thuật chia để trị) thực hiện chức năng gì?
+A. Tính tổng các phần tử của mảng a trên đoạn [i,j]
+B. Tìm giá trị lớn nhất trên đoạn [i,j]
+C. Sắp xếp mảng a trên đoạn [i,j]
+D. Đếm số phần tử chẵn trên đoạn [i,j]
+#ANSWER: A
+#EXPLAIN: Hàm chia đôi đoạn [i,j] và cộng tổng của 2 nửa lại với nhau, tức tính tổng toàn đoạn.
+
+### PHẦN 10: TỔ HỢP - ĐẾM & LẬP TRÌNH C ###
+
+#Q139 [SC4]
+Số nghiệm nguyên dương của phương trình 2x1 + 4x2 + 3x3 + 5x4 = 60 thỏa mãn điều kiện x1 + x2 = 6 là bao nhiêu?
+A. 13
+B. 11
+C. 15
+D. 10
+#ANSWER: A
+#EXPLAIN: Các cặp (x1,x2) có tổng bằng 6 là (1,5),(2,4),(3,3),(4,2),(5,1). Thử từng trường hợp vào phương trình, tổng cộng có 13 nghiệm.
+
+#Q140 [SC4]
+Cho hai chương trình C: (1) char s[] = "hello"; return s; và (2) char *s = "hello"; return s; Kết luận nào đúng?
+A. Hai chương trình cho kết quả giống nhau
+B. Hai chương trình cho kết quả khác nhau
+C. Cả hai đều gây lỗi biên dịch
+D. Cả hai đều an toàn như nhau khi dùng ngoài hàm
+#ANSWER: B
+#EXPLAIN: Chương trình 1 trả về con trỏ tới vùng nhớ cục bộ (Undefined Behavior). Chương trình 2 trả về con trỏ tới vùng hằng tĩnh (string literal), an toàn hơn khi dùng ngoài hàm.
+
+#Q141 [SC4]
+void ham7(unsigned int n) { if(n==0) return; else { ham7(--n); printf("%d", n); } }
+Gọi ham7(4), kết quả in ra màn hình là gì?
+A. 3 2 1 0
+B. 0 1 2 3
+C. 4 3 2 1
+D. 1 2 3 4
+#ANSWER: A
+#EXPLAIN: Toán tử --n sửa giá trị trước rồi mới đệ quy. Hàm con chạy về 0 không in, sau đó in giật lùi theo ngăn xếp lời gọi: 3 2 1 0.
+
+#Q142 [SC4]
+Đoạn mã dùng biến toàn cục S, count, n=3, m=11: TRY(k,last) { for v=last+1 to m { S+=v; if(k==n){if(S==m)count++;} else TRY(k+1,v); S-=v; } } Gọi TRY(1,0), giá trị count là bao nhiêu?
+A. 5
+B. 4
+C. 6
+D. 3
+#ANSWER: A
+#EXPLAIN: Đếm số cách phân tích 11 thành tổng 3 số nguyên dương tăng ngặt: có 5 cách (1,2,8),(1,3,7),(1,4,6),(2,3,6),(2,4,5).
+
+#Q143 [SC4]
+Cấu trúc dữ liệu (Data Structure) là gì?
+A. Là cách thức tổ chức, quản lý, lưu trữ dữ liệu sao cho việc truy cập hay thay đổi được hiệu quả
+B. Là một ngôn ngữ lập trình bậc cao
+C. Là hệ điều hành quản lý bộ nhớ máy tính
+D. Là một loại thuật toán sắp xếp
+#ANSWER: A
+#EXPLAIN: Đây là định nghĩa chuẩn của khái niệm cấu trúc dữ liệu trong khoa học máy tính.
+
+#Q144 [SC4]
+Kiểu dữ liệu trừu tượng (Abstract Data Type - ADT) có đặc điểm nào đúng nhất?
+A. Chỉ gồm các mô tả (description) thuộc tính kèm thao tác, chưa cài đặt cụ thể
+B. Đã được cài đặt cụ thể sẵn trong máy tính
+C. Có kích thước bộ nhớ cố định xác định trước
+D. Người dùng luôn thấy rõ cách cài đặt bên trong
+#ANSWER: A
+#EXPLAIN: ADT chỉ mô tả giao diện (interface) logic gồm thuộc tính và thao tác, không quan tâm đến cách cài đặt cụ thể.
+
+#Q145 [SC4]
+Để biểu diễn mối quan hệ giữa các phần tử theo kiểu thứ bậc (phân cấp cha - con), ta thường dùng cấu trúc dữ liệu nào?
+A. Hàng đợi - Queue
+B. Ngăn xếp - Stack
+C. Cây - Tree
+D. Mảng
+#ANSWER: C
+#EXPLAIN: Cây (Tree) là cấu trúc dữ liệu phân cấp, biểu diễn tự nhiên mối quan hệ cha - con giữa các phần tử.
+
+#Q146 [SC4]
+Cấu trúc dữ liệu mảng có ưu điểm nào sau đây?
+A. Việc truy xuất và tìm kiếm phần tử dễ dàng vì các phần tử liền nhau, chỉ cần dùng chỉ số để định vị
+B. Việc thêm/bớt phần tử luôn dễ dàng hơn danh sách liên kết
+C. Mật độ sử dụng bộ nhớ của mảng luôn tối ưu tuyệt đối
+D. Không giới hạn kích thước khi khai báo
+#ANSWER: A
+#EXPLAIN: Nhờ các phần tử được cấp phát liên tục, mảng cho phép truy cập trực tiếp qua chỉ số với độ phức tạp O(1).

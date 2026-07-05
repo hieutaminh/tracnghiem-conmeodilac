@@ -1,0 +1,125 @@
+#TIME: 30
+
+#Q1 [SC4]
+F(a,b) { if a==b return a; if a>b return F(a-b,b); else return F(a,b-a); }
+Gọi F(6,8) trả về giá trị nào?
+A. 2
+B. 4
+C. 6
+D. 8
+#ANSWER: A
+#EXPLAIN: Đây là thuật toán tìm ước chung lớn nhất bằng phép trừ đệ quy kiểu Euclid: F(6,8)->F(6,2)->F(4,2)->F(2,2)->2.
+
+#Q2 [SC4]
+Cùng hàm F ở trên. Gọi F(28,42) trả về giá trị nào?
+A. 14
+B. 7
+C. 21
+D. 28
+#ANSWER: A
+#EXPLAIN: F tính ước chung lớn nhất của 28 và 42, kết quả là 14.
+
+#Q3 [SC4]
+cal(a,i,j) { if i==j return a[i]; return a[j] + cal(a,i,j-1); }
+Gọi cal([8,5,3,2,1,4], 0, 4) trả về giá trị bao nhiêu?
+A. 19
+B. 13
+C. 23
+D. 18
+#ANSWER: A
+#EXPLAIN: Hàm tính tổng mảng từ chỉ số i đến j. 8+5+3+2+1 = 19.
+
+#Q4 [SC4]
+int f(int n) { if(n<=1) return 1; if(n%2==0) return 3*f(n-1)+2*f(n-2); else return 2*f(n-1)+3*f(n-2); }
+Kết quả của f(5) là bao nhiêu?
+A. 137
+B. 121
+C. 145
+D. 130
+#ANSWER: A
+#EXPLAIN: f(0)=1,f(1)=1,f(2)=5,f(3)=13,f(4)=49,f(5)=2*49+3*13=137.
+
+#Q5 [SC4]
+int f(int n) { if(n<=1) return 1; if(n%2==0) return 3*f(n-1)+2*f(n-2); else return 3*f(n-1)+2*f(n-2); }
+(Cả 2 nhánh đều dùng cùng công thức). Kết quả f(6) là bao nhiêu?
+A. 1113
+B. 1000
+C. 1200
+D. 987
+#ANSWER: A
+#EXPLAIN: Tính tuần tự theo công thức truy hồi 3*f(n-1)+2*f(n-2) cho mọi n, kết quả f(6)=1113.
+
+#Q6 [SC4]
+Hàm đệ quy: F(0)=1, F(1)=1, F(n)=F(n-1)+F(n-2) với n>=2. Kết quả của F(17) là bao nhiêu?
+A. 2584
+B. 1597
+C. 4181
+D. 2178
+#ANSWER: A
+#EXPLAIN: Đây là dãy Fibonacci: 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584.
+
+#Q7 [SC4]
+Hàm đệ quy: F(0)=1; nếu n chẵn: F(n)=F(n/2)*F(n/2); nếu n lẻ: F(n)=3*F((n-1)/2)*F((n-1)/2). Kết quả F(6) là bao nhiêu?
+A. 729
+B. 512
+C. 243
+D. 900
+#ANSWER: A
+#EXPLAIN: F(0)=1,F(1)=3,F(3)=3*3*3=27,F(6)=27*27=729.
+
+#Q8 [SC4]
+Hàm đệ quy: F(0)=0; nếu n chẵn: F(n)=F(n/2)+F(n/2); nếu n lẻ: F(n)=3+F((n-1)/2)+F((n-1)/2). Kết quả F(6) là bao nhiêu?
+A. 18
+B. 15
+C. 21
+D. 12
+#ANSWER: A
+#EXPLAIN: F(0)=0,F(1)=3,F(3)=3+3+3=9,F(6)=F(3)+F(3)=9+9=18.
+
+#Q9 [SC4]
+Đoạn mã dùng biến toàn cục S, count, n=3, m=11: TRY(k,last) { for v=last+1 to m { S+=v; if(k==n){if(S==m)count++;} else TRY(k+1,v); S-=v; } }
+Gọi TRY(1,0), giá trị count cuối cùng là bao nhiêu?
+A. 5
+B. 4
+C. 6
+D. 3
+#ANSWER: A
+#EXPLAIN: Đoạn mã đếm số cách phân tích 11 thành tổng 3 số nguyên dương tăng ngặt: (1,2,8),(1,3,7),(1,4,6),(2,3,6),(2,4,5) - có 5 cách.
+
+#Q10 [SC4]
+Đoạn mã TRY(k,last) tương tự câu trên nhưng với n=4, m=23 (đếm số cách biểu diễn m thành tổng n số nguyên dương tăng ngặt). Đoạn mã này dùng để làm gì?
+A. Đếm số cách biểu diễn m thành tổng của n số nguyên dương tăng dần đôi một khác nhau
+B. Tìm đường đi ngắn nhất giữa 2 đỉnh trên đồ thị
+C. Sắp xếp một mảng số nguyên
+D. Tính tổng các phần tử của một mảng
+#ANSWER: A
+#EXPLAIN: Đây là kỹ thuật quay lui (backtracking) liệt kê và đếm các bộ số nguyên dương tăng ngặt có tổng bằng m.
+
+#Q11 [SC4]
+Trong những nhận định về Chia để trị và Quy hoạch động, nhận định nào đúng?
+A. Quy hoạch động lưu trữ kết quả các bài toán con chồng lấp để tránh tính lại; Chia để trị (cổ điển) thì không
+B. Cả hai kỹ thuật là một, không có sự khác biệt
+C. Chia để trị luôn nhanh hơn Quy hoạch động trong mọi trường hợp
+D. Quy hoạch động không sử dụng đệ quy
+#ANSWER: A
+#EXPLAIN: Đặc trưng của Quy hoạch động là ghi nhớ (memoization) kết quả bài toán con để tránh tính toán lặp lại.
+
+#Q12 [SC4]
+F(a,i,j) { if i>j return 0; if i==j return a[i]; m=(i+j)/2; t1=F(a,i,m); t2=F(a,m+1,j); if(t1>t2) return t1; else return t2; }
+Gọi F([7,3,4,21,2,5,9,13], 0, 4) trả về kết quả bằng bao nhiêu?
+A. 21
+B. 7
+C. 13
+D. 9
+#ANSWER: A
+#EXPLAIN: Hàm F tìm giá trị lớn nhất trong đoạn [i,j] của mảng bằng chia để trị. Xét a[0..4]=[7,3,4,21,2], giá trị lớn nhất là 21.
+
+#Q13 [SC4]
+F(a,i,j) { if i>j return 0; if i==j return a[i]; m=(i+j)/2; return F(a,i,m) + F(a,m+1,j); }
+Hàm F trên (dùng kỹ thuật chia để trị) thực hiện chức năng gì?
+A. Tính tổng các phần tử của mảng a trên đoạn [i,j]
+B. Tìm giá trị lớn nhất trên đoạn [i,j]
+C. Sắp xếp mảng a trên đoạn [i,j]
+D. Đếm số phần tử chẵn trên đoạn [i,j]
+#ANSWER: A
+#EXPLAIN: Hàm chia đôi đoạn [i,j] và cộng tổng của 2 nửa lại với nhau, tức tính tổng toàn đoạn.

@@ -1,0 +1,46 @@
+#TIME: 20
+
+#Q1 [SC4]
+Định nghĩa nào sau đây đúng về cây AVL?
+A. Cây BST có số nút cây con trái bằng số nút cây con phải của mỗi nút
+B. Cây BST cân bằng trong đó chênh lệch độ cao giữa 2 nút con của mỗi nút không quá 1 đơn vị
+C. Cây có tất cả các nút đều có đủ 2 con
+D. Cây nhị phân hoàn chỉnh
+#ANSWER: B
+#EXPLAIN: Đây là định nghĩa chuẩn của cây AVL, dựa trên chênh lệch chiều cao (height) chứ không phải số lượng nút.
+
+#Q2 [MC4]
+Chọn các tính chất đúng của cây Đỏ - Đen (Red-Black Tree)?
+A. Nút gốc luôn được tô màu đen
+B. Không có hai nút đỏ nào kề nhau (cha - con đều đỏ)
+C. Mọi đường đi từ gốc đến lá NIL đều đi qua số lượng nút đen bằng nhau
+D. Cây Đỏ - Đen luôn cân bằng hoàn hảo (số nút 2 nhánh bằng nhau tuyệt đối)
+#ANSWER: A,B,C
+#EXPLAIN: Đây là 3 tính chất cơ bản của cây Đỏ-Đen. Tính chất D sai vì Đỏ-Đen chỉ đảm bảo cân bằng tương đối (theo số nút đen), không cân bằng hoàn hảo như ý D mô tả.
+
+#Q3 [SC4]
+Một cây có 2 nút đỏ liền kề nhau (cha - con đều màu đỏ). Cây này có phải cây Đỏ-Đen hợp lệ không?
+A. Hợp lệ
+B. Không hợp lệ, vi phạm quy tắc
+C. Chỉ hợp lệ nếu 2 nút đó ở gần gốc
+D. Tùy thuộc vào độ sâu của cây
+#ANSWER: B
+#EXPLAIN: Quy tắc cây Đỏ-Đen yêu cầu không có 2 nút đỏ liên tiếp (kề nhau), vi phạm quy tắc này khiến cây không hợp lệ.
+
+#Q4 [SC4]
+Một cây có cấu trúc cân bằng hoàn hảo (giống AVL cân bằng tuyệt đối) và tất cả các nút đều được tô màu đen. Cây này có thể là cây Đỏ - Đen hợp lệ không?
+A. Có thể là cây Đỏ-Đen hợp lệ
+B. Không thể là cây Đỏ-Đen hợp lệ
+C. Chỉ hợp lệ nếu có ít nhất 1 nút đỏ
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Nếu mọi nút đều đen và cây cân bằng hoàn hảo thì mọi quy tắc của cây Đỏ-Đen đều được thỏa mãn (không có 2 đỏ kề nhau, số nút đen trên mọi đường đi bằng nhau).
+
+#Q5 [SC4]
+Độ cao tối đa của cây AVL chứa n khóa xấp xỉ theo công thức nào (với hệ số logarit cơ số 2)?
+A. 1.44 * log2(n+2)
+B. log2(n)
+C. 2 * log2(n)
+D. n / 2
+#ANSWER: A
+#EXPLAIN: Do cây AVL tự cân bằng, chiều cao tối đa xấp xỉ 1.44*log2(n+2), luôn thuộc O(log n).

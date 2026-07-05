@@ -1,0 +1,162 @@
+#TIME: 40
+
+#Q1 [SC4]
+sort(a[1..n]) { for k=1 to n { minIdx=k; for j=k+1 to n if(a[minIdx]>a[j]) minIdx=j; swap(a[k],a[minIdx]); print("step",k,a[1..n]); } }
+Chạy với a[1..7] = [4, 2, 1, 7, 5, 6, 3]. Kết quả in ra ở bước 1 (step 1) là gì?
+A. 1, 2, 4, 7, 5, 6, 3
+B. 2, 1, 4, 7, 5, 6, 3
+C. 1, 4, 2, 7, 5, 6, 3
+D. 4, 2, 1, 7, 5, 6, 3
+#ANSWER: A
+#EXPLAIN: Đây là mô phỏng Selection Sort. Bước 1 đưa phần tử nhỏ nhất (1) lên vị trí đầu tiên.
+
+#Q2 [SC4]
+sort(a[1..n]) { for k=2 to n { last=a[k]; j=k; while(j>1 and a[j-1]>last){ a[j]=a[j-1]; j=j-1; } a[j]=last; print("step",k,a[1..n]); } }
+Chạy với a[1..7] = [4, 2, 1, 7, 5, 6, 3]. Kết quả in ra ở bước 2 (step 2) là gì?
+A. 2, 4, 1, 7, 5, 6, 3
+B. 4, 2, 1, 7, 5, 6, 3
+C. 1, 2, 4, 7, 5, 6, 3
+D. 2, 1, 4, 7, 5, 6, 3
+#ANSWER: A
+#EXPLAIN: Đây là mô phỏng Insertion Sort. Bước 2 so sánh phần tử thứ 2 (2) với phần tử thứ 1 (4), do 2<4 nên đổi chỗ.
+
+#Q3 [SC4]
+Sắp xếp lựa chọn (Selection Sort) trên dãy 11 phần tử: 16, 68, 76, 16, 25, 75, 45, 51, 60, 33, 26. Cần thực hiện bao nhiêu vòng lặp tìm phần tử nhỏ nhất?
+A. 10
+B. 11
+C. 9
+D. 5
+#ANSWER: A
+#EXPLAIN: Danh sách có 11 phần tử, vòng lặp chọn lặp N-1 = 10 lần để chốt các phần tử (trừ phần tử cuối tự động đúng vị trí).
+
+#Q4 [SC4]
+Sắp xếp mảng M gồm 11 phần tử: 11, 16, 12, 75, 51, 54, 5, 73, 36, 52, 98 bằng phương pháp sắp xếp chèn. Cần thực hiện bao nhiêu lần chèn?
+A. 10
+B. 11
+C. 9
+D. 5
+#ANSWER: A
+#EXPLAIN: Mảng có N=11 phần tử, giữ nguyên phần tử đầu, N-1=10 phần tử còn lại cần thực hiện chèn.
+
+#Q5 [SC4]
+Dãy 3, 2, 5, 7, 1, 6, 8, 9, 4 cần sắp xếp không giảm bằng Heap Sort. Sau bước buildMaxHeap, trạng thái dãy là:
+A. 9, 7, 8, 4, 1, 6, 5, 2, 3
+B. 9, 8, 7, 6, 5, 4, 3, 2, 1
+C. 1, 2, 3, 4, 5, 6, 7, 8, 9
+D. 9, 7, 8, 4, 1, 6, 5, 3, 2
+#ANSWER: A
+#EXPLAIN: Heapify từ dưới lên trên (bottom-up) sẽ thu được Max-Heap có cấu trúc mảng tương ứng.
+
+#Q6 [SC4]
+Dãy 3, 1, 4, 5, 2, 6, 7, 9, 8 cần sắp xếp không giảm bằng Heap Sort. Sau bước buildMaxHeap, trạng thái dãy là:
+A. 9, 8, 7, 5, 2, 6, 4, 3, 1
+B. 9, 8, 7, 6, 5, 4, 3, 2, 1
+C. 1, 2, 3, 4, 5, 6, 7, 8, 9
+D. 9, 5, 4, 1, 2, 8, 7, 3, 6
+#ANSWER: A
+#EXPLAIN: Heapify bottom-up đẩy các giá trị lớn lên gốc, cho ra kết quả trên.
+
+#Q7 [SC4]
+Dãy 9, 7, 5, 1, 6, 4, 2 có phải là một max-heap hay không?
+A. Có, đây là max-heap hợp lệ
+B. Không, đây không phải max-heap
+C. Chỉ đúng một phần
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Kiểm tra mọi phần tử tại chỉ số i đều lớn hơn 2 phần tử con tại chỉ số 2i+1 và 2i+2 - thỏa mãn.
+
+#Q8 [SC4]
+Dãy 9, 7, 8, 6, 5, 4, 1, 3, 2 có phải là một max-heap hay không?
+A. Có, đây là max-heap hợp lệ
+B. Không, đây không phải max-heap
+C. Chỉ đúng một phần
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Mọi nút đều lớn hơn cả con trái và con phải của nó.
+
+#Q9 [SC4]
+Dãy 9, 8, 6, 7, 5, 4, 1, 2, 3 có phải là một max-heap hay không?
+A. Có, đây là max-heap hợp lệ
+B. Không, đây không phải max-heap
+C. Chỉ đúng một phần
+D. Không xác định được
+#ANSWER: B
+#EXPLAIN: Vị trí phần tử 7 (con trái của 8) lớn hơn nút cha 6 ở nhánh khác gây vi phạm tính chất max-heap tại một số vị trí kiểm tra chi tiết.
+
+#Q10 [SC4]
+Dùng BUILD-MAX-HEAP xây max-heap cho mảng: 14, 11, 13, 12, 26, 19, 20, 24, 18, 27. Cha của phần tử 19 là?
+A. 20
+B. 26
+C. 13
+D. 24
+#ANSWER: A
+#EXPLAIN: Sau khi heapify toàn bộ mảng theo thuật toán build max-heap, nút cha của phần tử 19 trong cây kết quả là 20.
+
+#Q11 [SC4]
+Trong các thuật toán sắp xếp sau, thuật toán nào áp dụng kỹ thuật chia để trị (Divide and Conquer)?
+A. Sắp xếp nhanh - Quick Sort
+B. Sắp xếp lựa chọn
+C. Sắp xếp nổi bọt
+D. Sắp xếp chèn
+#ANSWER: A
+#EXPLAIN: Quick Sort (cũng như Merge Sort) sử dụng kỹ thuật chia nhỏ bài toán rồi giải và kết hợp lại (Divide and Conquer).
+
+#Q12 [SC4]
+void sort() { for k=1 to n { minIdx=k; for j=k+1 to n if(a[minIdx]>a[j]) minIdx=j; swap(a[k],a[minIdx]); } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp lựa chọn (Selection Sort)
+B. Sắp xếp chèn (Insertion Sort)
+C. Sắp xếp nổi bọt (Bubble Sort)
+D. Sắp xếp trộn (Merge Sort)
+#ANSWER: A
+#EXPLAIN: Mỗi vòng lặp tìm phần tử nhỏ nhất còn lại rồi swap vào đúng vị trí, đặc trưng của Selection Sort.
+
+#Q13 [SC4]
+void sort() { sort(1,n); } void sort(L,R) { if(L<R){ M=(L+R)/2; sort(L,M); sort(M+1,R); combine(L,M,R); } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp nhanh (Quick Sort)
+B. Sắp xếp trộn (Merge Sort)
+C. Sắp xếp vun đống (Heap Sort)
+D. Sắp xếp lựa chọn
+#ANSWER: B
+#EXPLAIN: Cơ chế chia đôi liên tục (sort(L,M), sort(M+1,R)) rồi kết hợp (combine) là đặc trưng của Merge Sort.
+
+#Q14 [SC4]
+void sort() { for k=2 to n { last=a[k]; j=k; while(j>1 and a[j-1]>last){a[j]=a[j-1]; j=j-1;} a[j]=last; } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp chèn (Insertion Sort)
+B. Sắp xếp lựa chọn (Selection Sort)
+C. Sắp xếp nổi bọt (Bubble Sort)
+D. Sắp xếp vun đống (Heap Sort)
+#ANSWER: A
+#EXPLAIN: Dịch chuyển các phần tử lớn hơn sang phải để chèn phần tử hiện tại vào đúng vị trí, đặc trưng của Insertion Sort.
+
+#Q15 [SC4]
+void sort() { stop=0; while(stop==0) { stop=1; for i=1 to n-1 if(a[i]>a[i+1]){swap(a[i],a[i+1]); stop=0;} } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp nổi bọt (Bubble Sort)
+B. Sắp xếp chèn (Insertion Sort)
+C. Sắp xếp lựa chọn (Selection Sort)
+D. Sắp xếp trộn (Merge Sort)
+#ANSWER: A
+#EXPLAIN: So sánh và đổi chỗ 2 phần tử liền kề lặp đi lặp lại cho đến khi không còn đổi chỗ nào - đặc trưng Bubble Sort.
+
+#Q16 [SC4]
+void sort() { sort(1,n); } void sort(L,R) { if(L<R){ index=(L+R)/2; index=partition(L,R,index); if(index>L) sort(L,index-1); if(index<R) sort(index+1,R); } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp nhanh (Quick Sort)
+B. Sắp xếp trộn (Merge Sort)
+C. Sắp xếp vun đống (Heap Sort)
+D. Sắp xếp chèn (Insertion Sort)
+#ANSWER: A
+#EXPLAIN: Dùng hàm partition để chia mảng quanh 1 phần tử chốt (pivot) rồi đệ quy hai nửa - đặc trưng Quick Sort.
+
+#Q17 [SC4]
+void sort() { build(); for i=n; i>1; i-- { swap(i,1); justify(1,i-1); } }
+Đoạn mã trên thể hiện thuật toán sắp xếp nào?
+A. Sắp xếp vun đống (Heap Sort)
+B. Sắp xếp nhanh (Quick Sort)
+C. Sắp xếp trộn (Merge Sort)
+D. Sắp xếp lựa chọn (Selection Sort)
+#ANSWER: A
+#EXPLAIN: Xây dựng heap (build) rồi liên tục đưa phần tử lớn nhất ra cuối và justify (heapify) lại - đặc trưng Heap Sort.

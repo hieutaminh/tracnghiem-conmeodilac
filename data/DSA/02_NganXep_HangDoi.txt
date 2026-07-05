@@ -1,0 +1,154 @@
+#TIME: 30
+
+#Q1 [SC4]
+Kết luận nào sau đây đúng với ngăn xếp (Stack)?
+A. Phần tử vào đầu tiên sẽ được lấy ra cuối cùng
+B. Phần tử vào cuối cùng sẽ được lấy ra cuối cùng
+C. Cả hai kết luận trên đều đúng
+D. Không xác định được thứ tự lấy ra
+#ANSWER: A
+#EXPLAIN: Ngăn xếp dùng LIFO (Last In, First Out). Phần tử vào đầu tiên nằm ở đáy nên ra cuối cùng.
+
+#Q2 [SC4]
+Kết luận nào sau đây đúng với hàng đợi (Queue)?
+A. Phần tử vào cuối cùng sẽ được lấy ra cuối cùng
+B. Phần tử vào đầu tiên sẽ được lấy ra cuối cùng
+C. Phần tử vào giữa hàng đợi được lấy ra đầu tiên
+D. Không xác định được thứ tự lấy ra
+#ANSWER: A
+#EXPLAIN: Hàng đợi dùng FIFO (First In, First Out), nên phần tử vào sau cùng cũng ra sau cùng.
+
+#Q3 [SC4]
+S là ngăn xếp rỗng. For i=1 to 5: S.PUSH(i*2); e1=S.POP(); S.PUSH(8); e2=S.POP(); print(e2). Kết quả in ra?
+A. 8
+B. 10
+C. 6
+D. 2
+#ANSWER: A
+#EXPLAIN: Đẩy vào 2,4,6,8,10. e1=POP() lấy 10. PUSH(8) đẩy 8 vào (đỉnh là 8). e2=POP() lấy 8.
+
+#Q4 [SC4]
+Q là hàng đợi rỗng. For i=1 to 5: Q.PUSH(i); e1=Q.POP(); e2=Q.POP(); e3=Q.POP(); print(e3). Kết quả in ra?
+A. 3
+B. 1
+C. 4
+D. 5
+#ANSWER: A
+#EXPLAIN: PUSH vào 1,2,3,4,5. POP lần lượt lấy ra 1, 2, 3. Vậy e3 = 3.
+
+#Q5 [SC4]
+S là ngăn xếp rỗng. For i=1 to 5: S.PUSH(i); e1=S.POP(); e2=S.POP(); print(e2). Kết quả in ra?
+A. 4
+B. 5
+C. 3
+D. 2
+#ANSWER: A
+#EXPLAIN: PUSH vào 1,2,3,4,5. POP lần 1 lấy 5, POP lần 2 lấy 4.
+
+#Q6 [SC4]
+Q là hàng đợi rỗng. For i=1 to 7: Q.PUSH(2*i); For i=1 to 3: e=Q.POP(); e2=Q.POP(); print(e2). Kết quả in ra?
+A. 8
+B. 6
+C. 10
+D. 4
+#ANSWER: A
+#EXPLAIN: PUSH vào 2,4,6,8,10,12,14. POP 3 lần lấy ra 2,4,6. e2=POP() lấy phần tử thứ 4 là 8.
+
+#Q7 [SC4]
+Cấu trúc dữ liệu nào tương ứng với LIFO?
+A. Linked List
+B. Queue
+C. Tree
+D. Stack
+#ANSWER: D
+#EXPLAIN: LIFO (Last In First Out) chính là nguyên lý hoạt động của Stack.
+
+#Q8 [SC4]
+Trong các từ tiếng Anh sau, từ nào đúng với tên gọi của cấu trúc dữ liệu FIFO?
+A. First-In First-Out
+B. STACK
+C. First-In Last-Out
+D. QUEUE
+#ANSWER: D
+#EXPLAIN: Cấu trúc dữ liệu hoạt động theo nguyên lý FIFO chính là Queue (hàng đợi).
+
+#Q9 [SC4]
+Trong các từ tiếng Anh sau, từ nào đúng với tên gọi của cấu trúc dữ liệu FILO?
+A. QUEUE
+B. First-In First-Out
+C. First-In Last-Out
+D. STACK
+#ANSWER: D
+#EXPLAIN: FILO (First In Last Out) tương đương LIFO, chính là Stack (ngăn xếp).
+
+#Q10 [SC4]
+Từ viết tắt tiếng Anh FIFO có nghĩa là gì trong tiếng Việt?
+A. Vào Trước - Ra Trước
+B. Vào - Ra Tức Thì
+C. Vào - Ra Đồng Thời
+D. Vào Trước - Ra Sau
+#ANSWER: A
+#EXPLAIN: FIFO = First In First Out = Vào Trước - Ra Trước.
+
+#Q11 [SC4]
+Trong thuật toán duyệt đồ thị theo chiều rộng (BFS), cấu trúc dữ liệu nào được dùng để lưu trữ đỉnh trong quá trình duyệt?
+A. Cây tìm kiếm nhị phân
+B. Hàng đợi - Queue
+C. Bảng băm
+D. Ngăn xếp - Stack
+#ANSWER: B
+#EXPLAIN: BFS duyệt theo từng mức, cần lưu các đỉnh chờ xét theo thứ tự vào trước ra trước, tức dùng Queue.
+
+#Q12 [SC4]
+Thao tác dequeue() là thao tác cơ bản của cấu trúc dữ liệu nào?
+A. Ngăn xếp
+B. Danh sách
+C. Mảng
+D. Hàng đợi
+#ANSWER: D
+#EXPLAIN: dequeue() lấy phần tử ra khỏi hàng đợi, đây là thao tác đặc trưng của Queue.
+
+#Q13 [SC4]
+Thao tác pop() là thao tác cơ bản của cấu trúc dữ liệu nào?
+A. Hàng đợi
+B. Mảng
+C. Danh sách
+D. Ngăn xếp
+#ANSWER: D
+#EXPLAIN: pop() lấy phần tử ra khỏi ngăn xếp, đây là thao tác đặc trưng của Stack.
+
+#Q14 [SC4]
+Tính giá trị của biểu thức hậu tố sau: 4 6 3 / + 7 10 2 / - *
+A. 12
+B. 10
+C. 14
+D. 8
+#ANSWER: A
+#EXPLAIN: (4 + 6/3) * (7 - 10/2) = (4+2)*(7-5) = 6*2 = 12.
+
+#Q15 [SC4]
+Tính giá trị của biểu thức hậu tố sau: 6 3 6 + 5 * 90 / -
+A. 5.5
+B. 6
+C. 5
+D. 7
+#ANSWER: A
+#EXPLAIN: (3+6)=9 -> 9*5=45 -> 45/90=0.5 -> 6-0.5=5.5.
+
+#Q16 [SC4]
+Cho biểu thức hậu tố a b - c / d c - b + với a=25, b=5, c=4, d=19. Giá trị biểu thức bằng?
+A. 8
+B. 6
+C. 10
+D. 4
+#ANSWER: A
+#EXPLAIN: Dùng ngăn xếp để tính lần lượt từng toán tử theo đúng thứ tự Reverse Polish Notation, kết quả cuối cùng bằng 8.
+
+#Q17 [SC4]
+Cho biểu thức dạng trung tố A + B*C/D - G*H. Biểu thức dạng hậu tố tương ứng là gì?
+A. ABC*D/+GH*-
+B. AB+C*D/GH*-
+C. ABC+*D/GH-*
+D. ABCD*/+GH*-
+#ANSWER: A
+#EXPLAIN: Áp dụng độ ưu tiên toán tử (*, / trước +, -) và chuyển sang hậu tố theo cây cú pháp biểu thức.

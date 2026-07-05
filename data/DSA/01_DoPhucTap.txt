@@ -1,0 +1,218 @@
+#TIME: 45
+
+#Q1 [SC4]
+Kết luận 1000n^2 - 6n + 7 = O(n^2) là đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng khi n < 1000
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Bậc cao nhất là n^2, bỏ qua hệ số và bậc thấp hơn, độ phức tạp tiệm cận là O(n^2).
+
+#Q2 [SC4]
+Cho f1(n) = n^(1/2) và f2(n) = 1000 log(n). Hàm nào tăng nhanh hơn?
+A. f1(n) tăng nhanh hơn
+B. f2(n) tăng nhanh hơn
+C. Hai hàm tăng như nhau
+D. Không thể so sánh
+#ANSWER: A
+#EXPLAIN: Hàm đa thức (kể cả căn bậc hai) luôn tăng nhanh hơn hàm logarit.
+
+#Q3 [SC4]
+Kết luận 2000n^2 + 6n - 7 = O(n^2) là đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng khi n rất nhỏ
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Bậc cao nhất quyết định độ phức tạp tiệm cận, ở đây là n^2.
+
+#Q4 [SC4]
+Kết luận 10n^2 + 3n - 1000 = O(n log n) là đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng khi n lớn
+D. Không xác định được
+#ANSWER: B
+#EXPLAIN: Hàm bậc 2 (n^2) tăng nhanh hơn n log n nên phải là O(n^2), không phải O(n log n).
+
+#Q5 [SC4]
+Đoạn chương trình: s=1; i=1; a=2; while(i<=n){ s=s*a; i++; }
+Độ phức tạp thời gian là:
+A. O(log n)
+B. O(n)
+C. O(n log n)
+D. O(n^2)
+#ANSWER: B
+#EXPLAIN: Vòng lặp chạy đúng n lần, biến i tăng dần từng đơn vị.
+
+#Q6 [SC4]
+Xác định độ phức tạp: s=0; a=1; i=1; while(s<=n){ s=s+a; a=a*2; i++; }
+A. O(n)
+B. O(log n)
+C. O(n log n)
+D. O(n^2)
+#ANSWER: B
+#EXPLAIN: Biến a nhân đôi mỗi lần nên s tăng theo cấp số nhân, số vòng lặp tỉ lệ log(n).
+
+#Q7 [SC4]
+Cho f1(n) = n^2 và f2(n) = 1000n log(n). Hàm nào tăng nhanh hơn?
+A. f1(n) tăng nhanh hơn
+B. f2(n) tăng nhanh hơn
+C. Hai hàm tăng như nhau
+D. Không thể so sánh
+#ANSWER: A
+#EXPLAIN: Đa thức bậc 2 vượt xa n log n khi n tiến ra vô cùng.
+
+#Q8 [SC4]
+Thuật toán sắp xếp lựa chọn (Selection Sort) có độ phức tạp:
+A. Tốt nhất O(n), xấu nhất O(n^2)
+B. Tốt nhất O(n), xấu nhất O(n log n)
+C. Tốt nhất O(n^2), xấu nhất O(n^2)
+D. Tốt nhất O(log n), xấu nhất O(n^2)
+#ANSWER: C
+#EXPLAIN: Dù mảng đã sắp xếp hay chưa, thuật toán vẫn phải duyệt toàn bộ phần còn lại để tìm phần tử nhỏ nhất.
+
+#Q9 [SC4]
+Thuật toán sắp xếp trộn (Merge Sort) có độ phức tạp thời gian là:
+A. O(n)
+B. O(n log n)
+C. O(n^2)
+D. O(2^n)
+#ANSWER: B
+#EXPLAIN: Cơ chế chia đôi liên tục và trộn lại luôn cho O(n log n) ở mọi trường hợp.
+
+#Q10 [SC4]
+Heap Sort trên dãy n phần tử có độ phức tạp trong trường hợp tốt nhất là O(n^2)?
+A. Đúng
+B. Sai
+C. Chỉ đúng nếu mảng đã gần sắp xếp
+D. Chỉ đúng nếu mảng ngẫu nhiên
+#ANSWER: B
+#EXPLAIN: Heap Sort luôn đảm bảo O(n log n) ở mọi trường hợp (tốt nhất, trung bình, xấu nhất).
+
+#Q11 [SC4]
+Thuật toán sắp xếp nổi bọt (Bubble Sort, có cờ kiểm tra swapped) có độ phức tạp tốt nhất là:
+A. O(n)
+B. O(n log n)
+C. O(n^2)
+D. O(log n)
+#ANSWER: A
+#EXPLAIN: Nếu mảng đã sắp sẵn, thuật toán chỉ quét 1 lần (chi phí n) rồi dừng sớm nhờ cờ kiểm tra.
+
+#Q12 [SC4]
+Điều kiện để áp dụng tìm kiếm nhị phân trên dãy a1, a2, ..., an là:
+A. Dãy không được phép có số âm
+B. Dãy được sắp xếp theo thứ tự không tăng hoặc không giảm
+C. Dãy bất kỳ, không cần điều kiện gì
+D. Dãy phải toàn số nguyên
+#ANSWER: B
+#EXPLAIN: Tìm kiếm nhị phân chia đôi liên tục nên bắt buộc mảng phải có thứ tự từ trước.
+
+#Q13 [SC4]
+Thuật toán tìm kiếm nhị phân trên dãy đã sắp xếp có độ phức tạp:
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n log n)
+#ANSWER: B
+#EXPLAIN: Số phép so sánh tỉ lệ với log cơ số 2 của n.
+
+#Q14 [SC4]
+Thao tác tìm kiếm trên cây nhị phân tìm kiếm chứa n khóa, trường hợp xấu nhất có thời gian:
+A. O(n)
+B. O(log n)
+C. O(1)
+D. O(n log n)
+#ANSWER: A
+#EXPLAIN: Khi cây thoái hóa thành một đường thẳng (giống danh sách liên kết), tìm kiếm mất O(n).
+
+#Q15 [SC4]
+Thao tác tìm kiếm trên cây AVL chứa n khóa, trường hợp tốt nhất có thời gian:
+A. O(log n)
+B. O(n)
+C. O(1)
+D. O(n log n)
+#ANSWER: A
+#EXPLAIN: Nhờ tính chất cân bằng, độ sâu tối đa của cây AVL luôn là O(log n).
+
+#Q16 [SC4]
+Độ cao của cây AVL chứa n khóa luôn là O(log n), đúng hay sai?
+A. Đúng
+B. Sai
+C. Chỉ đúng khi cây gần như hoàn chỉnh
+D. Không xác định được
+#ANSWER: A
+#EXPLAIN: Do cây tự cân bằng, độ cao tối đa khoảng 1.44*log2(n+2), luôn là O(log n).
+
+#Q17 [SC4]
+Theo định lý thợ (Master Theorem), T(n) = T(n/2) + 4n có độ phức tạp:
+A. Θ(n)
+B. Θ(n^2)
+C. Θ(n log n)
+D. Θ(2^n)
+#ANSWER: A
+#EXPLAIN: a=1, b=2 → n^(log2 1) = n^0 = 1. Vì f(n)=4n thuộc Ω(n^(0+ε)), theo trường hợp 3 của Master Theorem, T(n) = Θ(n).
+
+#Q18 [SC4]
+Theo định lý thợ, T(n) = 3T(n/3) + 2log(n), T(1)=1 có độ phức tạp:
+A. O(n)
+B. O(n log n)
+C. O(log n)
+D. O(n^2)
+#ANSWER: A
+#EXPLAIN: a=3, b=3 → n^(log3 3) = n. Vì f(n)=2log(n)=O(n^(1-ε)), theo trường hợp 1 của Master Theorem, T(n)=Θ(n).
+
+#Q19 [SC4]
+Cho đồ thị G=(V,E) trọng số không âm biểu diễn bằng ma trận trọng số. Thuật toán Dijkstra có độ phức tạp:
+A. O(|V|^2)
+B. O(|V||E|)
+C. O(|V|+|E|)
+D. O(|V|^3)
+#ANSWER: A
+#EXPLAIN: Với ma trận kề, ở mỗi trong |V| bước, tìm phần tử min mất |V| lần so sánh tuyến tính.
+
+#Q20 [SC4]
+Cho đồ thị G=(V,E) trọng số không âm biểu diễn bằng danh sách kề. Thuật toán Dijkstra dùng hàng đợi ưu tiên có độ phức tạp:
+A. O(|E| log |V|)
+B. O(|V|^2)
+C. O(|E|^2)
+D. O(|V| x |E|)
+#ANSWER: A
+#EXPLAIN: Hàng đợi ưu tiên (Heap) giúp lấy đỉnh nhỏ nhất nhanh (log|V|) và cập nhật |E| cạnh.
+
+#Q21 [SC4]
+Cho đồ thị vô hướng G có n đỉnh, m cạnh. Thuật toán DFS trên G có độ phức tạp thời gian:
+A. O(n)
+B. O(nm)
+C. O(n + m)
+D. O(n^2)
+#ANSWER: C
+#EXPLAIN: Mỗi đỉnh và mỗi cạnh được thăm qua đúng 1 lần, bất kể biểu diễn đồ thị.
+
+#Q22 [SC4]
+Hàm ham2(n): for(i=0;i<n;i++) for(j=n;j>0;j-=2) S++; Gọi ham2(10), câu lệnh S++ thực hiện bao nhiêu lần?
+A. 50
+B. 100
+C. 45
+D. 55
+#ANSWER: A
+#EXPLAIN: Vòng ngoài lặp 10 lần. Vòng trong j chạy 10,8,6,4,2 (5 lần). Tổng 10x5=50.
+
+#Q23 [SC4]
+Hàm ham1(n): for(i=0;i<n;i++) for(j=i;j<n;j++) S+=i; Gọi ham1(10), câu lệnh S+=i thực hiện bao nhiêu lần?
+A. 55
+B. 100
+C. 45
+D. 50
+#ANSWER: A
+#EXPLAIN: Tổng số lần lặp là 10+9+8+...+1 = 55.
+
+#Q24 [SC4]
+Công thức độ phức tạp tính toán nào sau đây là không hợp lệ?
+A. f(n) = -2n^2 + 100n log(n) + 10^9
+B. f(n) = 10n - 3n
+C. f(n) = -26n log(n) + 6n^2 + 10
+D. f(n) = n + n log n
+#ANSWER: A
+#EXPLAIN: Bậc cao nhất (n^2) có hệ số âm, không thể là độ phức tạp thuật toán (vốn luôn không âm khi n lớn).
