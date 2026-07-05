@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luyện đề &amp; Thi thử</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ============ MÀN HÌNH TRANG CHỦ ============ -->
+<div id="view-home" class="view">
+  <header class="home-header">
+    <div class="brand">
+      <span class="brand-mark">Đ.</span>
+      <div class="brand-text">
+        <h1>Luyện đề &amp; Thi thử</h1>
+        <p>Chọn một đề trong danh sách để bắt đầu làm bài.</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-body">
+    <aside class="subject-rail" id="subject-rail">
+      <div class="rail-label">Môn học</div>
+      <div id="subject-list"></div>
+    </aside>
+
+    <main class="exam-board" id="exam-board">
+      <!-- được render bằng JS -->
+    </main>
+  </div>
+</div>
+
+<!-- ============ MÀN HÌNH LÀM ĐỀ ============ -->
+<div id="view-exam" class="view hidden">
+  <div class="exam-topbar">
+    <div class="exam-topbar-left">
+      <span class="mode-chip" id="mode-chip">Luyện tập</span>
+      <h2 id="exam-title">Tên đề</h2>
+    </div>
+    <div class="exam-topbar-right">
+      <span class="timer hidden" id="timer">--:--</span>
+      <button class="btn btn-end" id="btn-end">Kết thúc bài làm</button>
+    </div>
+  </div>
+
+  <div class="exam-body">
+    <aside class="question-nav-pane">
+      <div class="nav-perforation" aria-hidden="true"></div>
+      <div class="nav-scroll">
+        <div class="nav-legend" id="nav-legend"></div>
+        <div class="question-grid" id="question-grid"></div>
+        <div class="score-banner hidden" id="score-banner"></div>
+      </div>
+    </aside>
+
+    <section class="question-pane">
+      <div class="question-controls">
+        <button class="btn btn-ghost" id="btn-back">← Back</button>
+        <button class="btn btn-check" id="btn-check">Check</button>
+        <button class="btn btn-ghost" id="btn-next">Next →</button>
+      </div>
+      <div class="question-scroll">
+        <div class="question-content" id="question-content"></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ============ MODAL XÁC NHẬN ============ -->
+<div id="confirm-modal" class="modal hidden">
+  <div class="modal-card">
+    <p id="confirm-text">Bạn có chắc muốn kết thúc bài làm?</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="confirm-cancel">Hủy</button>
+      <button class="btn btn-end" id="confirm-ok">Kết thúc</button>
+    </div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
