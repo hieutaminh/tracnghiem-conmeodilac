@@ -1,0 +1,241 @@
+#TIME: 60
+
+#Q1 [SC4]
+Năng lực pháp luật của cá nhân phụ thuộc vào:
+A. Hoàn cảnh kinh tế của cá nhân đó
+B. Độ tuổi và khả năng nhận thức của cá nhân đó
+C. Pháp luật của từng quốc gia
+D. Độ tuổi, khả năng nhận thức và hoàn cảnh kinh tế
+#ANSWER: C
+
+#Q2 [SC4]
+Anh A mới ký hợp đồng với công ty X để mua một chiếc xe ô tô với trị giá 1 tỷ. Xác định khách thể của quan hệ pháp luật nói trên:
+A. Quyền sở hữu chiếc xe ô tô
+B. Quyền sử dụng chiếc xe ô tô
+C. Chiếc xe ô tô
+D. Số tiền 1 tỷ
+#ANSWER: A
+
+#Q3 [SC4]
+Nhận định nào sau đây là sai:
+A. Năng lực pháp luật của cá nhân là khác nhau
+B. Năng lực pháp luật của cá nhân xuất hiện khi cá nhân đó sinh ra
+C. Năng lực pháp luật của cá nhân mất đi khi cá nhân đó chết
+D. Năng lực pháp luật có từ khi sinh ra và mất đi khi chết
+#ANSWER: A
+
+#Q4 [SC4]
+Nhận định nào sau đây là sai:
+A. Tất cả các nhận định trên đều sai
+B. Năng lực pháp luật, năng lực hành vi của tổ chức xuất hiện đồng thời cùng một lúc kể từ thời điểm tổ chức đó được thành lập
+C. Năng lực pháp luật của tổ chức mất đi khi tổ chức đó bị giải thể
+D. Năng lực pháp luật của tổ chức xuất hiện khi tổ chức đó được thành lập
+#ANSWER: A
+
+#Q5 [SC4]
+Nội dung của quan hệ pháp luật:
+A. Gồm các quyền chủ thể của các bên tham gia quan hệ pháp luật
+B. Đồng nghĩa với năng lực pháp luật vì đều quy định quyền và nghĩa vụ của chủ thể
+C. Gồm các quyền chủ thể và nghĩa vụ pháp lý của các bên tham gia quan hệ pháp luật
+D. Gồm các nghĩa vụ pháp lý của các bên tham gia quan hệ pháp luật
+#ANSWER: C
+
+#Q6 [SC4]
+Quyền của chủ thể là cách xử sự mà pháp luật:
+A. Cho phép chủ thể thực hiện
+B. Cho phép hoặc khuyến khích chủ thể thực hiện
+C. Khuyến khích chủ thể thực hiện
+D. Cấm chủ thể thực hiện
+#ANSWER: B
+
+#Q7 [SC4]
+Quyền của chủ thể được biểu hiện ở các khía cạnh nào sau đây:
+A. Quyền thụ hưởng
+B. Quyền sử dụng, quyền sở hữu
+C. Quyền chuyển nhượng
+D. Cả 3 đáp án trên
+#ANSWER: D
+
+#Q8 [SC4]
+Nhận định nào sau đây là đúng:
+A. Chủ thể bắt buộc phải thực hiện quyền của mình
+B. Nhà nước yêu cầu chủ thể phải thực hiện quyền của mình
+C. Các bên tham gia yêu cầu chủ thể thực hiện quyền của mình
+D. Chủ thể có thể không thực hiện quyền của mình
+#ANSWER: D
+
+#Q9 [SC4]
+Nghĩa vụ pháp lý là cách xử sự mà pháp luật:
+A. Bắt buộc chủ thể phải thực hiện để đáp ứng quyền của chủ thể bên kia
+B. Cấm chủ thể thực hiện
+C. Khuyến khích chủ thể thực hiện
+D. Cho phép chủ thể thực hiện
+#ANSWER: A
+
+#Q10 [SC4]
+Đặc điểm của nghĩa vụ pháp lý:
+A. Cả 3 đáp án trên
+B. Được áp đặt bởi pháp luật
+C. Có tính chất pháp lý
+D. Bắt buộc phải thực hiện
+#ANSWER: A
+
+#Q11 [SC4]
+Khách thể của quan hệ pháp luật là:
+A. Lợi ích mà các bên mong muốn đạt được và là yếu tố thúc đẩy các bên tham gia quan hệ pháp luật
+B. Yếu tố thúc đẩy các bên tham gia quan hệ pháp luật
+C. Lợi ích mà các bên mong muốn đạt được khi tham gia quan hệ pháp luật
+D. Đối tượng mà các bên tác động vào khi tham gia quan hệ pháp luật
+#ANSWER: A
+
+#Q12 [SC4]
+Sự kiện pháp lý:
+A. Là những hoàn cảnh tình huống trong thực tế
+B. Là những hoàn cảnh, tình huống trong thực tế làm phát sinh, thay đổi, chấm dứt các quan hệ pháp luật
+C. Làm phát sinh, thay đổi và chấm dứt các quan hệ pháp luật
+D. Là yếu tố thúc đẩy các bên tham gia quan hệ pháp luật
+#ANSWER: B
+
+#Q13 [SC4]
+Sự kiện pháp lý gồm mấy loại:
+A. Các hành vi pháp lý và sự biến pháp lý
+B. Các hành vi thực tế
+C. Các sự biến pháp lý
+D. Các hành vi và sự kiện thực tế
+#ANSWER: A
+
+#Q14 [SC4]
+Tác động của sự kiện pháp lý đối với quan hệ pháp luật là:
+A. Tất cả các phương án
+B. Làm phát sinh
+C. Làm chấm dứt
+D. Làm thay đổi
+#ANSWER: A
+
+#Q15 [SC4]
+Nhận định nào sau đây là đúng:
+A. Sự biến là sự kiện pháp lý phổ biến trong thực tiễn cuộc sống
+B. Sự biến là sự kiện pháp lý phụ thuộc vào ý chí của con người
+C. Sự biến là sự kiện pháp lý được thực hiện dưới dạng hành động
+D. Sự biến là sự kiện pháp lý không phụ thuộc vào ý chí của con người
+#ANSWER: D
+
+#Q16 [SC4]
+Hành vi pháp lý là loại sự kiện pháp lý:
+A. Phụ thuộc vào ý chí của con người và phổ biến trong thực tiễn cuộc sống
+B. Phụ thuộc vào ý chí của con người
+C. Phổ biến trong thực tiễn cuộc sống
+D. Không phụ thuộc vào ý chí của con người
+#ANSWER: A
+
+#Q17 [SC4]
+Hệ thống pháp luật Islamic Law còn được gọi là:
+A. Hệ thống pháp luật dân luật
+B. Hệ thống pháp luật thông luật
+C. Hệ thống pháp luật hồi giáo
+D. Cả 3 đáp án đều sai
+#ANSWER: C
+
+#Q18 [SC4]
+Điều kiện để xác định một quốc gia thuộc hệ thống pháp luật Islamic Law là:
+A. Đạo hồi là quốc đạo của quốc gia đó
+B. Quốc gia lấy quy định trong kinh thánh của Đạo hồi làm luật
+C. Đạo hồi là quốc đạo và lấy quy định trong kinh thánh làm luật
+D. Đạo hồi được coi là tôn giáo của quốc gia đó
+#ANSWER: C
+
+#Q19 [SC4]
+Quyền sở hữu trí tuệ gồm:
+A. Quyền đối với giống cây trồng
+B. Tất cả các đáp án trên
+C. Quyền tác giả và quyền liên quan đến quyền tác giả
+D. Quyền sở hữu công nghiệp
+#ANSWER: B
+
+#Q20 [SC4]
+Quyền tác giả là quyền của cá nhân, ... đối với tác phẩm do mình sáng tạo ra hoặc ...
+A. Tổ chức, sở hữu
+B. Pháp nhân, sử dụng
+C. Pháp nhân, sở hữu
+D. Tổ chức, sử dụng
+#ANSWER: A
+
+#Q21 [SC4]
+Quyền sở hữu công nghiệp gồm những gì:
+A. Nhãn hiệu, tên thương mại, bí mật kinh doanh
+B. Tất cả các đáp án trên
+C. Quyền sở hữu của cá nhân, pháp nhân đối với sáng chế
+D. Kiểu dáng công nghiệp
+#ANSWER: B
+
+#Q22 [SC4]
+Quyền sở hữu công nghiệp đối với sáng chế được xác lập trên cơ sở gì?
+A. Quyết định cấp văn bằng bảo hộ của cơ quan nhà nước có thẩm quyền
+B. Có khả năng áp dụng công nghiệp
+C. Có tính mới, có tính sáng tạo
+D. Thuộc đối tượng được bảo hộ
+#ANSWER: A
+
+#Q23 [SC4]
+Sáng chế được bảo hộ dưới hình thức cấp bằng độc quyền sáng chế nếu đáp ứng được những điều kiện nào?
+A. Có tính mới, có tính sáng tạo
+B. Có tính mới, có tính sáng tạo, có khả năng áp dụng công nghiệp, thuộc đối tượng được bảo hộ
+C. Có khả năng áp dụng công nghiệp, thuộc đối tượng được bảo hộ
+D. Thuộc đối tượng được bảo hộ
+#ANSWER: B
+
+#Q24 [SC4]
+Nhãn hiệu được bảo hộ nếu đáp ứng được những điều kiện gì?
+A. Có tính mới, có tính sáng tạo, có khả năng áp dụng công nghiệp
+B. Là dấu hiệu nhìn thấy được và có khả năng phân biệt hàng hoá, dịch vụ của chủ thể này với chủ thể khác
+C. Có khả năng phân biệt hàng hoá, dịch vụ của chủ sở hữu nhãn hiệu
+D. Là dấu hiệu nhìn thấy được dưới dạng chữ cái, từ ngữ, hình vẽ...
+#ANSWER: B
+
+#Q25 [SC4]
+Tên thương mại là gì?
+A. Là giải pháp kỹ thuật dưới dạng sản phẩm hoặc quy trình nhằm giải quyết một vấn đề xác định
+B. Là hình dáng bên ngoài của sản phẩm được thể hiện bằng hình khối, đường nét, màu sắc
+C. Là dấu hiệu để phân biệt hàng hóa dịch vụ của các cá nhân, tổ chức khác nhau
+D. Là tên gọi của tổ chức, cá nhân dùng trong hoạt động kinh doanh để phân biệt chủ thể kinh doanh mang tên gọi đó với chủ thể kinh doanh khác
+#ANSWER: D
+
+#Q26 [SC4]
+Mong muốn hậu quả xảy ra khi thực hiện hành vi trái pháp luật đấy là dấu hiệu của loại lỗi nào?
+A. Lỗi vô ý do quá tự tin
+B. Lỗi cố ý gián tiếp
+C. Lỗi cố ý trực tiếp
+D. Lỗi vô ý do cẩu thả
+#ANSWER: C
+
+#Q27 [SC4]
+Đối tượng điều chỉnh của ngành luật lao động là:
+A. Quan hệ phát sinh giữa nhà nước với người phạm tội
+B. Quan hệ lao động
+C. Cả quan hệ lao động và quan hệ phát sinh trong quá trình sử dụng lao động
+D. Quan hệ phát sinh trong quá trình sử dụng lao động
+#ANSWER: C
+
+#Q28 [SC4]
+Nguồn của luật lao động là:
+A. Bộ luật hình sự
+B. Luật doanh nghiệp
+C. Bộ luật lao động
+D. Bộ luật dân sự
+#ANSWER: C
+
+#Q29 [SC4]
+Phương pháp điều chỉnh của ngành luật lao động:
+A. Phương pháp mệnh lệnh, phục tùng
+B. Không có đáp án đúng
+C. Cả phương pháp tự nguyện thỏa thuận và phương pháp mệnh lệnh, phục tùng
+D. Phương pháp tự nguyện thỏa thuận
+#ANSWER: C
+
+#Q30 [SC4]
+Quan hệ pháp luật được hình thành từ những chủ thể nào?
+A. Người lao động và người sử dụng lao động
+B. Người lao động
+C. Người sử dụng lao động
+D. Nhà nước
+#ANSWER: A

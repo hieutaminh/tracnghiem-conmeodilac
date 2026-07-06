@@ -1,0 +1,241 @@
+#TIME: 60
+
+#Q1 [SC4]
+Quyền lực nhà nước tách rời khỏi xã hội vì:
+A. Do nhu cầu quản lý bằng quyền lực trong xã hội
+B. Do sự phân công lao động trong xã hội
+C. Do bộ máy quản lý quá đồ sộ
+D. Do nhà nước phải quản lý xã hội rộng lớn
+#ANSWER: B
+
+#Q2 [SC4]
+Chọn nhận định đúng nhất thể hiện mối quan hệ giữa nhà nước và pháp luật:
+A. Nhà nước xây dựng và thực hiện pháp luật nên nó có thể không quản lý bằng luật
+B. Pháp luật là phương tiện quản lý của nhà nước bởi vì nó do nhà nước đặt ra
+C. Nhà nước ban hành pháp luật và quản lý bằng pháp luật nhưng bị ràng buộc bởi pháp luật
+D. Pháp luật do nhà nước ban hành nên nó là phương tiện để nhà nước quản lý
+#ANSWER: C
+
+#Q3 [SC4]
+Nhà nước thực hiện việc thu thuế để:
+A. Đảm bảo lợi ích vật chất của giai cấp
+B. Đảm bảo nguồn lực cho sự tồn tại nhà nước
+C. Đảm bảo sự công bằng trong xã hội
+D. Bảo vệ lợi ích cho người nghèo
+#ANSWER: B
+
+#Q4 [SC4]
+Thu thuế dưới dạng bắt buộc là việc:
+A. Nhà nước buộc các chủ thể trong xã hội phải nộp thuế
+B. Dùng vũ lực đối với các cá nhân tổ chức
+C. Các cá nhân tổ chức tự nguyện đóng thuế cho nhà nước
+D. Nhà nước kêu gọi các cá nhân tổ chức đóng thuế
+#ANSWER: A
+
+#Q5 [SC4]
+Nhà nước không tạo ra của cải vật chất và tách biệt khỏi xã hội cho nên:
+A. Nhà nước có quyền công cộng đặc biệt
+B. Nhà nước có chủ quyền
+C. Nhà nước thu các khoản thuế
+D. Ban hành và quản lý xã hội bằng pháp luật
+#ANSWER: C
+
+#Q6 [SC4]
+Nhà nước định ra và thu các loại thuế dưới dạng bắt buộc vì:
+A. Nhà nước có chủ quyền quốc gia
+B. Nhà nước thực hiện quyền lực công cộng của mình
+C. Nhà nước không tự đảm bảo nguồn tài chính
+D. Nhà nước thực hiện chức năng quản lý của mình
+#ANSWER: C
+
+#Q7 [SC4]
+Nhà nước Việt Nam đại diện cho lợi ích của những giai cấp nào:
+A. Nhân dân lao động
+B. Giai cấp công nhân
+C. Các tầng lớp bị áp bức
+D. Giai cấp công nhân và nhân dân lao động
+#ANSWER: D
+
+#Q8 [SC4]
+Pháp luật do Nhà nước ban hành có đặc điểm gì:
+A. Nhà nước tôn trọng và thực hiện pháp luật
+B. Cả ba phương án còn lại đều đúng
+C. Có tính bắt buộc chung
+D. Mọi công dân đều phải tôn trọng và thực hiện theo pháp luật
+#ANSWER: B
+
+#Q9 [SC4]
+Nhà nước có chủ quyền quốc gia là:
+A. Quyền độc lập trong quan hệ quốc tế
+B. Quyền bất khả xâm phạm về lãnh thổ
+C. Quyền tự quyết về vấn đề đối nội đất nước
+D. Tất cả các ý trên đều đúng
+#ANSWER: D
+
+#Q10 [SC4]
+Nhà nước có vai trò đối với nền kinh tế:
+A. Nó quyết định nội dung và tính chất của cơ sở kinh tế
+B. Không có vai trò gì đối với cơ sở kinh tế
+C. Nó tác động trở lại đối với cơ sở kinh tế
+D. Nó thúc đẩy cơ sở kinh tế phát triển nếu như nó tiến bộ
+#ANSWER: C
+
+#Q11 [SC4]
+Trong hệ thống pháp luật Việt Nam, để được coi là một ngành luật độc lập khi:
+A. Ngành luật đó phải có phương pháp điều chỉnh
+B. Ngành luật đó phải có đầy đủ các văn bản quy phạm pháp luật
+C. Ngành luật đó phải có đối tượng điều chỉnh
+D. Ngành luật đó phải có đối tượng điều chỉnh và phương pháp điều chỉnh
+#ANSWER: D
+
+#Q12 [SC4]
+Văn bản có giá trị pháp lý cao nhất trong hệ thống các văn bản pháp luật:
+A. Hiến pháp
+B. Bộ Luật của Quốc hội
+C. Nghị quyết của Quốc hội
+D. Thông tư của Bộ trưởng
+#ANSWER: A
+
+#Q13 [SC4]
+Sắp xếp theo thứ tự nhỏ dần của hình thức bên trong của pháp luật:
+A. Quy phạm pháp luật, hệ thống pháp luật, ngành luật, chế định luật
+B. Ngành luật, quy phạm pháp luật, hệ thống pháp luật, ngành luật
+C. Hệ thống pháp luật, ngành luật, chế định luật, quy phạm pháp luật
+D. Chế định pháp luật, quy phạm pháp luật, hệ thống pháp luật, ngành luật
+#ANSWER: C
+
+#Q14 [SC4]
+Uỷ ban thường vụ quốc hội ban hành những văn bản pháp luật nào:
+A. Pháp lệnh, nghị quyết
+B. Nghị quyết
+C. Pháp lệnh
+D. Nghị định
+#ANSWER: A
+
+#Q15 [SC4]
+Hội đồng nhân dân các cấp có quyền ban hành văn bản quy phạm pháp luật gì:
+A. Pháp lệnh, nghị quyết
+B. Nghị quyết
+C. Hiến pháp
+D. Pháp lệnh
+#ANSWER: B
+
+#Q16 [SC4]
+Văn bản nào sau đây không phải là văn bản quy phạm pháp luật:
+A. Thông tư của Bộ trưởng
+B. Luật, bộ luật của Quốc hội
+C. Chỉ thị của Thủ tướng
+D. Lệnh của Chủ tịch nước
+#ANSWER: C
+
+#Q17 [SC4]
+Bộ trưởng được ban hành văn bản nào sau đây:
+A. Thông tư
+B. Nghị quyết
+C. Nghị định
+D. Luật giáo dục đại học
+#ANSWER: A
+
+#Q18 [SC4]
+Pháp lệnh là văn bản do cơ quan nào ban hành:
+A. Quốc hội
+B. Chính phủ
+C. Uỷ ban Thường vụ Quốc hội
+D. Cả ba phương án còn lại đều đúng
+#ANSWER: C
+
+#Q19 [SC4]
+Chính phủ được ban hành văn bản quy phạm pháp luật nào:
+A. Pháp lệnh
+B. Hiến pháp
+C. Nghị định, nghị quyết
+D. Nghị quyết
+#ANSWER: C
+
+#Q20 [SC4]
+Tập quán pháp là gì:
+A. Tập quán được lưu truyền trong xã hội
+B. Phù hợp với lợi ích của nhà nước với thực tiễn cuộc sống
+C. Tập quán được nhà nước thừa nhận trở thành pháp luật
+D. Cả 3 phương án trên
+#ANSWER: B
+
+#Q21 [SC4]
+Tiền lệ pháp là gì (án lệ):
+A. Là việc nhà nước thừa nhận những bản án những quyết định của cơ quan hành chính, của toà án khi giải quyết những vụ việc cụ thể để áp dụng cho những vụ việc tương tự về sau
+B. Là việc nhà nước thừa nhận những bản án những quyết định của toà án khi giải quyết những vụ việc cụ thể để áp dụng cho những vụ việc tương tự về sau
+C. Là việc nhà nước thừa nhận những bản án những quyết định của cơ quan hành chính khi giải quyết những vụ việc cụ thể để áp dụng cho những vụ việc tương tự về sau
+D. Là việc nhà nước thừa nhận những bản án những quyết định của cơ quan nhà nước có thẩm quyền khi giải quyết những vụ việc cụ thể để áp dụng cho những vụ việc tương tự về sau
+#ANSWER: A
+
+#Q22 [SC4]
+Văn bản quy phạm pháp luật được áp dụng từ thời điểm nào:
+A. Bắt đầu có hiệu lực
+B. Thời điểm thông qua
+C. Thời điểm ký ban hành
+D. Thời điểm đăng thông báo
+#ANSWER: A
+
+#Q23 [SC4]
+Văn bản quy phạm pháp luật là:
+A. Chứa đựng các quy tắc xử sự mang tính bắt buộc chung được nhà nước đảm bảo thực hiện
+B. Áp dụng nhiều lần trong thực tế cuộc sống
+C. Cả ba phương án A, B và C
+D. Văn bản do cơ quan nhà nước có thẩm quyền ban hành
+#ANSWER: C
+
+#Q24 [SC4]
+Khẳng định nào sau đây là đúng:
+A. Tổ chức xã hội chỉ có quyền ban hành pháp luật khi được nhà nước trao quyền
+B. Cả A và C
+C. Không chỉ có nhà nước mà các tổ chức xã hội cũng có quyền ban hành pháp luật
+D. Chỉ có nhà nước mới có quyền ban hành pháp luật
+#ANSWER: D
+
+#Q25 [SC4]
+Chế định pháp luật là gì:
+A. Là một nhóm các Quy phạm pháp luật điều chỉnh một nhóm Quan hệ xã hội cùng loại
+B. Là văn bản do cơ quan nhà nước có thẩm quyền ban hành, chứa đựng các quy tắc xử sự mang tính bắt buộc chung được nhà nước đảm bảo thực hiện
+C. Cả ba phương án còn lại đều đúng
+D. Là một nhóm các Quy phạm pháp luật điều chỉnh một nhóm quan hệ xã hội cùng loại, có tính chất nội tại trong một ngành luật
+#ANSWER: D
+
+#Q26 [SC4]
+Bản chất của pháp luật bao gồm:
+A. Tính quy phạm và bắt buộc chung
+B. Cả 3 phương án trên
+C. Tính giai cấp và tính xã hội
+D. Tính giáo dục, thuyết phục và cưỡng chế
+#ANSWER: C
+
+#Q27 [SC4]
+Khi nghiên cứu về nguồn gốc Nhà nước, thì khẳng định nào sau đây là sai:
+A. Nhà nước là hiện tượng xã hội mang tính lịch sử
+B. Nhà nước ra đời, tồn tại cùng với lịch sử xã hội loài người
+C. Thời kì xã hội loài người chưa có giai cấp, thì nhà nước chưa xuất hiện
+D. Nhà nước ra đời, tồn tại trong xã hội có giai cấp
+#ANSWER: B
+
+#Q28 [SC4]
+Nguyên thủ quốc gia của nước Cộng hòa XHCN Việt Nam là:
+A. Thủ tướng chính phủ
+B. Tổng bí thư
+C. Chủ tịch quốc hội
+D. Chủ tịch nước
+#ANSWER: D
+
+#Q29 [SC4]
+Hội đồng nhân dân các cấp có quyền ban hành loại văn bản quy phạm pháp luật nào:
+A. Nghị quyết, quyết định
+B. Nghị định
+C. Nghị quyết
+D. Nghị quyết, nghị định
+#ANSWER: C
+
+#Q30 [SC4]
+Bộ phận giả định trong quy phạm pháp luật sau là: "Người nào quảng cáo gian dối về hàng hóa, dịch vụ gây hậu quả nghiêm trọng đã bị xử phạt hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm thì phạt tiền từ 10 triệu đến 100 triệu đồng, cải tạo không giam giữ đến 3 năm hoặc bị phạt tù từ 6 tháng đến 3 năm."
+A. Người nào quảng cáo gian dối về hàng hóa về dịch vụ
+B. Người nào quảng cáo gian dối về hàng hóa dịch vụ gây hậu quả nghiêm trọng đã bị xử phạt hành chính vì hành vi này
+C. Người nào quảng cáo gian dối về hàng hóa dịch vụ gây hậu quả nghiêm trọng
+D. Người nào quảng cáo gian dối về hàng hóa, dịch vụ gây hậu quả nghiêm trọng đã bị xử phạt hành chính về hành vi này hoặc đã bị kết án vì tội này, chưa được xóa án tích mà còn vi phạm
+#ANSWER: D
