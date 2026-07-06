@@ -1,0 +1,239 @@
+#TIME: 60
+
+#Q1 [SC4] Nhà nước quân chủ hạn chế (quân chủ lập hiến) là nhà nước như thế nào?
+A. Quyền lực nhà nước tối cao thuộc về một tập thể do bầu cử mà ra
+B. Quyền lực nhà nước được chia làm hai một phần thuộc về nhà vua hoặc nữ hoàng theo phương thức thừa kế, một phần thuộc về cơ quan nhà nước khác do bầu cử.
+C. Quyền lực nhà nước tối cao thuộc về một tập thể và được hình thành theo phương thức thừa kế
+D. Không có phương án nào đúng
+#ANSWER: B
+
+#Q2 [SC4] Trong nhà nước quân chủ chuyên chế thì:
+A. Quyền lực nhà nước tối cao thuộc về một tập thể và được hình thành theo phương thức thừa kế
+B. Quyền lực nhà nước tối cao thuộc về một tập thể do bầu cử mà ra
+C. Quyền lực tối cao thuộc về một người do bầu cử mà ra
+D. Quyền lực tối cao thuộc về một người và được hình thành theo phương thức thừa kế
+#ANSWER: D
+
+#Q3 [SC4] Chế độ chính trị của nhà nước Việt Nam:
+A. Dân chủ quý tộc
+B. Dân chủ xã hội chủ nghĩa
+C. Dân chủ tư sản
+D. Dân chủ chủ nô
+#ANSWER: B
+
+#Q4 [SC4] Hình thức chính thể của nhà nước Việt Nam:
+A. Cộng hòa tổng thống
+B. Cộng hòa lưỡng tính
+C. Cộng hòa đại nghị
+D. Chế độ độc đảng
+#ANSWER: C
+
+#Q5 [SC4] Chế độ chính trị phản dân chủ là gì?
+A. Tất cả đều đúng
+B. Vi phạm các quyền tự do của nhân dân
+C. Nhà nước độc tài
+D. Vi phạm các quyền dân chủ của nhân dân
+#ANSWER: A
+
+#Q6 [SC4] Hình thức chính thể quân chủ hạn chế còn có tên gọi khác là gì?
+A. Quân chủ lập hiến
+B. Quân chủ chuyên chế
+C. Quân chủ tập quyền
+D. Không có phương án nào đúng
+#ANSWER: A
+
+#Q7 [SC4] Quyền lực của nhà vua trong hình thức chính thể quân chủ tuyệt đối luôn:
+A. Bị giới hạn
+B. Bị giới hạn bởi pháp luật
+C. Vô hạn
+D. Bị giới hạn bởi nhà nước
+#ANSWER: C
+
+#Q8 [SC4] Hình thức chính thể cộng hòa đại nghị còn được gọi là:
+A. Hình thức chính thể cộng hòa lưỡng tính
+B. Hình thức chính thể cộng hòa nghị viện
+C. Hình thức chính thể cộng hòa tổng thống
+D. Hình thức chính thể quân chủ đại nghị
+#ANSWER: B
+
+#Q9 [SC4] Hình thức cấu trúc nhà nước bao gồm những loại nào?
+A. Nhà nước đơn nhất và nhà nước liên bang
+B. Chỉ có nhà nước đơn nhất
+C. Nhà nước đơn nhất, nhà nước liên bang và liên minh các nhà nước
+D. Chỉ có nhà nước liên bang
+#ANSWER: C
+
+#Q10 [SC4] Nhà nước đơn nhất là nhà nước như thế nào?
+A. Không có phương án nào đúng
+B. Là nhà nước có chủ quyền chung, có lãnh thổ toàn vẹn; có một hệ thống các cơ quan nhà nước thống nhất từ trung ương đến địa phương; có một hệ thống pháp luật thống nhất trên toàn vẹn lãnh thổ quốc gia
+C. Là nhà nước có chủ quyền chung, có lãnh thổ toàn vẹn, thống nhất; có một hệ thống các cơ quan nhà nước thống nhất từ trung ương đến địa phương; có một hệ thống pháp luật thống nhất trên toàn vẹn lãnh thổ quốc gia
+D. Là nhà nước có chủ quyền riêng, có lãnh thổ toàn vẹn, thống nhất; có một hệ thống các cơ quan nhà nước thống nhất từ trung ương đến địa phương; có một hệ thống pháp luật thống nhất trên toàn vẹn lãnh thổ quốc gia
+#ANSWER: B
+
+#Q11 [SC4] Nhà nước liên bang là nhà nước như thế nào?
+A. Là nhà nước được thiết lập từ hai hay nhiều nhà nước thành viên.
+B. Là nhà nước được thiết lập từ hai hay nhiều vùng lãnh thổ.
+C. Là nhà nước được thiết lập từ ba hay nhiều nhà nước thành viên.
+D. Là nhà nước được thiết lập từ hai hay nhiều vùng lãnh thổ gần nhau.
+#ANSWER: A
+
+#Q12 [SC4] Chế độ chính trị được hiểu là gì?
+A. Là tổng thể các phương pháp để thực hiện quyền lực nhà nước
+B. Là tất cả các thiết chế chính trị trong xã hội
+C. Tất cả đều đúng
+D. Là toàn bộ đường lối chính sách mà đảng chính trị cầm quyền đề ra
+#ANSWER: A
+
+#Q13 [SC4] Quan hệ xã hội muốn trở thành quan hệ pháp luật cần có điều kiện gì?
+A. Có sự kiện pháp lý
+B. Có quy phạm pháp luật điều chỉnh
+C. Phải có đủ ba điều kiện trên
+D. Có chủ thể tham gia quan hệ pháp luật và chủ thể đó có đủ năng lực chủ thể
+#ANSWER: C
+
+#Q14 [SC4] Các yếu tố của quan hệ pháp luật gồm:
+A. Chủ thể, khách thể của quan hệ pháp luật
+B. Nội dung của quan hệ pháp luật
+C. Sự kiện pháp lý
+D. Cả Chủ thể, khách thể và nội dung của quan hệ pháp luật
+#ANSWER: D
+
+#Q15 [SC4] Nhận định nào sau đây là đúng:
+A. Quan hệ pháp luật luôn phản ánh ý chí của nhà nước
+B. Tất cả các nhận định trên đều đúng
+C. Quan hệ pháp luật luôn phản ánh ý chí của các bên tham gia quan hệ
+D. Quan hệ pháp luật được đảm bảo bằng sức mạnh cưỡng chế của nhà nước
+#ANSWER: B
+
+#Q16 [SC4] Chủ thể của quan hệ pháp luật là:
+A. Bất kỳ cá nhân nào
+B. Tất cả các cá nhân, tổ chức tham gia vào quan hệ pháp luật
+C. Mọi tổ chức
+D. Các cá nhân, tổ chức có đủ năng lực chủ thể theo quy định của pháp luật tham gia vào quan hệ pháp luật
+#ANSWER: D
+
+#Q17 [SC4] Nhận định nào dưới đây là sai:
+A. Năng lực pháp luật của mọi tổ chức là như nhau
+B. Năng lực pháp luật của tổ chức xuất hiện khi tổ chức đó được thành lập
+C. Năng lực pháp luật của cá nhân là như nhau
+D. Năng lực pháp luật của cá nhân xuất hiện khi cá nhân đó sinh ra và mất đi khi cá nhân đó chết
+#ANSWER: A
+
+#Q18 [SC4] Năng lực chủ thể gồm những loại năng lực nào?
+A. Năng lực pháp luật và năng lực hành vi
+B. Năng lực pháp luật
+C. Năng lực hành vi
+D. Năng lực pháp luật và năng lực hành chính
+#ANSWER: A
+
+#Q19 [SC4] Năng lực chủ thể được hiểu là:
+A. Khả năng chủ thể có các quyền và nghĩa vụ pháp lý do nhà nước thừa nhận
+B. Khả năng chủ thể có thể trở thành các bên tham gia vào các quan hệ pháp luật
+C. Khả năng chủ thể bằng hành vi của mình thực hiện trên thực tế các quyền và nghĩa vụ pháp lý
+D. Tất cả đều đúng
+#ANSWER: B
+
+#Q20 [SC4] Năng lực pháp luật là gì?
+A. Khả năng chủ thể có thể trở thành các bên tham gia vào các quan hệ pháp luật
+B. Khả năng chủ thể có các quyền và nghĩa vụ pháp lý do nhà nước thừa nhận
+C. Tất cả đều đúng
+D. Khả năng chủ thể bằng hành vi của mình thực hiện trên thực tế các quyền và nghĩa vụ pháp lý
+#ANSWER: B
+
+#Q21 [SC4] Năng lực hành vi được hiểu là:
+A. Khả năng chủ thể bằng hành vi của mình thực hiện trên thực tế các quyền và nghĩa vụ pháp lý
+B. Tất cả đều đúng
+C. Khả năng chủ thể có các quyền và nghĩa vụ pháp lý do nhà nước thừa nhận
+D. Khả năng chủ thể có thể trở thành các bên tham gia vào các quan hệ pháp luật
+#ANSWER: A
+
+#Q22 [SC4] Nhận định nào dưới đây là đúng:
+A. Năng lực pháp luật luôn mang tính giai cấp
+B. Năng lực hành vi luôn mang tính giai cấp
+C. Năng lực pháp luật của mọi tổ chức là như nhau
+D. Năng lực pháp luật là điều kiện đủ, năng lực hành vi là điều kiện cần
+#ANSWER: A
+
+#Q23 [SC4] Chủ thể của quan hệ pháp luật là cá nhân bao gồm mấy loại:
+A. Tất cả các phương án trên
+B. Công dân Việt Nam
+C. Người không có quốc tịch sinh sống hoạt động trên lãnh thổ Việt Nam
+D. Người nước ngoài sinh sống hoạt động trên lãnh thổ Việt Nam
+#ANSWER: A
+
+#Q24 [SC4] Năng lực hành vi của cá nhân phụ thuộc vào:
+A. Độ tuổi và khả năng hành vi
+B. Khả năng nhận thức
+C. Độ tuổi
+D. Độ tuổi và khả năng nhận thức
+#ANSWER: D
+
+#Q25 [SC4] Có một anh A gây thương tích cho chị B nên tòa thụ lý và xét xử anh 10 năm. Xác định chủ thể của quan hệ pháp luật hình sự trong vụ án trên:
+A. Anh A với nhà nước và chị B
+B. Công dân A với chị B
+C. Tất cả các phương án trên đều sai
+D. Anh A với nhà nước
+#ANSWER: D
+
+#Q26 [SC4] Một tội phạm có mức cao nhất của khung hình phạt là 12 năm tù. Tội phạm này được xếp vào loại nào dưới đây:
+A. Tội phạm rất nghiêm trọng
+B. Tội phạm đặc biệt nghiêm trọng
+C. Tội phạm nghiêm trọng
+D. Tội phạm ít nghiêm trọng
+#ANSWER: A
+
+#Q27 [SC4] Chính phủ có quyền ban hành những loại VBPL nào:
+A. Pháp lệnh, nghị quyết
+B. Nghị quyết, nghị định
+C. Luật, pháp lệnh
+D. Nghị quyết, nghị định, quyết định
+#ANSWER: B
+
+#Q28 [SC4] Cơ sở nào làm phát sinh trách nhiệm pháp lý?
+A. Khi cơ quan có thẩm quyền tiến hành xem xét vụ việc vi phạm
+B. Khi có chủ thể pháp luật xuất hiện
+C. Khi có quy phạm pháp luật được ban hành
+D. Khi có hành vi vi phạm pháp luật và có quyết định áp dụng
+#ANSWER: D
+
+#Q29 [SC4] Nhà nước do ai lập ra?
+A. Do Thượng đế lập ra
+B. Do toàn dân thế giới lập ra
+C. Do giai cấp thống trị lập ra
+D. Do các giai cấp bị trị trong xã hội lập ra
+#ANSWER: C
+
+#Q30 [SC4] Hình thức chính thể cộng hoà được hiểu như thế nào?
+A. Là hình thức chính thể mà quyền lực nhà nước được trao cho một người đứng đầu theo chế độ thừa kế
+B. Cả ba nhận định trên đều sai
+C. Là hình thức chính thể mà quyền lực nhà nước được trao cho một cơ quan được thành lập theo chế độ bầu cử
+D. Là hình thức chính thể mà quyền lực nhà nước được trao cho một cơ quan được thành lập theo chế độ bầu cử và bên cạnh cơ quan này còn có một người đứng đầu là vua hoặc nữ hoàng
+#ANSWER: C
+
+#Q31 [SC4] Đối tượng điều chỉnh của luật dân sự là:
+A. Các quan hệ vật chất
+B. Các quan hệ tài sản
+C. Cả hai phương án: Các quan hệ tài sản và Các quan hệ nhân thân phi tài sản
+D. Các quan hệ nhân thân phi tài sản
+#ANSWER: C
+
+#Q32 [SC4] Đối tượng điều chỉnh của ngành luật hình sự là gì?
+A. Là quan hệ xã hội giữa Nhà nước và chủ thể đã thực hiện tội phạm
+B. Là quan hệ giữa Viện kiểm sát nhân dân với người phạm tội
+C. Cả ba đáp án đều đúng
+D. Là quan hệ giữa người phạm tội với người bị hại
+#ANSWER: A
+
+#Q33 [SC4] Hoạt động nào sau đây thuộc chức năng của viện kiểm sát nhân dân:
+A. Hoạt động truy tố người phạm tội ra trước tòa án
+B. Hoạt động xét xử kẻ phạm tội
+C. Hoạt động thi hành án
+D. Cả ba hoạt động trên đều thuộc chức năng của viện kiểm sát nhân dân
+#ANSWER: A
+
+#Q34 [SC4] Cơ quan hành pháp là:
+A. Chủ tịch nước, Chính phủ, Hội đồng nhân dân
+B. Quốc hội, Chính phủ
+C. Ủy ban thường vụ quốc hội, Chủ tịch nước
+D. Tất cả đều sai
+#ANSWER: D

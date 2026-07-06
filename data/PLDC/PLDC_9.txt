@@ -1,0 +1,211 @@
+#TIME: 60
+
+#Q1 [SC4] Sáng chế là gì?
+A. Không có phương án nào đúng
+B. Là giải pháp kỹ thuật có ứng dụng thực tiễn
+C. Là giải pháp kỹ thuật dưới dạng sản phẩm hoặc quy trình nhằm giải quyết một vấn đề xác định bằng việc ứng dụng các quy luật tự nhiên
+D. Là những công trình nghiên cứu phục vụ đời sống con người
+#ANSWER: C
+
+#Q2 [SC4] Kiểu dáng công nghiệp là gì?
+A. Không có phương án nào đúng
+B. Là những thuộc tính tồn tại bên trong vật thể
+C. Là kiểu dáng bên ngoài sản phẩm được thể hiện bằng hình khối, đường nét, màu sắc hoặc sự kết hợp giữa các yếu tố này
+D. Là bề ngoài của vật thể
+#ANSWER: C
+
+#Q3 [SC4] Nhãn hiệu là gì?
+A. Là dấu hiệu dùng để phân biệt hàng hoá, dịch vụ của các tổ chức, cá nhân khác nhau
+B. Là hình ảnh đại diện cho công ty, tổ chức
+C. Là biểu tượng của tổ chức, cá nhân
+D. Là hoạt động trao đổi buôn bán hàng hoá và dịch vụ giữa hai hay nhiều bên với nhau
+#ANSWER: A
+
+#Q4 [SC4] Khi nghiên cứu về nhà nước và pháp luật thì nó gắn liền với phương pháp nghiên cứu nào
+A. Trực quan sinh động
+B. Duy vật lịch sử
+C. Duy vật biện chứng
+D. Duy vật biện chứng và duy vật lịch sử
+#ANSWER: D
+
+#Q5 [SC4] Môn học Pháp luật đại cương thuộc lĩnh vực nào của khoa học xã hội
+A. Khoa học kinh tế
+B. Khoa học văn hoá
+C. Khoa học tâm lý
+D. Khoa học chính trị - pháp lý
+#ANSWER: D
+
+#Q6 [SC4] Trong lĩnh vực nghiên cứu khoa học pháp lý, pháp luật đại cương là
+A. Nghiên cứu những vấn đề nền tảng cốt lõi của nhà nước và pháp luật
+B. Nghiên cứu về một nhà nước pháp luật cụ thể
+C. Nghiên cứu về một kiểu nhà nước kiểu pháp luật cụ thể
+D. Nghiên cứu về một hệ thống pháp luật của nhà nước
+#ANSWER: A
+
+#Q7 [SC4] Khi nghiên cứu về pháp luật đại cương liên quan tới các lĩnh vực xã hội nào
+A. Lĩnh vực về tư tưởng
+B. Lĩnh vực về kinh tế
+C. Lĩnh vực về văn hoá
+D. Tất cả các lĩnh vực đã nêu
+#ANSWER: D
+
+#Q8 [SC4] Mục đích ra đời của nhà nước nhằm
+A. Bảo vệ lợi ích của người đứng đầu
+B. Bảo vệ duy trì lặp lại trật tự xã hội
+C. Cả hai phương án trên đều sai
+D. Cả hai phương án trên đều đúng
+#ANSWER: B
+
+#Q9 [SC4] Đâu là chức năng đối nội của nhà nước
+A. Phát triển quan hệ với các quốc gia khác
+B. Giáo dục ý thức của người dân trong xã hội
+C. Chống sự xâm lược từ bên ngoài
+D. Bảo vệ chế độ kinh tế đất nước
+#ANSWER: D
+
+#Q10 [SC4] Chức năng của nhà nước là thực hiện các nhiệm vụ của nhà nước trong phạm vi
+A. Thực hiện những công việc trong phạm vi lãnh thổ quốc gia và những công việc của nhà nước vượt ra ngoài phạm vi lãnh thổ quốc gia
+B. Thực hiện chính sách đối nội hoặc đối ngoại
+C. Thực hiện chính sách đối nội của nhà nước
+D. Thực hiện chính sách đối ngoại
+#ANSWER: A
+
+#Q11 [SC4] Trấn áp phần tử chống đối chế độ là dấu hiệu thuộc về chức năng nào của nhà nước
+A. Tất cả phương án đều sai
+B. Chức năng đối nội
+C. Chức năng đối nội hoặc chức năng đối ngoại
+D. Chức năng đối ngoại
+#ANSWER: B
+
+#Q12 [SC4] Đâu là chức năng đối ngoại của nhà nước
+A. Thiết lập quan hệ với các quốc gia bên ngoài và phòng thủ đất nước
+B. Thiết lập quan hệ với các quốc gia bên ngoài
+C. Phòng thủ đất nước
+D. Bảo vệ chế độ kinh tế
+#ANSWER: A
+
+#Q13 [SC4] Bộ phận tạo thành bộ máy nhà nước
+A. Cơ quan luật pháp
+B. Cơ quan hành pháp
+C. Cơ quan nhà nước
+D. Tất cả các cơ quan trên
+#ANSWER: C
+
+#Q14 [SC4] Hệ thống cơ quan trong bộ máy nhà nước bao gồm mấy hệ thống
+A. Cơ quan lập pháp, cơ quan hành pháp và cơ quan tư pháp
+B. Cơ quan hành pháp
+C. Cơ quan lập pháp
+D. Cơ quan tư pháp
+#ANSWER: A
+
+#Q15 [SC4] Học thuyết được một số quốc gia trên thế giới áp dụng trong việc tổ chức bộ máy nhà nước là học thuyết nào
+A. Thuyết hàn phi tử
+B. Thuyết tam quyền phân lập
+C. Thuyết bạo lực
+D. Thuyết khế ước xã hội
+#ANSWER: B
+
+#Q16 [SC4] Toà án thuộc hệ thống cơ quan nào trong nhà nước
+A. Tư pháp
+B. Hành pháp
+C. Luật pháp
+D. Cả ba hệ thống nêu trên
+#ANSWER: A
+
+#Q17 [SC4] Ủy ban nhân dân các cấp nằm trong hệ thống cơ quan nào trong bộ máy nhà nước
+A. Cơ quan hành chính
+B. Cơ quan đại diện nhân dân
+C. Cơ quan luật pháp
+D. Cơ quan xét xử
+#ANSWER: A
+
+#Q18 [SC4] Chính phủ là cơ quan nhà nước do
+A. Cơ quan không do người dân trực tiếp bầu ra
+B. Người dân trực tiếp bầu ra
+C. Việc thành lập bởi nguyên thủ quốc gia
+D. Toà án bầu ra
+#ANSWER: A
+
+#Q19 [SC4] Nguyên thủ quốc gia trong chính thể cộng hòa đại nghị do
+A. Do người dân cả nước bầu ra
+B. Do nghị viện quốc hội bầu ra
+C. Tất cả các đáp án trên đều đúng
+D. Do nhân dân địa phương bầu ra
+#ANSWER: B
+
+#Q20 [SC4] Các bộ là cơ quan nhà nước thuộc
+A. Ủy ban nhân dân
+B. Quốc hội
+C. Chính phủ
+D. Tòa án
+#ANSWER: C
+
+#Q21 [SC4] Tổ chức bộ máy nhà nước cộng hòa xã hội nói chung, bộ máy nhà nước cộng hòa xã hội chủ nghĩa Việt Nam nói riêng tuân theo nguyên tắc gì
+A. Quyền lực nhà nước được giao cho các cơ quan độc lập đảm nhiệm để thực hiện quyền lập pháp, hành pháp và tư pháp
+B. Quyền lực nhà nước thống nhất, tất cả quyền lực nhà nước thuộc về nhân dân
+C. A, B sai
+D. Tất cả đều đúng
+#ANSWER: B
+
+#Q22 [SC4] Trong bộ máy nhà nước cộng hòa xã hội chủ nghĩa Việt Nam, hội đồng nhân dân các cấp là
+A. Cơ quan của quốc hội ở địa phương
+B. Cơ quan kiêm nhiệm ở địa phương
+C. Cơ quan luật pháp
+D. Cơ quan đại diện quyền lực cao nhất ở địa phương
+#ANSWER: D
+
+#Q23 [SC4] Khi quy định mỗi cơ quan nhà nước có một thẩm quyền nhất định có nghĩa là
+A. Cơ quan nhà nước có quyền làm những công việc không thuộc nhiệm vụ của cơ quan mình
+B. Cơ quan nhà nước được sử dụng quyền lực nhà nước ở bất kỳ công việc nào
+C. Cơ quan nhà nước chỉ được làm những gì mà pháp luật quy định
+D. Cơ quan nhà nước không được nhân danh nhà nước khi làm nhiệm vụ
+#ANSWER: C
+
+#Q24 [SC4] Khi thực hiện chức năng xét xử, toà án nhân danh ai để xét xử
+A. Cơ quan có thẩm quyền
+B. Quốc hội
+C. Nhà nước
+D. Uỷ ban nhân dân
+#ANSWER: C
+
+#Q25 [SC4] Bộ máy nhà nước Việt Nam được thành lập ở mấy cấp
+A. 4
+B. 2
+C. 3
+D. 1
+#ANSWER: A
+
+#Q26 [SC4] Chức năng nào sau đây không phải là chức năng của pháp luật
+A. Chức năng giáo dục
+B. Chức năng điều chỉnh các quan hệ xã hội
+C. Chức năng bảo vệ các quan hệ xã hội
+D. Chức năng xây dựng các quan hệ xã hội
+#ANSWER: D
+
+#Q27 [SC4] Quy phạm pháp luật "Mọi người có quyền tự do kinh doanh trong những ngành nghề mà pháp luật không cấm" gồm những thành phần nào
+A. Quy định và chế tài
+B. Giả định
+C. Giả định và quy định
+D. Quy định
+#ANSWER: C
+
+#Q28 [SC4] Theo chủ nghĩa Mác- Lênin thì nguyên nhân trực tiếp dẫn đến sự ra đời của nhà nước là
+A. Sự xuất hiện chế độ tư hữu tư liệu sản xuất
+B. Thượng đế sắp đặt như vậy
+C. Do mâu thuẫn giai cấp trong xã hội không thể điều hòa được
+D. Sự chiếm đoạt đất đai, lãnh thổ của dân tộc này đối với dân tộc khác
+#ANSWER: C
+
+#Q29 [SC4] Hệ thống pháp luật gồm
+A. Hệ thống cấu trúc của pháp luật và hệ thống văn bản pháp luật
+B. Tập hợp hóa và pháp điển hóa
+C. Quy phạm pháp luật, chế định pháp luật, ngành luật
+D. Tất cả các phương án trên đều sai
+#ANSWER: A
+
+#Q30 [SC4] Lần phân công lao động xã hội thứ nhất trong xã hội cộng sản nguyên thủy là
+A. Thương mại tách khỏi thủ công nghiệp, chăn nuôi và trồng trọt
+B. Chăn nuôi tách khỏi trồng trọt
+C. Thủ công nghiệp tách khỏi nông nghiệp và trồng trọt
+D. Thủ công nghiệp tách khỏi nông nghiệp
+#ANSWER: B
